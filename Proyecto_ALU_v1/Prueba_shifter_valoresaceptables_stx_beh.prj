@@ -1,0 +1,2 @@
+vhdl isim_temp "Shiftter.vhd"
+vhdl isim_temp "Prueba_shifter_valoresaceptables.vhd"

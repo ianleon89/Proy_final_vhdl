@@ -1,0 +1,370 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Detector_de_Rebose.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Detector_de_Rebose.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Detector_de_Rebose"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Detector_de_Rebose
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd" in Library work.
+Architecture behavioral of Entity detector_de_rebose is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Detector_de_Rebose> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Detector_de_Rebose> in library <work> (Architecture <behavioral>).
+Entity <Detector_de_Rebose> analyzed. Unit <Detector_de_Rebose> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Detector_de_Rebose>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <exponente_real>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit adder for signal <exponente_real$addsub0000> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Detector_de_Rebose> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Detector_de_Rebose> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Detector_de_Rebose, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Detector_de_Rebose.ngr
+Top Level Output File Name         : Detector_de_Rebose
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 65
+
+Cell Usage :
+# BELS                             : 56
+#      LUT2                        : 1
+#      LUT3                        : 24
+#      LUT4                        : 31
+# FlipFlops/Latches                : 8
+#      LDCP_1                      : 8
+# IO Buffers                       : 65
+#      IBUF                        : 33
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       32  out of   4656     0%  
+ Number of 4 input LUTs:                 56  out of   9312     0%  
+ Number of IOs:                          65
+ Number of bonded IOBs:                  65  out of    232    28%  
+    IOB Flip Flops:                       8
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+error_and0000(error_and0000:O)     | NONE(*)(exponente_real_0)| 8     |
+-----------------------------------+--------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------+------------------------+-------+
+Control Signal                                         | Buffer(FF name)        | Load  |
+-------------------------------------------------------+------------------------+-------+
+exponente_real_0__and0000(exponente_real_0__and00001:O)| NONE(exponente_real_0) | 1     |
+exponente_real_0__or0000(exponente_real_0__or00002:O)  | NONE(exponente_real_0) | 1     |
+exponente_real_1__and0000(exponente_real_1__and00001:O)| NONE(exponente_real_1) | 1     |
+exponente_real_1__or0000(exponente_real_1__or00001:O)  | NONE(exponente_real_1) | 1     |
+exponente_real_2__and0000(exponente_real_2__and00001:O)| NONE(exponente_real_2) | 1     |
+exponente_real_2__or0000(exponente_real_2__or00001:O)  | NONE(exponente_real_2) | 1     |
+exponente_real_3__and0000(exponente_real_3__and00001:O)| NONE(exponente_real_3) | 1     |
+exponente_real_3__or0000(exponente_real_3__or00001:O)  | NONE(exponente_real_3) | 1     |
+exponente_real_4__and0000(exponente_real_4__and00001:O)| NONE(exponente_real_4) | 1     |
+exponente_real_4__or0000(exponente_real_4__or00001:O)  | NONE(exponente_real_4) | 1     |
+exponente_real_5__and0000(exponente_real_5__and00001:O)| NONE(exponente_real_5) | 1     |
+exponente_real_5__or0000(exponente_real_5__or00001:O)  | NONE(exponente_real_5) | 1     |
+exponente_real_6__and0000(exponente_real_6__and00001:O)| NONE(exponente_real_6) | 1     |
+exponente_real_6__or0000(exponente_real_6__or00001:O)  | NONE(exponente_real_6) | 1     |
+exponente_real_7__and0000(exponente_real_7__and00001:O)| NONE(exponente_real_7) | 1     |
+exponente_real_7__or0000(exponente_real_7__or00001:O)  | NONE(exponente_real_7) | 1     |
+-------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 6.313ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: 11.682ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'error_and0000'
+  Total number of paths / destination ports: 44 / 8
+-------------------------------------------------------------------------
+Offset:              6.313ns (Levels of Logic = 4)
+  Source:            acarreo<1> (PAD)
+  Destination:       exponente_real_5 (LATCH)
+  Destination Clock: error_and0000 rising
+
+  Data Path: acarreo<1> to exponente_real_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            44   1.218   1.441  acarreo_1_IBUF (acarreo_1_IBUF)
+     LUT3:I0->O            5   0.704   0.668  exponente_real_mux0002<2>11 (N8)
+     LUT3:I2->O            3   0.704   0.566  exponente_real_mux0002<4>11 (N4)
+     LUT3:I2->O            1   0.704   0.000  exponente_real_mux0002<5>1 (exponente_real_mux0002<5>)
+     LDCP_1:D                  0.308          exponente_real_5
+    ----------------------------------------
+    Total                      6.313ns (3.638ns logic, 2.675ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'error_and0000'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            exponente_real_7 (LATCH)
+  Destination:       exponente_real<7> (PAD)
+  Source Clock:      error_and0000 rising
+
+  Data Path: exponente_real_7 to exponente_real<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP_1:G->Q           1   0.676   0.420  exponente_real_7 (exponente_real_7)
+     OBUF:I->O                 3.272          exponente_real_7_OBUF (exponente_real<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 287 / 24
+-------------------------------------------------------------------------
+Delay:               11.682ns (Levels of Logic = 6)
+  Source:            acarreo<1> (PAD)
+  Destination:       mantisa_real<22> (PAD)
+
+  Data Path: acarreo<1> to mantisa_real<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            44   1.218   1.441  acarreo_1_IBUF (acarreo_1_IBUF)
+     LUT3:I0->O            5   0.704   0.668  exponente_real_mux0002<2>11 (N8)
+     LUT3:I2->O            3   0.704   0.610  exponente_real_mux0002<4>11 (N4)
+     LUT3:I1->O           23   0.704   1.237  mantisa_real<0>11 (N3)
+     LUT4:I2->O            1   0.704   0.420  mantisa_real<9>1 (mantisa_real_9_OBUF)
+     OBUF:I->O                 3.272          mantisa_real_9_OBUF (mantisa_real<9>)
+    ----------------------------------------
+    Total                     11.682ns (7.306ns logic, 4.376ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.86 secs
+ 
+--> 
+
+Total memory usage is 302232 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selec_suma_resta_isim_beh.exe" -prj "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selec_suma_resta_beh.prj" "work.Prueba_selec_suma_resta" 
