@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\ANDRES\Documents\UBA\Ibimestre\circuitoslogicosprogramables\ProyFinal\programa\Proyecto_ALU_v1\Prueba_selec_suma_resta_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selec_suma_resta_isim_beh.wdb 
+Running: C:\Users\ANDRES\Documents\UBA\Ibimestre\circuitoslogicosprogramables\ProyFinal\programa\Proyecto_ALU_v1\PRUEBA_REAL_SUMADOR_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR_isim_beh.wdb 
 ISim P.49d (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -30,4 +30,5 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /prueba_real_sumador/uut/c4/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.

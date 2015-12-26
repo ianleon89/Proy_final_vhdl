@@ -92,13 +92,10 @@ BEGIN
 		
 	 wait for clock_period/4;	
 	 ex_igl<='1';
-	 mantisa_desplazada <="11111111111111111111111";
-    mantisa_no_desplazada<="11101101111111111111111"; 
+	 mantisa_desplazada <="11101010000111001010110";
+    mantisa_no_desplazada<="11001010110011000000001"; 
 	 wait for clock_period/4;
-	 ex_igl<='1';
-	 mantisa_desplazada <="00000111111111111000000";
-    mantisa_no_desplazada<="11101101111111111111111"; 
-	 wait for clock_period/4;
+	 
    end process;
  
 

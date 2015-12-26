@@ -40,6 +40,7 @@ entity Comparador_Exp is
 			  );
 end Comparador_Exp;
 
+
 architecture Behavioral of Comparador_Exp is
 
 signal despl: std_logic_vector(7 downto 0);
@@ -49,10 +50,14 @@ emax<= e1 when e1>e2 else
 			 e2 when e2>e1 else
 			 e1;
 	
-	process (e1,e2)
+	process (e1,e2,despl)
 	begin
 --	n_despl <= e1-e2;
-	if e1>e2 then
+	if e1="00000000" then
+			n_despl<="00000000";
+	elsif e2="00000000" then 
+			n_despl<="00000000";
+	elsif e1>e2 then
 			despl <= conv_std_logic_vector((conv_integer(e1)-conv_integer(e2)),8);
 			
 			if despl<23 then

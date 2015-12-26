@@ -93,12 +93,8 @@ BEGIN
 		exponente_max<="00110110";
 		wait for clock_period/4;
 		acarreo<="11";
-		resultado_suma<="11110110111110000000010";
-		exponente_max<="01111110";
-		wait for clock_period/4;
-		acarreo<="10";
-		resultado_suma<="11110110111110000000010";
-		exponente_max<="11111111";
+		resultado_suma<="10110100111010001010111";
+		exponente_max<="10000011";
 		wait for clock_period/4;
 		
    end process;

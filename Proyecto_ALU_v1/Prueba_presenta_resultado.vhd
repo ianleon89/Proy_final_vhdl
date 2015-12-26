@@ -103,10 +103,10 @@ BEGIN
 		exponente_real<="11111111";
 		mantisa_real<="10110111110001010101111";
 		wait for clock_period/6;
-		error_exp<='1';
-		cod_error<="1000000";
-		exponente_real<="11000100";
-		mantisa_real<="10110111110001010101111";
+		error_exp<='0';
+		cod_error<="1100100";
+		exponente_real<="10000100";
+		mantisa_real<="11011010011101000101011";
 		wait for clock_period/6;
    end process;
  

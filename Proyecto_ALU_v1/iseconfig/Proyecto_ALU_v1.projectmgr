@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xc3s500e-4fg320</SelectedItem>
+         <SelectedItem>Sumador_iee_754 - Behavioral (C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>xc3s500e-4fg320</CurrentItem>
+      <CurrentItem>Sumador_iee_754 - Behavioral (C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -23,13 +23,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000176000000010000000100000000000000000000000064ffffffff000000810000000000000001000001760000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -63,13 +63,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000165000000010000000100000000000000000000000064ffffffff000000810000000000000001000001650000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -80,12 +80,14 @@
          <ClosedNode>/Prueba_presenta_resultado - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_presenta_resultado.vhd</ClosedNode>
          <ClosedNode>/Prueba_rebose - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_rebose.vhd</ClosedNode>
          <ClosedNode>/Prueba_selec_comp_mantisa - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_selec_comp_mantisa.vhd</ClosedNode>
+         <ClosedNode>/Prueba_selec_oper - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_selec_oper.vhd</ClosedNode>
+         <ClosedNode>/Prueba_selec_suma_resta - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_selec_suma_resta.vhd</ClosedNode>
          <ClosedNode>/Prueba_shifter_valoresaceptables - behavior C:|Users|ANDRES|Documents|UBA|Ibimestre|circuitoslogicosprogramables|ProyFinal|programa|Proyecto_ALU_v1|Prueba_shifter_valoresaceptables.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Prueba_selec_suma_resta - behavior (C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selec_suma_resta.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -119,7 +121,7 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>

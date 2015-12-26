@@ -52,7 +52,7 @@ architecture Behavioral of Selec_Comp_Mantisa is
 begin
 	
 	
-	process(ex1,ex2,A,M)
+	process(ex1,ex2,A,M,oper_ok)
 	begin
 	--  ERROR
 	-- 00 valor 0
@@ -208,10 +208,20 @@ begin
 			Mantisa_sin_despl<=M;
 			Mantisa_despl<=A;
 		--	sig_M<="00000000000000000000000";
+		elsif (ex2=ex1) and oper_ok /='0' then
+			Mantisa_sin_despl<=M;
+			Mantisa_despl<=A;
+		else
+			Mantisa_sin_despl<="11111111111111111111111";
+			Mantisa_despl<="11111111111111111111111";
 		end if;
 		if (A=M)and oper_ok /='0' then
 			--sig_M<=A;
 			Mantisa_iguales<='1';
+		else
+			Mantisa_iguales<='0';
+		
+			
 		end if;
 		
 	end process;

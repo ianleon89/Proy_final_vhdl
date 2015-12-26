@@ -81,19 +81,19 @@ BEGIN
    clk_process :process
    begin
 		
-		e2<="10000010";
-		e1<="10000111";
+		e2<="10000100";
+		e1<="10000011";
 		wait for clk_period/4;
 		
-		e2<="10000000";
-		e1<="10001111";
+		e2<="10001001";
+		e1<="10000101";
 		wait for clk_period/4;
 		e2<="10101010";
-		e1<="01010101";
+		e1<="10000001";
 		wait for clk_period/4;
 		
-		e2<="11001100";
-		e1<="11001100";
+		e2<="00000000";
+		e1<="10000011";
 		wait for clk_period/4;
 		
    end process;

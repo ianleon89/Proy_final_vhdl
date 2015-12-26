@@ -1,0 +1,981 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Sumador_iee_754.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sumador_iee_754.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sumador_iee_754"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Sumador_iee_754
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd" in Library work.
+Architecture behavioral of Entity comparador_exp is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" in Library work.
+Architecture behavioral of Entity selec_comp_mantisa is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" in Library work.
+Architecture behavioral of Entity shiftter is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd" in Library work.
+Architecture behavioral of Entity detector_de_rebose is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd" in Library work.
+Architecture behavioral of Entity pressenta_resultados is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" in Library work.
+Architecture behavioral of Entity sumador_iee_754 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Sumador_iee_754> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comparador_Exp> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Selec_Comp_Mantisa> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Shiftter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sumador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Detector_de_Rebose> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Pressenta_resultados> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Sumador_iee_754> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" line 136: Unconnected output port 'Mantisa_iguales' of component 'Selec_Comp_Mantisa'.
+Entity <Sumador_iee_754> analyzed. Unit <Sumador_iee_754> generated.
+
+Analyzing Entity <Comparador_Exp> in library <work> (Architecture <behavioral>).
+Entity <Comparador_Exp> analyzed. Unit <Comparador_Exp> generated.
+
+Analyzing Entity <Selec_Comp_Mantisa> in library <work> (Architecture <behavioral>).
+Entity <Selec_Comp_Mantisa> analyzed. Unit <Selec_Comp_Mantisa> generated.
+
+Analyzing Entity <Shiftter> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" line 58: Width mismatch. <mantisa_despl> has a width of 23 bits but assigned expression is 24-bit wide.
+Entity <Shiftter> analyzed. Unit <Shiftter> generated.
+
+Analyzing Entity <Sumador> in library <work> (Architecture <behavioral>).
+Entity <Sumador> analyzed. Unit <Sumador> generated.
+
+Analyzing Entity <Detector_de_Rebose> in library <work> (Architecture <behavioral>).
+Entity <Detector_de_Rebose> analyzed. Unit <Detector_de_Rebose> generated.
+
+Analyzing Entity <Pressenta_resultados> in library <work> (Architecture <behavioral>).
+Entity <Pressenta_resultados> analyzed. Unit <Pressenta_resultados> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comparador_Exp>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <exp_iguales>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <despl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit subtractor for signal <despl$share0000> created at line 59.
+    Found 8-bit comparator greater for signal <n_despl$cmp_gt0000> created at line 59.
+    Found 8-bit comparator greater for signal <n_despl$cmp_gt0001> created at line 68.
+    Found 9-bit comparator less for signal <n_despl$cmp_lt0000> created at line 71.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <Comparador_Exp> synthesized.
+
+
+Synthesizing Unit <Selec_Comp_Mantisa>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <oper_ok>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 7-bit latch for signal <cod_error>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit comparator equal for signal <Mantisa_despl$cmp_eq0000> created at line 209.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0000> created at line 204.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0001> created at line 206.
+    Found 23-bit comparator equal for signal <Mantisa_iguales$cmp_eq0000> created at line 218.
+    Summary:
+	inferred   4 Comparator(s).
+Unit <Selec_Comp_Mantisa> synthesized.
+
+
+Synthesizing Unit <Shiftter>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd".
+WARNING:Xst:1780 - Signal <m_des> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 24-bit shifter logical right for signal <mantisa_despl$shift0001> created at line 58.
+    Found 8-bit subtractor for signal <mantisa_despl$sub0000> created at line 58.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <Shiftter> synthesized.
+
+
+Synthesizing Unit <Sumador>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd".
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_des>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_n_des>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_sumada>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_2_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_2_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 24-bit adder for signal <mantisa_sumada$add0000> created at line 75.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Sumador> synthesized.
+
+
+Synthesizing Unit <Detector_de_Rebose>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd".
+    Found 8-bit adder for signal <exponente_real$addsub0000> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Detector_de_Rebose> synthesized.
+
+
+Synthesizing Unit <Pressenta_resultados>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd".
+Unit <Pressenta_resultados> synthesized.
+
+
+Synthesizing Unit <Sumador_iee_754>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd".
+WARNING:Xst:646 - Signal <senal_vcc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Sumador_iee_754> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 24-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 2
+# Latches                                              : 10
+ 1-bit latch                                           : 5
+ 24-bit latch                                          : 3
+ 7-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 7
+ 23-bit comparator equal                               : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 4
+ 9-bit comparator less                                 : 1
+# Logic shifters                                       : 1
+ 24-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 24-bit adder                                          : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 2
+# Latches                                              : 10
+ 1-bit latch                                           : 5
+ 24-bit latch                                          : 3
+ 7-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 7
+ 23-bit comparator equal                               : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 4
+ 9-bit comparator less                                 : 1
+# Logic shifters                                       : 1
+ 24-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <mantisa_n_des_23> (without init value) has a constant value of 0 in block <Sumador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mantisa_des_23> (without init value) has a constant value of 0 in block <Sumador>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Sumador_iee_754> ...
+
+Optimizing unit <Shiftter> ...
+
+Optimizing unit <Detector_de_Rebose> ...
+
+Optimizing unit <Comparador_Exp> ...
+
+Optimizing unit <Selec_Comp_Mantisa> ...
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+
+Optimizing unit <Sumador> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sumador_iee_754, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sumador_iee_754.ngr
+Top Level Output File Name         : Sumador_iee_754
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 94
+
+Cell Usage :
+# BELS                             : 644
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 78
+#      LUT3                        : 78
+#      LUT4                        : 332
+#      MUXCY                       : 80
+#      MUXF5                       : 40
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 83
+#      LD                          : 1
+#      LD_1                        : 70
+#      LDE                         : 12
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 94
+#      IBUF                        : 63
+#      OBUF                        : 31
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      271  out of   4656     5%  
+ Number of Slice Flip Flops:             83  out of   9312     0%  
+ Number of 4 input LUTs:                490  out of   9312     5%  
+ Number of IOs:                          94
+ Number of bonded IOBs:                  94  out of    232    40%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                    | Clock buffer(FF name)     | Load  |
+----------------------------------------------------------------+---------------------------+-------+
+c0/exp_iguales_not0003(c0/exp_iguales_not00031:O)               | NONE(*)(c0/despl_7)       | 8     |
+c0/exp_iguales_not0002(c0/exp_iguales_not00021:O)               | NONE(*)(c0/exp_iguales)   | 1     |
+c1/oper_ok_not0001(c1/oper_ok_not00011:O)                       | NONE(*)(c1/oper_ok)       | 1     |
+c3/mantisa_des_cmp_eq00001(c3/mantisa_des_cmp_eq0000_wg_cy<5>:O)| BUFG(*)(c3/mantisa_des_22)| 70    |
+c0/exp_iguales                                                  | NONE(c3/bit_1)            | 3     |
+----------------------------------------------------------------+---------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.849ns (Maximum Frequency: 206.228MHz)
+   Minimum input arrival time before clock: 24.809ns
+   Maximum output required time after clock: 31.231ns
+   Maximum combinational path delay: 34.968ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c0/exp_iguales_not0003'
+  Clock period: 2.692ns (frequency: 371.471MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               2.692ns (Levels of Logic = 1)
+  Source:            c0/despl_4 (LATCH)
+  Destination:       c0/despl_4 (LATCH)
+  Source Clock:      c0/exp_iguales_not0003 falling
+  Destination Clock: c0/exp_iguales_not0003 falling
+
+  Data Path: c0/despl_4 to c0/despl_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q             14   0.676   1.004  c0/despl_4 (c0/despl_4)
+     LUT4:I3->O            1   0.704   0.000  c0/despl_mux0003<4>1 (c0/despl_mux0003<4>)
+     LDE:D                     0.308          c0/despl_4
+    ----------------------------------------
+    Total                      2.692ns (1.688ns logic, 1.004ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c1/oper_ok_not0001'
+  Clock period: 2.450ns (frequency: 408.163MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.450ns (Levels of Logic = 1)
+  Source:            c1/oper_ok (LATCH)
+  Destination:       c1/oper_ok (LATCH)
+  Source Clock:      c1/oper_ok_not0001 falling
+  Destination Clock: c1/oper_ok_not0001 falling
+
+  Data Path: c1/oper_ok to c1/oper_ok
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.676   0.762  c1/oper_ok (c1/oper_ok)
+     LUT4:I0->O            1   0.704   0.000  c1/oper_ok_mux00091 (c1/oper_ok_mux0009)
+     LD:D                      0.308          c1/oper_ok
+    ----------------------------------------
+    Total                      2.450ns (1.688ns logic, 0.762ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c3/mantisa_des_cmp_eq00001'
+  Clock period: 4.849ns (frequency: 206.228MHz)
+  Total number of paths / destination ports: 874 / 24
+-------------------------------------------------------------------------
+Delay:               4.849ns (Levels of Logic = 25)
+  Source:            c3/mantisa_n_des_0 (LATCH)
+  Destination:       c3/mantisa_sumada_23 (LATCH)
+  Source Clock:      c3/mantisa_des_cmp_eq00001 rising
+  Destination Clock: c3/mantisa_des_cmp_eq00001 rising
+
+  Data Path: c3/mantisa_n_des_0 to c3/mantisa_sumada_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.676   0.595  c3/mantisa_n_des_0 (c3/mantisa_n_des_0)
+     LUT2:I0->O            1   0.704   0.000  c3/Madd_mantisa_sumada_add0000_lut<0> (c3/Madd_mantisa_sumada_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c3/Madd_mantisa_sumada_add0000_cy<0> (c3/Madd_mantisa_sumada_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<1> (c3/Madd_mantisa_sumada_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<2> (c3/Madd_mantisa_sumada_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<3> (c3/Madd_mantisa_sumada_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<4> (c3/Madd_mantisa_sumada_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<5> (c3/Madd_mantisa_sumada_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<6> (c3/Madd_mantisa_sumada_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<7> (c3/Madd_mantisa_sumada_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<8> (c3/Madd_mantisa_sumada_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<9> (c3/Madd_mantisa_sumada_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<10> (c3/Madd_mantisa_sumada_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<11> (c3/Madd_mantisa_sumada_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<12> (c3/Madd_mantisa_sumada_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<13> (c3/Madd_mantisa_sumada_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<14> (c3/Madd_mantisa_sumada_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<15> (c3/Madd_mantisa_sumada_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<16> (c3/Madd_mantisa_sumada_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<17> (c3/Madd_mantisa_sumada_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<18> (c3/Madd_mantisa_sumada_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<19> (c3/Madd_mantisa_sumada_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<20> (c3/Madd_mantisa_sumada_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<21> (c3/Madd_mantisa_sumada_add0000_cy<21>)
+     MUXCY:CI->O           0   0.059   0.000  c3/Madd_mantisa_sumada_add0000_cy<22> (c3/Madd_mantisa_sumada_add0000_cy<22>)
+     XORCY:CI->O           1   0.804   0.000  c3/Madd_mantisa_sumada_add0000_xor<23> (c3/mantisa_sumada_add0000<23>)
+     LD_1:D                    0.308          c3/mantisa_sumada_23
+    ----------------------------------------
+    Total                      4.849ns (4.254ns logic, 0.595ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c0/exp_iguales'
+  Clock period: 1.515ns (frequency: 660.066MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.515ns (Levels of Logic = 0)
+  Source:            c3/bit_2_0 (LATCH)
+  Destination:       c3/bit_1 (LATCH)
+  Source Clock:      c0/exp_iguales falling
+  Destination Clock: c0/exp_iguales falling
+
+  Data Path: c3/bit_2_0 to c3/bit_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.676   0.531  c3/bit_2_0 (c3/bit_2_0)
+     LDE:D                     0.308          c3/bit_1
+    ----------------------------------------
+    Total                      1.515ns (0.984ns logic, 0.531ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c0/exp_iguales_not0003'
+  Total number of paths / destination ports: 1648 / 16
+-------------------------------------------------------------------------
+Offset:              10.834ns (Levels of Logic = 21)
+  Source:            exponente_simple_presicion_dos<0> (PAD)
+  Destination:       c0/despl_7 (LATCH)
+  Destination Clock: c0/exp_iguales_not0003 falling
+
+  Data Path: exponente_simple_presicion_dos<0> to c0/despl_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  exponente_simple_presicion_dos_0_IBUF (exponente_simple_presicion_dos_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  c0/Mcompar_n_despl_cmp_gt0000_lut<0> (c0/Mcompar_n_despl_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<0> (c0/Mcompar_n_despl_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<1> (c0/Mcompar_n_despl_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<2> (c0/Mcompar_n_despl_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<3> (c0/Mcompar_n_despl_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<4> (c0/Mcompar_n_despl_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<5> (c0/Mcompar_n_despl_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<6> (c0/Mcompar_n_despl_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          26   0.459   1.435  c0/Mcompar_n_despl_cmp_gt0000_cy<7> (c0/Mcompar_n_despl_cmp_gt0000_cy<7>)
+     LUT3:I0->O            1   0.704   0.455  c0/despl_mux0004<0>1 (c0/despl_mux0004<0>)
+     LUT4:I2->O            1   0.704   0.000  c0/Msub_despl_share0000_lut<0> (c0/Msub_despl_share0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Msub_despl_share0000_cy<0> (c0/Msub_despl_share0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Msub_despl_share0000_cy<1> (c0/Msub_despl_share0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Msub_despl_share0000_cy<2> (c0/Msub_despl_share0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Msub_despl_share0000_cy<3> (c0/Msub_despl_share0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Msub_despl_share0000_cy<4> (c0/Msub_despl_share0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Msub_despl_share0000_cy<5> (c0/Msub_despl_share0000_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  c0/Msub_despl_share0000_cy<6> (c0/Msub_despl_share0000_cy<6>)
+     XORCY:CI->O           1   0.804   0.595  c0/Msub_despl_share0000_xor<7> (c0/despl_share0000<7>)
+     LUT4:I0->O            1   0.704   0.000  c0/despl_mux0003<7>1 (c0/despl_mux0003<7>)
+     LDE:D                     0.308          c0/despl_7
+    ----------------------------------------
+    Total                     10.834ns (7.241ns logic, 3.593ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c0/exp_iguales_not0002'
+  Total number of paths / destination ports: 56 / 2
+-------------------------------------------------------------------------
+Offset:              6.754ns (Levels of Logic = 11)
+  Source:            exponente_simple_presicion_dos<0> (PAD)
+  Destination:       c0/exp_iguales (LATCH)
+  Destination Clock: c0/exp_iguales_not0002 falling
+
+  Data Path: exponente_simple_presicion_dos<0> to c0/exp_iguales
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  exponente_simple_presicion_dos_0_IBUF (exponente_simple_presicion_dos_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  c0/Mcompar_n_despl_cmp_gt0000_lut<0> (c0/Mcompar_n_despl_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<0> (c0/Mcompar_n_despl_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<1> (c0/Mcompar_n_despl_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<2> (c0/Mcompar_n_despl_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<3> (c0/Mcompar_n_despl_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<4> (c0/Mcompar_n_despl_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<5> (c0/Mcompar_n_despl_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<6> (c0/Mcompar_n_despl_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          26   0.459   1.435  c0/Mcompar_n_despl_cmp_gt0000_cy<7> (c0/Mcompar_n_despl_cmp_gt0000_cy<7>)
+     LUT2:I0->O            1   0.704   0.000  c0/exp_iguales_mux00031 (c0/exp_iguales_mux0003)
+     LDE:D                     0.308          c0/exp_iguales
+    ----------------------------------------
+    Total                      6.754ns (4.211ns logic, 2.543ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c1/oper_ok_not0001'
+  Total number of paths / destination ports: 166 / 1
+-------------------------------------------------------------------------
+Offset:              10.456ns (Levels of Logic = 8)
+  Source:            exponente_simple_presicion_dos<3> (PAD)
+  Destination:       c1/oper_ok (LATCH)
+  Destination Clock: c1/oper_ok_not0001 falling
+
+  Data Path: exponente_simple_presicion_dos<3> to c1/oper_ok
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.218   1.136  exponente_simple_presicion_dos_3_IBUF (exponente_simple_presicion_dos_3_IBUF)
+     LUT3:I0->O            5   0.704   0.808  c1/cod_error_cmp_eq000111 (c1/N12)
+     LUT3:I0->O            1   0.704   0.424  c1/cod_error_cmp_eq0001_SW0 (N19)
+     LUT4:I3->O           12   0.704   1.040  c1/cod_error_cmp_eq0001 (c1/cod_error_cmp_eq0001)
+     LUT4:I1->O            2   0.704   0.526  c1/cod_error_and00101 (c1/cod_error_and0010)
+     LUT4:I1->O            1   0.704   0.000  c1/cod_error_mux0028<6>11 (c1/cod_error_mux0028<6>1)
+     MUXF5:I1->O           2   0.321   0.451  c1/cod_error_mux0028<6>1_f5 (c1/N2)
+     LUT4:I3->O            1   0.704   0.000  c1/oper_ok_mux00091 (c1/oper_ok_mux0009)
+     LD:D                      0.308          c1/oper_ok
+    ----------------------------------------
+    Total                     10.456ns (6.071ns logic, 4.385ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c3/mantisa_des_cmp_eq00001'
+  Total number of paths / destination ports: 79607 / 46
+-------------------------------------------------------------------------
+Offset:              19.581ns (Levels of Logic = 22)
+  Source:            exponente_simple_presicion_dos<0> (PAD)
+  Destination:       c3/mantisa_des_1 (LATCH)
+  Destination Clock: c3/mantisa_des_cmp_eq00001 rising
+
+  Data Path: exponente_simple_presicion_dos<0> to c3/mantisa_des_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  exponente_simple_presicion_dos_0_IBUF (exponente_simple_presicion_dos_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  c0/Mcompar_n_despl_cmp_gt0000_lut<0> (c0/Mcompar_n_despl_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<0> (c0/Mcompar_n_despl_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<1> (c0/Mcompar_n_despl_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<2> (c0/Mcompar_n_despl_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<3> (c0/Mcompar_n_despl_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<4> (c0/Mcompar_n_despl_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<5> (c0/Mcompar_n_despl_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<6> (c0/Mcompar_n_despl_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          26   0.459   1.295  c0/Mcompar_n_despl_cmp_gt0000_cy<7> (c0/Mcompar_n_despl_cmp_gt0000_cy<7>)
+     LUT4:I2->O            1   0.704   0.595  c0/n_despl<6>11_SW0 (N173)
+     LUT3:I0->O           39   0.704   1.439  c0/n_despl<6>11 (c0/N6)
+     LUT3:I0->O           57   0.704   1.445  c0/n_despl<2>1 (senal_numero_despl<2>)
+     LUT3:I0->O            3   0.704   0.706  c2/mantisa_despl<1>121 (c2/N32)
+     LUT4:I0->O            1   0.704   0.595  c2/mantisa_despl<1>180_SW0 (N123)
+     LUT4:I0->O            1   0.704   0.000  c2/mantisa_despl<1>180_F (N207)
+     MUXF5:I0->O           2   0.321   0.482  c2/mantisa_despl<1>180 (c2/mantisa_despl<1>180)
+     LUT3:I2->O            1   0.704   0.000  c2/mantisa_despl<1>19112 (c2/mantisa_despl<1>19111)
+     MUXF5:I0->O           3   0.321   0.610  c2/mantisa_despl<1>1911_f5 (c2/N01)
+     LUT4:I1->O            1   0.704   0.000  c2/mantisa_despl<1>91 (c2/mantisa_despl<1>91)
+     MUXF5:I1->O           1   0.321   0.499  c2/mantisa_despl<1>9_f5 (c2/mantisa_despl<1>9)
+     LUT4:I1->O            2   0.704   0.000  c2/mantisa_despl<1>65 (senal_mantisa_shift<1>)
+     LD_1:D                    0.308          c3/mantisa_des_1
+    ----------------------------------------
+    Total                     19.581ns (10.806ns logic, 8.775ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c0/exp_iguales'
+  Total number of paths / destination ports: 232611 / 3
+-------------------------------------------------------------------------
+Offset:              24.809ns (Levels of Logic = 30)
+  Source:            exponente_simple_presicion_dos<0> (PAD)
+  Destination:       c3/bit_1 (LATCH)
+  Destination Clock: c0/exp_iguales falling
+
+  Data Path: exponente_simple_presicion_dos<0> to c3/bit_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  exponente_simple_presicion_dos_0_IBUF (exponente_simple_presicion_dos_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  c0/Mcompar_n_despl_cmp_gt0000_lut<0> (c0/Mcompar_n_despl_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<0> (c0/Mcompar_n_despl_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<1> (c0/Mcompar_n_despl_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<2> (c0/Mcompar_n_despl_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<3> (c0/Mcompar_n_despl_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<4> (c0/Mcompar_n_despl_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<5> (c0/Mcompar_n_despl_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<6> (c0/Mcompar_n_despl_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          26   0.459   1.295  c0/Mcompar_n_despl_cmp_gt0000_cy<7> (c0/Mcompar_n_despl_cmp_gt0000_cy<7>)
+     LUT4:I2->O            1   0.704   0.595  c0/n_despl<6>11_SW0 (N173)
+     LUT3:I0->O           39   0.704   1.439  c0/n_despl<6>11 (c0/N6)
+     LUT3:I0->O           57   0.704   1.445  c0/n_despl<2>1 (senal_numero_despl<2>)
+     LUT3:I0->O            3   0.704   0.706  c2/mantisa_despl<1>121 (c2/N32)
+     LUT4:I0->O            1   0.704   0.595  c2/mantisa_despl<1>180_SW0 (N123)
+     LUT4:I0->O            1   0.704   0.000  c2/mantisa_despl<1>180_F (N207)
+     MUXF5:I0->O           2   0.321   0.482  c2/mantisa_despl<1>180 (c2/mantisa_despl<1>180)
+     LUT3:I2->O            1   0.704   0.000  c2/mantisa_despl<1>19112 (c2/mantisa_despl<1>19111)
+     MUXF5:I0->O           3   0.321   0.610  c2/mantisa_despl<1>1911_f5 (c2/N01)
+     LUT4:I1->O            1   0.704   0.000  c2/mantisa_despl<1>91 (c2/mantisa_despl<1>91)
+     MUXF5:I1->O           1   0.321   0.499  c2/mantisa_despl<1>9_f5 (c2/mantisa_despl<1>9)
+     LUT4:I1->O            2   0.704   0.622  c2/mantisa_despl<1>65 (senal_mantisa_shift<1>)
+     LUT3:I0->O            1   0.704   0.000  c3/mantisa_des_cmp_eq0000_wg_lut<0> (c3/mantisa_des_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<0> (c3/mantisa_des_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<1> (c3/mantisa_des_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<2> (c3/mantisa_des_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<3> (c3/mantisa_des_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<4> (c3/mantisa_des_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          28   0.459   1.261  c3/mantisa_des_cmp_eq0000_wg_cy<5> (c3/mantisa_des_cmp_eq00001)
+     INV:I->O              3   0.704   0.531  c3/bit_1_0_not00001_INV_0 (c3/bit_1_0_not0000)
+     LDE:GE                    0.555          c3/bit_1
+    ----------------------------------------
+    Total                     24.809ns (13.620ns logic, 11.189ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c0/exp_iguales_not0002'
+  Total number of paths / destination ports: 126 / 31
+-------------------------------------------------------------------------
+Offset:              13.434ns (Levels of Logic = 6)
+  Source:            c0/exp_iguales (LATCH)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+  Source Clock:      c0/exp_iguales_not0002 falling
+
+  Data Path: c0/exp_iguales to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              6   0.676   0.844  c0/exp_iguales (c0/exp_iguales)
+     LUT4:I0->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     13.434ns (7.468ns logic, 5.966ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c0/exp_iguales'
+  Total number of paths / destination ports: 278 / 31
+-------------------------------------------------------------------------
+Offset:              14.340ns (Levels of Logic = 7)
+  Source:            c3/bit_2_1 (LATCH)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+  Source Clock:      c0/exp_iguales falling
+
+  Data Path: c3/bit_2_1 to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              1   0.676   0.595  c3/bit_2_1 (c3/bit_2_1)
+     LUT2:I0->O            2   0.704   0.451  c3/carry_1_mux0001_SW0 (N43)
+     LUT4:I3->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     14.340ns (8.172ns logic, 6.168ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c0/exp_iguales_not0003'
+  Total number of paths / destination ports: 709091 / 31
+-------------------------------------------------------------------------
+Offset:              30.942ns (Levels of Logic = 25)
+  Source:            c0/despl_7 (LATCH)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+  Source Clock:      c0/exp_iguales_not0003 falling
+
+  Data Path: c0/despl_7 to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.676   0.622  c0/despl_7 (c0/despl_7)
+     LUT3:I0->O           13   0.704   1.018  c0/n_despl<3>121 (c0/N51)
+     LUT3:I2->O           26   0.704   1.295  c0/n_despl<5>211 (c0/N5)
+     LUT3:I2->O           57   0.704   1.445  c0/n_despl<2>1 (senal_numero_despl<2>)
+     LUT3:I0->O            3   0.704   0.706  c2/mantisa_despl<1>121 (c2/N32)
+     LUT4:I0->O            1   0.704   0.595  c2/mantisa_despl<1>180_SW0 (N123)
+     LUT4:I0->O            1   0.704   0.000  c2/mantisa_despl<1>180_F (N207)
+     MUXF5:I0->O           2   0.321   0.482  c2/mantisa_despl<1>180 (c2/mantisa_despl<1>180)
+     LUT3:I2->O            1   0.704   0.000  c2/mantisa_despl<1>19112 (c2/mantisa_despl<1>19111)
+     MUXF5:I0->O           3   0.321   0.610  c2/mantisa_despl<1>1911_f5 (c2/N01)
+     LUT4:I1->O            1   0.704   0.000  c2/mantisa_despl<1>91 (c2/mantisa_despl<1>91)
+     MUXF5:I1->O           1   0.321   0.499  c2/mantisa_despl<1>9_f5 (c2/mantisa_despl<1>9)
+     LUT4:I1->O            2   0.704   0.622  c2/mantisa_despl<1>65 (senal_mantisa_shift<1>)
+     LUT3:I0->O            1   0.704   0.000  c3/mantisa_des_cmp_eq0000_wg_lut<0> (c3/mantisa_des_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<0> (c3/mantisa_des_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<1> (c3/mantisa_des_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<2> (c3/mantisa_des_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<3> (c3/mantisa_des_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<4> (c3/mantisa_des_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          28   0.459   1.296  c3/mantisa_des_cmp_eq0000_wg_cy<5> (c3/mantisa_des_cmp_eq00001)
+     LUT4:I2->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     30.942ns (16.630ns logic, 14.312ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c1/oper_ok_not0001'
+  Total number of paths / destination ports: 147510 / 31
+-------------------------------------------------------------------------
+Offset:              31.231ns (Levels of Logic = 26)
+  Source:            c1/oper_ok (LATCH)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+  Source Clock:      c1/oper_ok_not0001 falling
+
+  Data Path: c1/oper_ok to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.676   0.762  c1/oper_ok (c1/oper_ok)
+     LUT4:I0->O            1   0.704   0.455  c1/Mantisa_despl<0>1176_SW0_SW0 (N171)
+     LUT4:I2->O            1   0.704   0.595  c1/Mantisa_despl<0>1176_SW1 (N185)
+     LUT4:I0->O           46   0.704   1.442  c1/Mantisa_despl<0>1176 (c1/N3)
+     LUT4:I0->O            5   0.704   0.712  c1/Mantisa_despl<13>1 (senal_mantisa_despl<13>)
+     LUT3:I1->O            3   0.704   0.706  c2/mantisa_despl<1>121 (c2/N32)
+     LUT4:I0->O            1   0.704   0.595  c2/mantisa_despl<1>180_SW0 (N123)
+     LUT4:I0->O            1   0.704   0.000  c2/mantisa_despl<1>180_F (N207)
+     MUXF5:I0->O           2   0.321   0.482  c2/mantisa_despl<1>180 (c2/mantisa_despl<1>180)
+     LUT3:I2->O            1   0.704   0.000  c2/mantisa_despl<1>19112 (c2/mantisa_despl<1>19111)
+     MUXF5:I0->O           3   0.321   0.610  c2/mantisa_despl<1>1911_f5 (c2/N01)
+     LUT4:I1->O            1   0.704   0.000  c2/mantisa_despl<1>91 (c2/mantisa_despl<1>91)
+     MUXF5:I1->O           1   0.321   0.499  c2/mantisa_despl<1>9_f5 (c2/mantisa_despl<1>9)
+     LUT4:I1->O            2   0.704   0.622  c2/mantisa_despl<1>65 (senal_mantisa_shift<1>)
+     LUT3:I0->O            1   0.704   0.000  c3/mantisa_des_cmp_eq0000_wg_lut<0> (c3/mantisa_des_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<0> (c3/mantisa_des_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<1> (c3/mantisa_des_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<2> (c3/mantisa_des_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<3> (c3/mantisa_des_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<4> (c3/mantisa_des_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          28   0.459   1.296  c3/mantisa_des_cmp_eq0000_wg_cy<5> (c3/mantisa_des_cmp_eq00001)
+     LUT4:I2->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     31.231ns (17.334ns logic, 13.897ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c3/mantisa_des_cmp_eq00001'
+  Total number of paths / destination ports: 140 / 31
+-------------------------------------------------------------------------
+Offset:              13.256ns (Levels of Logic = 6)
+  Source:            c3/mantisa_sumada_23 (LATCH)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+  Source Clock:      c3/mantisa_des_cmp_eq00001 rising
+
+  Data Path: c3/mantisa_sumada_23 to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             4   0.676   0.666  c3/mantisa_sumada_23 (c3/mantisa_sumada_23)
+     LUT4:I1->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     13.256ns (7.468ns logic, 5.788ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 11606851 / 31
+-------------------------------------------------------------------------
+Delay:               34.968ns (Levels of Logic = 35)
+  Source:            exponente_simple_presicion_dos<0> (PAD)
+  Destination:       numero_sumado_ieee754<22> (PAD)
+
+  Data Path: exponente_simple_presicion_dos<0> to numero_sumado_ieee754<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  exponente_simple_presicion_dos_0_IBUF (exponente_simple_presicion_dos_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  c0/Mcompar_n_despl_cmp_gt0000_lut<0> (c0/Mcompar_n_despl_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<0> (c0/Mcompar_n_despl_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<1> (c0/Mcompar_n_despl_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<2> (c0/Mcompar_n_despl_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<3> (c0/Mcompar_n_despl_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<4> (c0/Mcompar_n_despl_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<5> (c0/Mcompar_n_despl_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/Mcompar_n_despl_cmp_gt0000_cy<6> (c0/Mcompar_n_despl_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          26   0.459   1.295  c0/Mcompar_n_despl_cmp_gt0000_cy<7> (c0/Mcompar_n_despl_cmp_gt0000_cy<7>)
+     LUT4:I2->O            1   0.704   0.595  c0/n_despl<6>11_SW0 (N173)
+     LUT3:I0->O           39   0.704   1.439  c0/n_despl<6>11 (c0/N6)
+     LUT3:I0->O           57   0.704   1.445  c0/n_despl<2>1 (senal_numero_despl<2>)
+     LUT3:I0->O            3   0.704   0.706  c2/mantisa_despl<1>121 (c2/N32)
+     LUT4:I0->O            1   0.704   0.595  c2/mantisa_despl<1>180_SW0 (N123)
+     LUT4:I0->O            1   0.704   0.000  c2/mantisa_despl<1>180_F (N207)
+     MUXF5:I0->O           2   0.321   0.482  c2/mantisa_despl<1>180 (c2/mantisa_despl<1>180)
+     LUT3:I2->O            1   0.704   0.000  c2/mantisa_despl<1>19112 (c2/mantisa_despl<1>19111)
+     MUXF5:I0->O           3   0.321   0.610  c2/mantisa_despl<1>1911_f5 (c2/N01)
+     LUT4:I1->O            1   0.704   0.000  c2/mantisa_despl<1>91 (c2/mantisa_despl<1>91)
+     MUXF5:I1->O           1   0.321   0.499  c2/mantisa_despl<1>9_f5 (c2/mantisa_despl<1>9)
+     LUT4:I1->O            2   0.704   0.622  c2/mantisa_despl<1>65 (senal_mantisa_shift<1>)
+     LUT3:I0->O            1   0.704   0.000  c3/mantisa_des_cmp_eq0000_wg_lut<0> (c3/mantisa_des_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<0> (c3/mantisa_des_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<1> (c3/mantisa_des_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<2> (c3/mantisa_des_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<3> (c3/mantisa_des_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c3/mantisa_des_cmp_eq0000_wg_cy<4> (c3/mantisa_des_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          28   0.459   1.296  c3/mantisa_des_cmp_eq0000_wg_cy<5> (c3/mantisa_des_cmp_eq00001)
+     LUT4:I2->O           33   0.704   1.438  c3/carry_1_mux0001 (senal_acarreo<1>)
+     LUT4:I0->O           29   0.704   1.436  c4/mantisa_real<0>1 (c4/N4)
+     LUT2:I0->O            4   0.704   0.591  c4/error1 (senal_error_exp_rebose)
+     LUT4:I3->O           23   0.704   1.237  c5/numero_ieee_754<0>233 (N2)
+     LUT4:I2->O            1   0.704   0.420  c5/numero_ieee_754<9> (numero_sumado_ieee754_9_OBUF)
+     OBUF:I->O                 3.272          numero_sumado_ieee754_9_OBUF (numero_sumado_ieee754<9>)
+    ----------------------------------------
+    Total                     34.968ns (19.153ns logic, 15.815ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.14 secs
+ 
+--> 
+
+Total memory usage is 318424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

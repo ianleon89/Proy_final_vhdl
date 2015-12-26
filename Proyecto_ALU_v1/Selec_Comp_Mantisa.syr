@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Selec_Comp_Mantisa.prj
@@ -117,8 +117,6 @@ Analyzing hierarchy for entity <Selec_Comp_Mantisa> in library <work> (architect
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Selec_Comp_Mantisa> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <oper_ok>
 Entity <Selec_Comp_Mantisa> analyzed. Unit <Selec_Comp_Mantisa> generated.
 
 
@@ -130,17 +128,15 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <Selec_Comp_Mantisa>.
     Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd".
-WARNING:Xst:737 - Found 1-bit latch for signal <Mantisa_iguales>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 23-bit latch for signal <Mantisa_despl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <oper_ok>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 23-bit latch for signal <Mantisa_sin_despl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 7-bit latch for signal <cod_error>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0000> created at line 206.
-    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0001> created at line 204.
-    Found 23-bit comparator equal for signal <Mantisa_iguales$cmp_eq0000> created at line 212.
+    Found 8-bit comparator equal for signal <Mantisa_despl$cmp_eq0000> created at line 209.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0000> created at line 204.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0001> created at line 206.
+    Found 23-bit comparator equal for signal <Mantisa_iguales$cmp_eq0000> created at line 218.
     Summary:
-	inferred   3 Comparator(s).
+	inferred   4 Comparator(s).
 Unit <Selec_Comp_Mantisa> synthesized.
 
 
@@ -148,12 +144,12 @@ Unit <Selec_Comp_Mantisa> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Latches                                              : 5
- 1-bit latch                                           : 2
- 23-bit latch                                          : 2
+# Latches                                              : 2
+ 1-bit latch                                           : 1
  7-bit latch                                           : 1
-# Comparators                                          : 3
+# Comparators                                          : 4
  23-bit comparator equal                               : 1
+ 8-bit comparator equal                                : 1
  8-bit comparator greater                              : 2
 
 =========================================================================
@@ -162,19 +158,17 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block Mantisa_iguales.
-   You should achieve better results by setting this init to 1.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Latches                                              : 5
- 1-bit latch                                           : 2
- 23-bit latch                                          : 2
+# Latches                                              : 2
+ 1-bit latch                                           : 1
  7-bit latch                                           : 1
-# Comparators                                          : 3
+# Comparators                                          : 4
  23-bit comparator equal                               : 1
+ 8-bit comparator equal                                : 1
  8-bit comparator greater                              : 2
 
 =========================================================================
@@ -182,8 +176,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch Mantisa_iguales hinder the constant cleaning in the block Selec_Comp_Mantisa.
-   You should achieve better results by setting this init to 1.
 
 Optimizing unit <Selec_Comp_Mantisa> ...
 WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
@@ -217,8 +209,7 @@ WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_C
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Selec_Comp_Mantisa, actual ratio is 2.
-Latch oper_ok has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Selec_Comp_Mantisa, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -253,21 +244,16 @@ Design Statistics
 # IOs                              : 116
 
 Cell Usage :
-# BELS                             : 256
+# BELS                             : 174
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 19
-#      LUT3                        : 100
-#      LUT4                        : 93
+#      LUT2                        : 21
+#      LUT3                        : 10
+#      LUT4                        : 97
 #      MUXCY                       : 40
-#      MUXF5                       : 1
+#      MUXF5                       : 4
 #      VCC                         : 1
-# FlipFlops/Latches                : 49
-#      LD                          : 2
-#      LDCPE                       : 46
-#      LDE                         : 1
-# Clock Buffers                    : 1
-#      BUFG                        : 1
+# FlipFlops/Latches                : 1
+#      LD                          : 1
 # IO Buffers                       : 116
 #      IBUF                        : 62
 #      OBUF                        : 54
@@ -278,13 +264,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      119  out of   4656     2%  
- Number of Slice Flip Flops:              2  out of   9312     0%  
- Number of 4 input LUTs:                213  out of   9312     2%  
+ Number of Slices:                       71  out of   4656     1%  
+ Number of Slice Flip Flops:              1  out of   9312     0%  
+ Number of 4 input LUTs:                128  out of   9312     1%  
  Number of IOs:                         116
  Number of bonded IOBs:                 116  out of    232    50%  
-    IOB Flip Flops:                      47
- Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -304,313 +288,141 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------------------+-----------------------------+-------+
-Clock Signal                                                                     | Clock buffer(FF name)       | Load  |
----------------------------------------------------------------------------------+-----------------------------+-------+
-cod_error_mux0028<6>320(oper_ok_not00011:O)                                      | NONE(*)(oper_ok)            | 2     |
-oper_ok                                                                          | NONE(Mantisa_iguales)       | 1     |
-Mcompar_Mantisa_despl_cmp_gt0000_cy<7>1(Mcompar_Mantisa_despl_cmp_gt0000_cy<7>:O)| BUFG(*)(Mantisa_sin_despl_0)| 46    |
----------------------------------------------------------------------------------+-----------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+oper_ok_not0001(oper_ok_not00011:O)| NONE(*)(oper_ok)       | 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------+---------------------------+-------+
-Control Signal                                                 | Buffer(FF name)           | Load  |
----------------------------------------------------------------+---------------------------+-------+
-Mantisa_despl_0__and0000(Mantisa_despl_0__and00001:O)          | NONE(Mantisa_despl_0)     | 1     |
-Mantisa_despl_0__and0001(Mantisa_despl_0__and00011:O)          | NONE(Mantisa_despl_0)     | 1     |
-Mantisa_despl_10__and0000(Mantisa_despl_10__and00001:O)        | NONE(Mantisa_despl_10)    | 1     |
-Mantisa_despl_10__and0001(Mantisa_despl_10__and00011:O)        | NONE(Mantisa_despl_10)    | 1     |
-Mantisa_despl_11__and0000(Mantisa_despl_11__and00001:O)        | NONE(Mantisa_despl_11)    | 1     |
-Mantisa_despl_11__and0001(Mantisa_despl_11__and00011:O)        | NONE(Mantisa_despl_11)    | 1     |
-Mantisa_despl_12__and0000(Mantisa_despl_12__and00001:O)        | NONE(Mantisa_despl_12)    | 1     |
-Mantisa_despl_12__and0001(Mantisa_despl_12__and00011:O)        | NONE(Mantisa_despl_12)    | 1     |
-Mantisa_despl_13__and0000(Mantisa_despl_13__and00001:O)        | NONE(Mantisa_despl_13)    | 1     |
-Mantisa_despl_13__and0001(Mantisa_despl_13__and00011:O)        | NONE(Mantisa_despl_13)    | 1     |
-Mantisa_despl_14__and0000(Mantisa_despl_14__and00001:O)        | NONE(Mantisa_despl_14)    | 1     |
-Mantisa_despl_14__and0001(Mantisa_despl_14__and00011:O)        | NONE(Mantisa_despl_14)    | 1     |
-Mantisa_despl_15__and0000(Mantisa_despl_15__and00001:O)        | NONE(Mantisa_despl_15)    | 1     |
-Mantisa_despl_15__and0001(Mantisa_despl_15__and00011:O)        | NONE(Mantisa_despl_15)    | 1     |
-Mantisa_despl_16__and0000(Mantisa_despl_16__and00001:O)        | NONE(Mantisa_despl_16)    | 1     |
-Mantisa_despl_16__and0001(Mantisa_despl_16__and00011:O)        | NONE(Mantisa_despl_16)    | 1     |
-Mantisa_despl_17__and0000(Mantisa_despl_17__and00001:O)        | NONE(Mantisa_despl_17)    | 1     |
-Mantisa_despl_17__and0001(Mantisa_despl_17__and00011:O)        | NONE(Mantisa_despl_17)    | 1     |
-Mantisa_despl_18__and0000(Mantisa_despl_18__and00001:O)        | NONE(Mantisa_despl_18)    | 1     |
-Mantisa_despl_18__and0001(Mantisa_despl_18__and00011:O)        | NONE(Mantisa_despl_18)    | 1     |
-Mantisa_despl_19__and0000(Mantisa_despl_19__and00001:O)        | NONE(Mantisa_despl_19)    | 1     |
-Mantisa_despl_19__and0001(Mantisa_despl_19__and00011:O)        | NONE(Mantisa_despl_19)    | 1     |
-Mantisa_despl_1__and0000(Mantisa_despl_1__and00001:O)          | NONE(Mantisa_despl_1)     | 1     |
-Mantisa_despl_1__and0001(Mantisa_despl_1__and00011:O)          | NONE(Mantisa_despl_1)     | 1     |
-Mantisa_despl_20__and0000(Mantisa_despl_20__and00001:O)        | NONE(Mantisa_despl_20)    | 1     |
-Mantisa_despl_20__and0001(Mantisa_despl_20__and00011:O)        | NONE(Mantisa_despl_20)    | 1     |
-Mantisa_despl_21__and0000(Mantisa_despl_21__and00001:O)        | NONE(Mantisa_despl_21)    | 1     |
-Mantisa_despl_21__and0001(Mantisa_despl_21__and00011:O)        | NONE(Mantisa_despl_21)    | 1     |
-Mantisa_despl_22__and0000(Mantisa_despl_22__and00001:O)        | NONE(Mantisa_despl_22)    | 1     |
-Mantisa_despl_22__and0001(Mantisa_despl_22__and00011:O)        | NONE(Mantisa_despl_22)    | 1     |
-Mantisa_despl_2__and0000(Mantisa_despl_2__and00001:O)          | NONE(Mantisa_despl_2)     | 1     |
-Mantisa_despl_2__and0001(Mantisa_despl_2__and00011:O)          | NONE(Mantisa_despl_2)     | 1     |
-Mantisa_despl_3__and0000(Mantisa_despl_3__and00001:O)          | NONE(Mantisa_despl_3)     | 1     |
-Mantisa_despl_3__and0001(Mantisa_despl_3__and00011:O)          | NONE(Mantisa_despl_3)     | 1     |
-Mantisa_despl_4__and0000(Mantisa_despl_4__and00001:O)          | NONE(Mantisa_despl_4)     | 1     |
-Mantisa_despl_4__and0001(Mantisa_despl_4__and00011:O)          | NONE(Mantisa_despl_4)     | 1     |
-Mantisa_despl_5__and0000(Mantisa_despl_5__and00001:O)          | NONE(Mantisa_despl_5)     | 1     |
-Mantisa_despl_5__and0001(Mantisa_despl_5__and00011:O)          | NONE(Mantisa_despl_5)     | 1     |
-Mantisa_despl_6__and0000(Mantisa_despl_6__and00001:O)          | NONE(Mantisa_despl_6)     | 1     |
-Mantisa_despl_6__and0001(Mantisa_despl_6__and00011:O)          | NONE(Mantisa_despl_6)     | 1     |
-Mantisa_despl_7__and0000(Mantisa_despl_7__and00001:O)          | NONE(Mantisa_despl_7)     | 1     |
-Mantisa_despl_7__and0001(Mantisa_despl_7__and00011:O)          | NONE(Mantisa_despl_7)     | 1     |
-Mantisa_despl_8__and0000(Mantisa_despl_8__and00001:O)          | NONE(Mantisa_despl_8)     | 1     |
-Mantisa_despl_8__and0001(Mantisa_despl_8__and00011:O)          | NONE(Mantisa_despl_8)     | 1     |
-Mantisa_despl_9__and0000(Mantisa_despl_9__and00001:O)          | NONE(Mantisa_despl_9)     | 1     |
-Mantisa_despl_9__and0001(Mantisa_despl_9__and00011:O)          | NONE(Mantisa_despl_9)     | 1     |
-Mantisa_sin_despl_0__and0000(Mantisa_sin_despl_0__and00001:O)  | NONE(Mantisa_sin_despl_0) | 1     |
-Mantisa_sin_despl_0__and0001(Mantisa_sin_despl_0__and00011:O)  | NONE(Mantisa_sin_despl_0) | 1     |
-Mantisa_sin_despl_10__and0000(Mantisa_sin_despl_10__and00001:O)| NONE(Mantisa_sin_despl_10)| 1     |
-Mantisa_sin_despl_10__and0001(Mantisa_sin_despl_10__and00011:O)| NONE(Mantisa_sin_despl_10)| 1     |
-Mantisa_sin_despl_11__and0000(Mantisa_sin_despl_11__and00001:O)| NONE(Mantisa_sin_despl_11)| 1     |
-Mantisa_sin_despl_11__and0001(Mantisa_sin_despl_11__and00011:O)| NONE(Mantisa_sin_despl_11)| 1     |
-Mantisa_sin_despl_12__and0000(Mantisa_sin_despl_12__and00001:O)| NONE(Mantisa_sin_despl_12)| 1     |
-Mantisa_sin_despl_12__and0001(Mantisa_sin_despl_12__and00011:O)| NONE(Mantisa_sin_despl_12)| 1     |
-Mantisa_sin_despl_13__and0000(Mantisa_sin_despl_13__and00001:O)| NONE(Mantisa_sin_despl_13)| 1     |
-Mantisa_sin_despl_13__and0001(Mantisa_sin_despl_13__and00011:O)| NONE(Mantisa_sin_despl_13)| 1     |
-Mantisa_sin_despl_14__and0000(Mantisa_sin_despl_14__and00001:O)| NONE(Mantisa_sin_despl_14)| 1     |
-Mantisa_sin_despl_14__and0001(Mantisa_sin_despl_14__and00011:O)| NONE(Mantisa_sin_despl_14)| 1     |
-Mantisa_sin_despl_15__and0000(Mantisa_sin_despl_15__and00001:O)| NONE(Mantisa_sin_despl_15)| 1     |
-Mantisa_sin_despl_15__and0001(Mantisa_sin_despl_15__and00011:O)| NONE(Mantisa_sin_despl_15)| 1     |
-Mantisa_sin_despl_16__and0000(Mantisa_sin_despl_16__and00001:O)| NONE(Mantisa_sin_despl_16)| 1     |
-Mantisa_sin_despl_16__and0001(Mantisa_sin_despl_16__and00011:O)| NONE(Mantisa_sin_despl_16)| 1     |
-Mantisa_sin_despl_17__and0000(Mantisa_sin_despl_17__and00001:O)| NONE(Mantisa_sin_despl_17)| 1     |
-Mantisa_sin_despl_17__and0001(Mantisa_sin_despl_17__and00011:O)| NONE(Mantisa_sin_despl_17)| 1     |
-Mantisa_sin_despl_18__and0000(Mantisa_sin_despl_18__and00001:O)| NONE(Mantisa_sin_despl_18)| 1     |
-Mantisa_sin_despl_18__and0001(Mantisa_sin_despl_18__and00011:O)| NONE(Mantisa_sin_despl_18)| 1     |
-Mantisa_sin_despl_19__and0000(Mantisa_sin_despl_19__and00001:O)| NONE(Mantisa_sin_despl_19)| 1     |
-Mantisa_sin_despl_19__and0001(Mantisa_sin_despl_19__and00011:O)| NONE(Mantisa_sin_despl_19)| 1     |
-Mantisa_sin_despl_1__and0000(Mantisa_sin_despl_1__and00001:O)  | NONE(Mantisa_sin_despl_1) | 1     |
-Mantisa_sin_despl_1__and0001(Mantisa_sin_despl_1__and00011:O)  | NONE(Mantisa_sin_despl_1) | 1     |
-Mantisa_sin_despl_20__and0000(Mantisa_sin_despl_20__and00001:O)| NONE(Mantisa_sin_despl_20)| 1     |
-Mantisa_sin_despl_20__and0001(Mantisa_sin_despl_20__and00011:O)| NONE(Mantisa_sin_despl_20)| 1     |
-Mantisa_sin_despl_21__and0000(Mantisa_sin_despl_21__and00001:O)| NONE(Mantisa_sin_despl_21)| 1     |
-Mantisa_sin_despl_21__and0001(Mantisa_sin_despl_21__and00011:O)| NONE(Mantisa_sin_despl_21)| 1     |
-Mantisa_sin_despl_22__and0000(Mantisa_sin_despl_22__and00001:O)| NONE(Mantisa_sin_despl_22)| 1     |
-Mantisa_sin_despl_22__and0001(Mantisa_sin_despl_22__and00011:O)| NONE(Mantisa_sin_despl_22)| 1     |
-Mantisa_sin_despl_2__and0000(Mantisa_sin_despl_2__and00001:O)  | NONE(Mantisa_sin_despl_2) | 1     |
-Mantisa_sin_despl_2__and0001(Mantisa_sin_despl_2__and00011:O)  | NONE(Mantisa_sin_despl_2) | 1     |
-Mantisa_sin_despl_3__and0000(Mantisa_sin_despl_3__and00001:O)  | NONE(Mantisa_sin_despl_3) | 1     |
-Mantisa_sin_despl_3__and0001(Mantisa_sin_despl_3__and00011:O)  | NONE(Mantisa_sin_despl_3) | 1     |
-Mantisa_sin_despl_4__and0000(Mantisa_sin_despl_4__and00001:O)  | NONE(Mantisa_sin_despl_4) | 1     |
-Mantisa_sin_despl_4__and0001(Mantisa_sin_despl_4__and00011:O)  | NONE(Mantisa_sin_despl_4) | 1     |
-Mantisa_sin_despl_5__and0000(Mantisa_sin_despl_5__and00001:O)  | NONE(Mantisa_sin_despl_5) | 1     |
-Mantisa_sin_despl_5__and0001(Mantisa_sin_despl_5__and00011:O)  | NONE(Mantisa_sin_despl_5) | 1     |
-Mantisa_sin_despl_6__and0000(Mantisa_sin_despl_6__and00001:O)  | NONE(Mantisa_sin_despl_6) | 1     |
-Mantisa_sin_despl_6__and0001(Mantisa_sin_despl_6__and00011:O)  | NONE(Mantisa_sin_despl_6) | 1     |
-Mantisa_sin_despl_7__and0000(Mantisa_sin_despl_7__and00001:O)  | NONE(Mantisa_sin_despl_7) | 1     |
-Mantisa_sin_despl_7__and0001(Mantisa_sin_despl_7__and00011:O)  | NONE(Mantisa_sin_despl_7) | 1     |
-Mantisa_sin_despl_8__and0000(Mantisa_sin_despl_8__and00001:O)  | NONE(Mantisa_sin_despl_8) | 1     |
-Mantisa_sin_despl_8__and0001(Mantisa_sin_despl_8__and00011:O)  | NONE(Mantisa_sin_despl_8) | 1     |
-Mantisa_sin_despl_9__and0000(Mantisa_sin_despl_9__and00001:O)  | NONE(Mantisa_sin_despl_9) | 1     |
-Mantisa_sin_despl_9__and0001(Mantisa_sin_despl_9__and00011:O)  | NONE(Mantisa_sin_despl_9) | 1     |
----------------------------------------------------------------+---------------------------+-------+
+No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 2.112ns (Maximum Frequency: 473.485MHz)
-   Minimum input arrival time before clock: 10.535ns
-   Maximum output required time after clock: 4.368ns
-   Maximum combinational path delay: 13.919ns
+   Minimum period: 2.325ns (Maximum Frequency: 430.108MHz)
+   Minimum input arrival time before clock: 10.195ns
+   Maximum output required time after clock: 10.282ns
+   Maximum combinational path delay: 13.729ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'cod_error_mux0028<6>320'
-  Clock period: 2.112ns (frequency: 473.485MHz)
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Delay:               2.112ns (Levels of Logic = 1)
-  Source:            oper_ok_1 (LATCH)
-  Destination:       oper_ok (LATCH)
-  Source Clock:      cod_error_mux0028<6>320 falling
-  Destination Clock: cod_error_mux0028<6>320 falling
-
-  Data Path: oper_ok_1 to oper_ok
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.676   0.424  oper_ok_1 (oper_ok_1)
-     LUT4:I3->O            2   0.704   0.000  oper_ok_mux0009 (oper_ok_mux0009)
-     LD:D                      0.308          oper_ok
-    ----------------------------------------
-    Total                      2.112ns (1.688ns logic, 0.424ns route)
-                                       (79.9% logic, 20.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'cod_error_mux0028<6>320'
-  Total number of paths / destination ports: 348 / 2
--------------------------------------------------------------------------
-Offset:              10.535ns (Levels of Logic = 8)
-  Source:            ex2<5> (PAD)
-  Destination:       oper_ok (LATCH)
-  Destination Clock: cod_error_mux0028<6>320 falling
-
-  Data Path: ex2<5> to oper_ok
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  ex2_5_IBUF (ex2_5_IBUF)
-     LUT3:I0->O            2   0.704   0.526  cod_error_and001611 (N7)
-     LUT3:I1->O            1   0.704   0.424  cod_error_cmp_eq0001_SW0 (N13)
-     LUT4:I3->O            9   0.704   0.824  cod_error_cmp_eq0001 (cod_error_cmp_eq0001)
-     LUT4:I3->O            1   0.704   0.499  cod_error_mux0028<6>319_SW0 (N19)
-     LUT4:I1->O            1   0.704   0.424  cod_error_mux0028<6>319 (cod_error_mux0028<6>319)
-     LUT4:I3->O            2   0.704   0.622  cod_error_mux0028<6>349 (N41)
-     LUT4:I0->O            2   0.704   0.000  oper_ok_mux0009 (oper_ok_mux0009)
-     LD:D                      0.308          oper_ok
-    ----------------------------------------
-    Total                     10.535ns (6.454ns logic, 4.081ns route)
-                                       (61.3% logic, 38.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'oper_ok'
-  Total number of paths / destination ports: 46 / 1
--------------------------------------------------------------------------
-Offset:              5.126ns (Levels of Logic = 14)
-  Source:            A<0> (PAD)
-  Destination:       Mantisa_iguales (LATCH)
-  Destination Clock: oper_ok falling
-
-  Data Path: A<0> to Mantisa_iguales
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             6   1.218   0.844  A_0_IBUF (A_0_IBUF)
-     LUT4:I0->O            1   0.704   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_lut<0> (Mcompar_Mantisa_iguales_cmp_eq0000_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<0> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<1> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<2> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<3> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<4> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<5> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<6> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<7> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<8> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<9> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_iguales_cmp_eq0000_cy<10> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<10>)
-     MUXCY:CI->O           1   0.331   0.420  Mcompar_Mantisa_iguales_cmp_eq0000_cy<11> (Mcompar_Mantisa_iguales_cmp_eq0000_cy<11>)
-     LDE:GE                    0.555          Mantisa_iguales
-    ----------------------------------------
-    Total                      5.126ns (3.862ns logic, 1.264ns route)
-                                       (75.3% logic, 24.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Mcompar_Mantisa_despl_cmp_gt0000_cy<7>1'
-  Total number of paths / destination ports: 1196 / 46
--------------------------------------------------------------------------
-Offset:              6.350ns (Levels of Logic = 11)
-  Source:            ex2<0> (PAD)
-  Destination:       Mantisa_sin_despl_0 (LATCH)
-  Destination Clock: Mcompar_Mantisa_despl_cmp_gt0000_cy<7>1 rising
-
-  Data Path: ex2<0> to Mantisa_sin_despl_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   1.218   0.808  ex2_0_IBUF (ex2_0_IBUF)
-     LUT2:I0->O            1   0.704   0.000  Mcompar_Mantisa_despl_cmp_gt0001_lut<0> (Mcompar_Mantisa_despl_cmp_gt0001_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<0> (Mcompar_Mantisa_despl_cmp_gt0001_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<1> (Mcompar_Mantisa_despl_cmp_gt0001_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<2> (Mcompar_Mantisa_despl_cmp_gt0001_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<3> (Mcompar_Mantisa_despl_cmp_gt0001_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<4> (Mcompar_Mantisa_despl_cmp_gt0001_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<5> (Mcompar_Mantisa_despl_cmp_gt0001_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_Mantisa_despl_cmp_gt0001_cy<6> (Mcompar_Mantisa_despl_cmp_gt0001_cy<6>)
-     MUXCY:CI->O         138   0.459   1.331  Mcompar_Mantisa_despl_cmp_gt0001_cy<7> (Mcompar_Mantisa_despl_cmp_gt0001_cy<7>)
-     LUT4:I2->O            1   0.704   0.000  Mantisa_sin_despl_mux0001<9>1 (Mantisa_sin_despl_mux0001<9>)
-     LDCPE:D                   0.308          Mantisa_sin_despl_9
-    ----------------------------------------
-    Total                      6.350ns (4.211ns logic, 2.139ns route)
-                                       (66.3% logic, 33.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'oper_ok'
+Timing constraint: Default period analysis for Clock 'oper_ok_not0001'
+  Clock period: 2.325ns (frequency: 430.108MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.368ns (Levels of Logic = 1)
-  Source:            Mantisa_iguales (LATCH)
-  Destination:       Mantisa_iguales (PAD)
-  Source Clock:      oper_ok falling
+Delay:               2.325ns (Levels of Logic = 1)
+  Source:            oper_ok (LATCH)
+  Destination:       oper_ok (LATCH)
+  Source Clock:      oper_ok_not0001 falling
+  Destination Clock: oper_ok_not0001 falling
 
-  Data Path: Mantisa_iguales to Mantisa_iguales
+  Data Path: oper_ok to oper_ok
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q              1   0.676   0.420  Mantisa_iguales (Mantisa_iguales_OBUF)
-     OBUF:I->O                 3.272          Mantisa_iguales_OBUF (Mantisa_iguales)
+     LD:G->Q               5   0.676   0.637  oper_ok (oper_ok)
+     LUT4:I3->O            1   0.704   0.000  oper_ok_mux00091 (oper_ok_mux0009)
+     LD:D                      0.308          oper_ok
     ----------------------------------------
-    Total                      4.368ns (3.948ns logic, 0.420ns route)
-                                       (90.4% logic, 9.6% route)
+    Total                      2.325ns (1.688ns logic, 0.637ns route)
+                                       (72.6% logic, 27.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Mcompar_Mantisa_despl_cmp_gt0000_cy<7>1'
-  Total number of paths / destination ports: 46 / 46
+Timing constraint: Default OFFSET IN BEFORE for Clock 'oper_ok_not0001'
+  Total number of paths / destination ports: 166 / 1
 -------------------------------------------------------------------------
-Offset:              4.368ns (Levels of Logic = 1)
-  Source:            Mantisa_sin_despl_22 (LATCH)
-  Destination:       Mantisa_sin_despl<22> (PAD)
-  Source Clock:      Mcompar_Mantisa_despl_cmp_gt0000_cy<7>1 rising
+Offset:              10.195ns (Levels of Logic = 8)
+  Source:            ex2<3> (PAD)
+  Destination:       oper_ok (LATCH)
+  Destination Clock: oper_ok_not0001 falling
 
-  Data Path: Mantisa_sin_despl_22 to Mantisa_sin_despl<22>
+  Data Path: ex2<3> to oper_ok
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCPE:G->Q            1   0.676   0.420  Mantisa_sin_despl_22 (Mantisa_sin_despl_22)
-     OBUF:I->O                 3.272          Mantisa_sin_despl_22_OBUF (Mantisa_sin_despl<22>)
+     IBUF:I->O             6   1.218   0.844  ex2_3_IBUF (ex2_3_IBUF)
+     LUT3:I0->O            5   0.704   0.712  cod_error_cmp_eq000111 (N12)
+     LUT3:I1->O            1   0.704   0.424  cod_error_cmp_eq0001_SW0 (N26)
+     LUT4:I3->O           12   0.704   0.996  cod_error_cmp_eq0001 (cod_error_cmp_eq0001)
+     LUT4:I2->O            2   0.704   0.526  cod_error_and00101 (cod_error_and0010)
+     LUT4:I1->O            1   0.704   0.000  cod_error_mux0028<6>15 (cod_error_mux0028<6>15)
+     MUXF5:I1->O           2   0.321   0.622  cod_error_mux0028<6>1_f5 (N2)
+     LUT4:I0->O            1   0.704   0.000  oper_ok_mux00091 (oper_ok_mux0009)
+     LD:D                      0.308          oper_ok
     ----------------------------------------
-    Total                      4.368ns (3.948ns logic, 0.420ns route)
-                                       (90.4% logic, 9.6% route)
+    Total                     10.195ns (6.071ns logic, 4.124ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'oper_ok_not0001'
+  Total number of paths / destination ports: 139 / 47
+-------------------------------------------------------------------------
+Offset:              10.282ns (Levels of Logic = 5)
+  Source:            oper_ok (LATCH)
+  Destination:       Mantisa_sin_despl<22> (PAD)
+  Source Clock:      oper_ok_not0001 falling
+
+  Data Path: oper_ok to Mantisa_sin_despl<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               5   0.676   0.808  oper_ok (oper_ok)
+     LUT4:I0->O            1   0.704   0.424  Mantisa_despl<0>1177_SW0_SW0 (N38)
+     LUT4:I3->O            1   0.704   0.595  Mantisa_despl<0>1177_SW0 (N34)
+     LUT4:I0->O           46   0.704   1.271  Mantisa_despl<0>1177 (N3)
+     LUT4:I3->O            1   0.704   0.420  Mantisa_sin_despl<9>1 (Mantisa_sin_despl_9_OBUF)
+     OBUF:I->O                 3.272          Mantisa_sin_despl_9_OBUF (Mantisa_sin_despl<9>)
+    ----------------------------------------
+    Total                     10.282ns (6.764ns logic, 3.518ns route)
+                                       (65.8% logic, 34.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 539 / 7
+  Total number of paths / destination ports: 4763 / 54
 -------------------------------------------------------------------------
-Delay:               13.919ns (Levels of Logic = 9)
-  Source:            ex2<5> (PAD)
+Delay:               13.729ns (Levels of Logic = 10)
+  Source:            ex2<3> (PAD)
   Destination:       cod_error<6> (PAD)
 
-  Data Path: ex2<5> to cod_error<6>
+  Data Path: ex2<3> to cod_error<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  ex2_5_IBUF (ex2_5_IBUF)
-     LUT3:I0->O            2   0.704   0.526  cod_error_and001611 (N7)
-     LUT3:I1->O            1   0.704   0.424  cod_error_cmp_eq0001_SW0 (N13)
-     LUT4:I3->O            9   0.704   0.824  cod_error_cmp_eq0001 (cod_error_cmp_eq0001)
-     LUT4:I3->O            1   0.704   0.499  cod_error_mux0028<6>319_SW0 (N19)
-     LUT4:I1->O            1   0.704   0.424  cod_error_mux0028<6>319 (cod_error_mux0028<6>319)
-     LUT4:I3->O            2   0.704   0.622  cod_error_mux0028<6>349 (N41)
-     LUT4:I0->O            1   0.704   0.420  cod_error_mux0028<6>40 (cod_error_6_OBUF)
+     IBUF:I->O             6   1.218   0.844  ex2_3_IBUF (ex2_3_IBUF)
+     LUT3:I0->O            5   0.704   0.712  cod_error_cmp_eq000111 (N12)
+     LUT3:I1->O            1   0.704   0.424  cod_error_cmp_eq0001_SW0 (N26)
+     LUT4:I3->O           12   0.704   0.996  cod_error_cmp_eq0001 (cod_error_cmp_eq0001)
+     LUT4:I2->O            2   0.704   0.526  cod_error_and00101 (cod_error_and0010)
+     LUT4:I1->O            1   0.704   0.000  cod_error_mux0028<6>15 (cod_error_mux0028<6>15)
+     MUXF5:I1->O           2   0.321   0.451  cod_error_mux0028<6>1_f5 (N2)
+     LUT4:I3->O            1   0.704   0.000  cod_error_mux0028<6>25_F (N40)
+     MUXF5:I0->O           1   0.321   0.420  cod_error_mux0028<6>25 (cod_error_6_OBUF)
      OBUF:I->O                 3.272          cod_error_6_OBUF (cod_error<6>)
     ----------------------------------------
-    Total                     13.919ns (9.418ns logic, 4.501ns route)
-                                       (67.7% logic, 32.3% route)
+    Total                     13.729ns (9.356ns logic, 4.373ns route)
+                                       (68.1% logic, 31.9% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.51 secs
+Total CPU time to Xst completion: 8.44 secs
  
 --> 
 
-Total memory usage is 302232 kilobytes
+Total memory usage is 302228 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   36 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 
