@@ -45,7 +45,11 @@ ARCHITECTURE behavior OF PRUEBA_REAL_SUMADOR IS
          mantisa_simple_presicion_dos : IN  std_logic_vector(22 downto 0);
          exponente_simple_presicion_uno : IN  std_logic_vector(7 downto 0);
          exponente_simple_presicion_dos : IN  std_logic_vector(7 downto 0);
+			operacion_pico_blaze: in std_logic_vector(1 downto 0);
+			signo_simple_presicion_uno: in std_logic;
+			signo_simple_presicion_dos: in std_logic;
          enable_754 : IN  std_logic;
+			signo_ieee754: out std_logic;
          numero_sumado_ieee754 : OUT  std_logic_vector(30 downto 0)
         );
     END COMPONENT;
@@ -56,9 +60,13 @@ ARCHITECTURE behavior OF PRUEBA_REAL_SUMADOR IS
    signal mantisa_simple_presicion_dos : std_logic_vector(22 downto 0) := (others => '0');
    signal exponente_simple_presicion_uno : std_logic_vector(7 downto 0) := (others => '0');
    signal exponente_simple_presicion_dos : std_logic_vector(7 downto 0) := (others => '0');
-   signal enable_754 : std_logic := '0';
-
+	signal operacion_pico_blaze:  std_logic_vector(1 downto 0):= (others => '0');
+	signal signo_simple_presicion_uno:  std_logic:= '0';
+	signal signo_simple_presicion_dos:  std_logic:= '0';
+	signal enable_754 : std_logic := '0';
+	
  	--Outputs
+	signal signo_ieee754: std_logic:='0';
    signal numero_sumado_ieee754 : std_logic_vector(30 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
@@ -73,7 +81,11 @@ BEGIN
           mantisa_simple_presicion_dos => mantisa_simple_presicion_dos,
           exponente_simple_presicion_uno => exponente_simple_presicion_uno,
           exponente_simple_presicion_dos => exponente_simple_presicion_dos,
+			 operacion_pico_blaze=>operacion_pico_blaze,
+	       signo_simple_presicion_uno=>signo_simple_presicion_uno,
+	       signo_simple_presicion_dos=>signo_simple_presicion_dos,
           enable_754 => enable_754,
+			 signo_ieee754=>signo_ieee754,
           numero_sumado_ieee754 => numero_sumado_ieee754
         );
 
@@ -118,43 +130,43 @@ BEGIN
 --		enable_754 <='1';
 --		wait for clock_period/4;
 		
-		--	0.25
-		exponente_simple_presicion_uno<="01111101";
-		mantisa_simple_presicion_uno<="00000000000000000000000";
-		--0.75
-		exponente_simple_presicion_dos<="01111110";
-		mantisa_simple_presicion_dos <="10000000000000000000000";
-		enable_754 <='1';
-		wait for clock_period/4;
-		--0.93
-		
-		exponente_simple_presicion_uno<="01111110";
-		mantisa_simple_presicion_uno<="11011100001010001111011";
-		--0.35
-		
-		exponente_simple_presicion_dos<="01111101";
-		mantisa_simple_presicion_dos <="01100110011001100110011";
-		enable_754 <='1';
-		wait for clock_period/4;
-		--9000000
-	
-		exponente_simple_presicion_uno<="10010110";
-		mantisa_simple_presicion_uno<="00010010101010001000000";
-		--50000000
-	
-		exponente_simple_presicion_dos<="10011000";
-		mantisa_simple_presicion_dos <="01111101011110000100000";
-		enable_754 <='1';
-		wait for clock_period/4;
-		--0.0001
-		
-		exponente_simple_presicion_uno<="01110001";
-		mantisa_simple_presicion_uno<="10100011011011100010111";
-		--0.00003
-		exponente_simple_presicion_dos<="01101111";
-		mantisa_simple_presicion_dos <="11110111010100010000010";
-		enable_754 <='1';
-		wait for clock_period/4;
+--		--	0.25
+--		exponente_simple_presicion_uno<="01111101";
+--		mantisa_simple_presicion_uno<="00000000000000000000000";
+--		--0.75
+--		exponente_simple_presicion_dos<="01111110";
+--		mantisa_simple_presicion_dos <="10000000000000000000000";
+--		enable_754 <='1';
+--		wait for clock_period/4;
+--		--0.93
+--		
+--		exponente_simple_presicion_uno<="01111110";
+--		mantisa_simple_presicion_uno<="11011100001010001111011";
+--		--0.35
+--		
+--		exponente_simple_presicion_dos<="01111101";
+--		mantisa_simple_presicion_dos <="01100110011001100110011";
+--		enable_754 <='1';
+--		wait for clock_period/4;
+--		--9000000
+--	
+--		exponente_simple_presicion_uno<="10010110";
+--		mantisa_simple_presicion_uno<="00010010101010001000000";
+--		--50000000
+--	
+--		exponente_simple_presicion_dos<="10011000";
+--		mantisa_simple_presicion_dos <="01111101011110000100000";
+--		enable_754 <='1';
+--		wait for clock_period/4;
+--		--0.0001
+--		
+--		exponente_simple_presicion_uno<="01110001";
+--		mantisa_simple_presicion_uno<="10100011011011100010111";
+--		--0.00003
+--		exponente_simple_presicion_dos<="01101111";
+--		mantisa_simple_presicion_dos <="11110111010100010000010";
+--		enable_754 <='1';
+--		wait for clock_period/4;
 		
 --		--	0
 --		exponente_simple_presicion_uno<="00000000";
@@ -167,11 +179,11 @@ BEGIN
 --		--2.5521175E38
 --		
 --		exponente_simple_presicion_uno<="11111110";
---		mantisa_simple_presicion_uno<="01111111111111111111111";
+--		mantisa_simple_presicion_uno<="11111111111111111111111";
 --		--2.5521175E38
 --		
 --		exponente_simple_presicion_dos<="11111110";
---		mantisa_simple_presicion_dos <="01111111111111111111111";
+--		mantisa_simple_presicion_dos <="11111111111111111111111";
 --		enable_754 <='1';
 --		wait for clock_period/4;
 --		--no normalizado
@@ -193,8 +205,193 @@ BEGIN
 --		mantisa_simple_presicion_dos <="11110111010100010000010";
 --		enable_754 <='1';
 --		wait for clock_period/4;
---		
---		
+		
+	------------------------------------------
+		--47 
+		exponente_simple_presicion_uno<="10000100";
+		signo_simple_presicion_uno<='0';
+		mantisa_simple_presicion_uno<="01111000000000000000000";
+		--19
+		exponente_simple_presicion_dos<="10000011";
+		signo_simple_presicion_dos<='1';
+		mantisa_simple_presicion_dos <="00110000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		
+		
+		wait for clock_period/30; 
+		--47 
+		exponente_simple_presicion_uno<="10000100";
+		signo_simple_presicion_uno<='1';
+		mantisa_simple_presicion_uno<="01111000000000000000000";
+		--19
+		exponente_simple_presicion_dos<="10000011";
+		signo_simple_presicion_dos<='1';
+		mantisa_simple_presicion_dos <="00110000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		
+		wait for clock_period/30;
+		--85
+		
+		exponente_simple_presicion_uno<="10000101";
+		signo_simple_presicion_uno<='1';
+		mantisa_simple_presicion_uno<="01010100000000000000000";
+		--1467
+		
+		exponente_simple_presicion_dos<="10001001";
+		mantisa_simple_presicion_dos <="01101110110000000000000";
+		enable_754 <='0';
+		operacion_pico_blaze<="00";
+		wait for clock_period/30;
+		--85
+		
+		exponente_simple_presicion_uno<="10000101";
+		signo_simple_presicion_uno<='1';
+		mantisa_simple_presicion_uno<="01010100000000000000000";
+		--1467
+		
+		exponente_simple_presicion_dos<="10001001";
+		mantisa_simple_presicion_dos <="01101110110000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		wait for clock_period/30;
+		--11.4893
+	
+		exponente_simple_presicion_uno<="10000010";
+		mantisa_simple_presicion_uno<="01101111101010000101100";
+		--4.658
+	
+		exponente_simple_presicion_dos<="10000001";
+		mantisa_simple_presicion_dos <="00101010000111001010110";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		wait for clock_period/30;
+		
+		--11.4893
+	
+		exponente_simple_presicion_uno<="10000010";
+		mantisa_simple_presicion_uno<="01101111101010000101100";
+		--4.658
+	
+		exponente_simple_presicion_dos<="10000001";
+		mantisa_simple_presicion_dos <="00101010000111001010110";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		wait for clock_period/30;
+		
+		--30.632 
+		
+		exponente_simple_presicion_uno<="10000011";
+		mantisa_simple_presicion_uno<="11101010000111001010110";
+		--28.674807
+		exponente_simple_presicion_dos<="10000011";
+		mantisa_simple_presicion_dos <="11001010110011000000001";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		wait for clock_period/30;
+		--30.632
+		
+		exponente_simple_presicion_uno<="10000011";
+		mantisa_simple_presicion_uno<="11101010000111001010110";
+		--28.674807
+		exponente_simple_presicion_dos<="10000011";
+		mantisa_simple_presicion_dos <="11001010110011000000001";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		wait for clock_period/30;
+		
+		--	0.25
+		exponente_simple_presicion_uno<="01111101";
+		mantisa_simple_presicion_uno<="00000000000000000000000";
+		--0.75
+		exponente_simple_presicion_dos<="01111110";
+		mantisa_simple_presicion_dos <="10000000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		
+		wait for clock_period/30;
+		--	0.25
+		exponente_simple_presicion_uno<="01111101";
+		mantisa_simple_presicion_uno<="00000000000000000000000";
+		--0.75
+		exponente_simple_presicion_dos<="01111110";
+		mantisa_simple_presicion_dos <="10000000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		
+		
+		wait for clock_period/30;
+		--9000000
+	
+		exponente_simple_presicion_uno<="10010110";
+		mantisa_simple_presicion_uno<="00010010101010001000000";
+		--50000000
+	
+		exponente_simple_presicion_dos<="10011000";
+		mantisa_simple_presicion_dos <="01111101011110000100000";
+		enable_754 <='1';
+	   operacion_pico_blaze<="00";
+		wait for clock_period/30;
+			--9000000
+	
+		exponente_simple_presicion_uno<="10010110";
+		mantisa_simple_presicion_uno<="00010010101010001000000";
+		--50000000
+	
+		exponente_simple_presicion_dos<="10011000";
+		mantisa_simple_presicion_dos <="01111101011110000100000";
+		enable_754 <='1';
+	   operacion_pico_blaze<="01";
+		wait for clock_period/30;
+		--0.0001
+		
+		exponente_simple_presicion_uno<="01110001";
+		mantisa_simple_presicion_uno<="10100011011011100010111";
+		--0.00003
+		exponente_simple_presicion_dos<="01101111";
+		mantisa_simple_presicion_dos <="11110111010100010000010";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		wait for clock_period/30;	
+		--0.0001
+		
+		exponente_simple_presicion_uno<="01110001";
+		mantisa_simple_presicion_uno<="10100011011011100010111";
+		--0.00003
+		exponente_simple_presicion_dos<="01101111";
+		mantisa_simple_presicion_dos <="11110111010100010000010";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		wait for clock_period/30;	
+		--0.25
+	
+		exponente_simple_presicion_uno<="01111101";
+		signo_simple_presicion_uno<='0';
+		mantisa_simple_presicion_uno<="00000000000000000000000";
+		--100
+	
+		exponente_simple_presicion_dos<="10000101";
+		signo_simple_presicion_dos<='0';
+		mantisa_simple_presicion_dos <="10010000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="01";
+		wait for clock_period/30;
+		
+		--0.25
+	
+		exponente_simple_presicion_uno<="01111101";
+		signo_simple_presicion_uno<='0';
+		mantisa_simple_presicion_uno<="00000000000000000000000";
+		--100
+	
+		exponente_simple_presicion_dos<="10000101";
+		signo_simple_presicion_dos<='0';
+		mantisa_simple_presicion_dos <="10010000000000000000000";
+		enable_754 <='1';
+		operacion_pico_blaze<="00";
+		wait for clock_period/30;
+		
 		
    end process;
  

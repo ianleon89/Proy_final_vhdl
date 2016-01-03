@@ -77,13 +77,13 @@ BEGIN
    cloc_process :process
    begin
 	 ex_igl<='0';
-	 mantisa_desplazada <="00101101011011101011110";
-    mantisa_no_desplazada<="11101100101101110110101"; 
+	 mantisa_desplazada <="10011000000000000000000";
+    mantisa_no_desplazada<="01111000000000000000000"; 
 		
 	 wait for clock_period/4;	
 	 ex_igl<='0';
-	 mantisa_desplazada <="00000000011011101011110";
-    mantisa_no_desplazada<="11101100000001110110101"; 
+	 mantisa_desplazada <="10011000000000000000000";
+    mantisa_no_desplazada<="01111000000000000000000"; 
 	 
 	 wait for clock_period/4;
 	 ex_igl<='0';

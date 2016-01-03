@@ -1,7 +1,1 @@
-work	"Comparador_Exp.vhd"
-work	"Detector_de_Rebose.vhd"
-work	"Pressenta_resultados.vhd"
-work	"Selec_Comp_Mantisa.vhd"
-work	"Shiftter.vhd"
-work	"Sumador.vhd"
-work	"Sumador_iee_754.vhd"
+work	"Selec_exponente.vhd"

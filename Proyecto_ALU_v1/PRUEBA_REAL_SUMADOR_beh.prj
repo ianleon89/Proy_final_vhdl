@@ -1,8 +1,0 @@
-vhdl work "Sumador.vhd"
-vhdl work "Shiftter.vhd"
-vhdl work "Selec_Comp_Mantisa.vhd"
-vhdl work "Pressenta_resultados.vhd"
-vhdl work "Detector_de_Rebose.vhd"
-vhdl work "Comparador_Exp.vhd"
-vhdl work "Sumador_iee_754.vhd"
-vhdl work "PRUEBA_REAL_SUMADOR.vhd"

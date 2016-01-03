@@ -75,8 +75,8 @@ BEGIN
    clck_process :process
    begin
 		enable<='1';
-		num_despl<="00000000";
-		mantisa<="00000000000000000000000";
+		num_despl<="00000001";
+		mantisa<="00110000000000000000000";
 		
 		wait for clock_period/12;
 		enable<='1';

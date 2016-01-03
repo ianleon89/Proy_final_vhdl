@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Detector_de_Rebose.prj
 
@@ -117,6 +117,8 @@ Analyzing hierarchy for entity <Detector_de_Rebose> in library <work> (architect
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Detector_de_Rebose> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <count> in unit <Detector_de_Rebose> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flag> in unit <Detector_de_Rebose> has a constant value of 1 during circuit operation. The register is replaced by logic.
 Entity <Detector_de_Rebose> analyzed. Unit <Detector_de_Rebose> generated.
 
 
@@ -128,21 +130,62 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <Detector_de_Rebose>.
     Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd".
-WARNING:Xst:737 - Found 8-bit latch for signal <exponente_real>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 8-bit adder for signal <exponente_real$addsub0000> created at line 56.
+WARNING:Xst:646 - Signal <senal_resultado<22>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <senal_exponente_resultado> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 23-bit latch for signal <senal_resultado>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit adder for signal <count$add0001> created at line 88.
+    Found 2-bit adder for signal <count$addsub0001> created at line 88.
+    Found 3-bit adder for signal <count$addsub0003> created at line 88.
+    Found 4-bit adder for signal <count$addsub0004> created at line 88.
+    Found 3-bit adder for signal <count$addsub0005> created at line 88.
+    Found 4-bit adder for signal <count$addsub0006> created at line 88.
+    Found 3-bit adder for signal <count$addsub0007> created at line 88.
+    Found 4-bit adder for signal <count$addsub0008> created at line 88.
+    Found 4-bit adder for signal <count$addsub0010> created at line 88.
+    Found 4-bit adder for signal <count$addsub0011> created at line 88.
+    Found 4-bit adder for signal <count$addsub0012> created at line 88.
+    Found 4-bit adder for signal <count$addsub0013> created at line 88.
+    Found 5-bit adder for signal <count$addsub0014> created at line 88.
+    Found 5-bit adder for signal <count$addsub0016> created at line 88.
+    Found 5-bit adder for signal <count$addsub0017> created at line 88.
+    Found 5-bit adder for signal <count$addsub0018> created at line 88.
+    Found 5-bit adder for signal <count$addsub0019> created at line 88.
+    Found 5-bit adder for signal <count$addsub0020> created at line 88.
+    Found 1-bit adder carry out for signal <count$addsub0021> created at line 88.
+    Found 2-bit adder carry out for signal <count$addsub0022> created at line 88.
+    Found 3-bit adder carry out for signal <count$addsub0023> created at line 88.
+    Found 4-bit adder carry out for signal <count$addsub0024> created at line 88.
+    Found 9-bit comparator greater for signal <error$cmp_gt0000> created at line 99.
+    Found 9-bit comparator less for signal <error$cmp_lt0000> created at line 96.
+    Found 8-bit subtractor for signal <exponente_real$addsub0000> created at line 97.
+    Found 8-bit addsub for signal <exponente_real$share0000> created at line 61.
     Summary:
-	inferred   1 Adder/Subtractor(s).
+	inferred  24 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
 Unit <Detector_de_Rebose> synthesized.
 
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
+# Adders/Subtractors                                   : 24
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 3
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 7
+ 4-bit adder carry out                                 : 1
+ 5-bit adder                                           : 7
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
 # Latches                                              : 1
- 8-bit latch                                           : 1
+ 23-bit latch                                          : 1
+# Comparators                                          : 2
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
 
 =========================================================================
 
@@ -155,22 +198,35 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
+# Adders/Subtractors                                   : 24
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 3
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 7
+ 4-bit adder carry out                                 : 1
+ 5-bit adder                                           : 7
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
 # Latches                                              : 1
- 8-bit latch                                           : 1
+ 23-bit latch                                          : 1
+# Comparators                                          : 2
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <senal_resultado_22> of sequential type is unconnected in block <Detector_de_Rebose>.
 
 Optimizing unit <Detector_de_Rebose> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Detector_de_Rebose, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Detector_de_Rebose, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -205,12 +261,20 @@ Design Statistics
 # IOs                              : 65
 
 Cell Usage :
-# BELS                             : 56
-#      LUT2                        : 1
-#      LUT3                        : 24
-#      LUT4                        : 31
-# FlipFlops/Latches                : 8
-#      LDCP_1                      : 8
+# BELS                             : 417
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 13
+#      LUT3                        : 140
+#      LUT4                        : 182
+#      MUXCY                       : 19
+#      MUXF5                       : 50
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 22
+#      LD_1                        : 22
+# Clock Buffers                    : 1
+#      BUFG                        : 1
 # IO Buffers                       : 65
 #      IBUF                        : 33
 #      OBUF                        : 32
@@ -221,11 +285,12 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       32  out of   4656     0%  
- Number of 4 input LUTs:                 56  out of   9312     0%  
+ Number of Slices:                      186  out of   4656     3%  
+ Number of Slice Flip Flops:             22  out of   9312     0%  
+ Number of 4 input LUTs:                338  out of   9312     3%  
  Number of IOs:                          65
  Number of bonded IOBs:                  65  out of    232    28%  
-    IOB Flip Flops:                       8
+ Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -245,126 +310,149 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+--------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)    | Load  |
------------------------------------+--------------------------+-------+
-error_and0000(error_and0000:O)     | NONE(*)(exponente_real_0)| 8     |
------------------------------------+--------------------------+-------+
+----------------------------------------------------+---------------------------+-------+
+Clock Signal                                        | Clock buffer(FF name)     | Load  |
+----------------------------------------------------+---------------------------+-------+
+senal_resultado_not00001(senal_resultado_not00001:O)| BUFG(*)(senal_resultado_0)| 22    |
+----------------------------------------------------+---------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
--------------------------------------------------------+------------------------+-------+
-Control Signal                                         | Buffer(FF name)        | Load  |
--------------------------------------------------------+------------------------+-------+
-exponente_real_0__and0000(exponente_real_0__and00001:O)| NONE(exponente_real_0) | 1     |
-exponente_real_0__or0000(exponente_real_0__or00002:O)  | NONE(exponente_real_0) | 1     |
-exponente_real_1__and0000(exponente_real_1__and00001:O)| NONE(exponente_real_1) | 1     |
-exponente_real_1__or0000(exponente_real_1__or00001:O)  | NONE(exponente_real_1) | 1     |
-exponente_real_2__and0000(exponente_real_2__and00001:O)| NONE(exponente_real_2) | 1     |
-exponente_real_2__or0000(exponente_real_2__or00001:O)  | NONE(exponente_real_2) | 1     |
-exponente_real_3__and0000(exponente_real_3__and00001:O)| NONE(exponente_real_3) | 1     |
-exponente_real_3__or0000(exponente_real_3__or00001:O)  | NONE(exponente_real_3) | 1     |
-exponente_real_4__and0000(exponente_real_4__and00001:O)| NONE(exponente_real_4) | 1     |
-exponente_real_4__or0000(exponente_real_4__or00001:O)  | NONE(exponente_real_4) | 1     |
-exponente_real_5__and0000(exponente_real_5__and00001:O)| NONE(exponente_real_5) | 1     |
-exponente_real_5__or0000(exponente_real_5__or00001:O)  | NONE(exponente_real_5) | 1     |
-exponente_real_6__and0000(exponente_real_6__and00001:O)| NONE(exponente_real_6) | 1     |
-exponente_real_6__or0000(exponente_real_6__or00001:O)  | NONE(exponente_real_6) | 1     |
-exponente_real_7__and0000(exponente_real_7__and00001:O)| NONE(exponente_real_7) | 1     |
-exponente_real_7__or0000(exponente_real_7__or00001:O)  | NONE(exponente_real_7) | 1     |
--------------------------------------------------------+------------------------+-------+
+No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 6.313ns
-   Maximum output required time after clock: 4.368ns
-   Maximum combinational path delay: 11.682ns
+   Minimum input arrival time before clock: 31.714ns
+   Maximum output required time after clock: 7.095ns
+   Maximum combinational path delay: 35.996ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'error_and0000'
-  Total number of paths / destination ports: 44 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'senal_resultado_not00001'
+  Total number of paths / destination ports: 2928635 / 22
 -------------------------------------------------------------------------
-Offset:              6.313ns (Levels of Logic = 4)
-  Source:            acarreo<1> (PAD)
-  Destination:       exponente_real_5 (LATCH)
-  Destination Clock: error_and0000 rising
+Offset:              31.714ns (Levels of Logic = 24)
+  Source:            resultado_suma<19> (PAD)
+  Destination:       senal_resultado_21 (LATCH)
+  Destination Clock: senal_resultado_not00001 rising
 
-  Data Path: acarreo<1> to exponente_real_5
+  Data Path: resultado_suma<19> to senal_resultado_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            44   1.218   1.441  acarreo_1_IBUF (acarreo_1_IBUF)
-     LUT3:I0->O            5   0.704   0.668  exponente_real_mux0002<2>11 (N8)
-     LUT3:I2->O            3   0.704   0.566  exponente_real_mux0002<4>11 (N4)
-     LUT3:I2->O            1   0.704   0.000  exponente_real_mux0002<5>1 (exponente_real_mux0002<5>)
-     LDCP_1:D                  0.308          exponente_real_5
+     IBUF:I->O             9   1.218   0.995  resultado_suma_19_IBUF (resultado_suma_19_IBUF)
+     LUT4:I0->O            2   0.704   0.622  count_and00031 (count_and0003)
+     LUT3:I0->O            6   0.704   0.844  count_and00061 (count_and0006)
+     LUT3:I0->O            4   0.704   0.762  count_and00101 (count_and0010)
+     LUT3:I0->O            1   0.704   0.595  count_mux0008<1>1 (Madd_count_addsub0011_lut<1>)
+     LUT4:I0->O            6   0.704   0.844  count_mux0010<1>1 (Madd_count_addsub0006_lut<1>)
+     LUT4:I0->O            2   0.704   0.622  Madd_count_addsub0008_cy<1>11 (Madd_count_addsub0008_cy<1>)
+     LUT4:I0->O            1   0.704   0.595  count_mux0013<2>1_SW0 (N364)
+     LUT4:I0->O            2   0.704   0.526  count_mux0013<2>1 (Madd_count_addsub0012_lut<2>)
+     LUT4:I1->O            3   0.704   0.610  count_mux0015<2>1 (Madd_count_addsub0024_lut<2>)
+     LUT4:I1->O            2   0.704   0.622  count_mux0016<2>1 (Madd_count_addsub0017_lut<2>)
+     LUT4:I0->O            5   0.704   0.808  count_mux0017<2>1 (Madd_count_addsub0019_lut<2>)
+     LUT3:I0->O            2   0.704   0.622  Madd_count_addsub0019_cy<2>11 (Madd_count_addsub0019_cy<2>)
+     LUT4:I0->O            1   0.704   0.595  count_mux0019<3>1_SW0 (N370)
+     LUT4:I0->O            2   0.704   0.451  count_mux0019<3>1 (Madd_count_addsub0014_lut<3>)
+     LUT4:I3->O            1   0.704   0.424  count_mux0021<4>1_SW1_SW0 (N394)
+     LUT4:I3->O            1   0.704   0.499  count_mux0021<4>1_SW1 (N376)
+     LUT4:I1->O            5   0.704   0.712  count_mux0021<4>1 (Madd_count_addsub0018_lut<4>)
+     LUT3:I1->O           45   0.704   1.270  count_mux0023<4>1 (count_mux0023<4>)
+     LUT4:I3->O            1   0.704   0.000  senal_resultado_mux0001<1>368_SW0_F (N438)
+     MUXF5:I0->O           1   0.321   0.424  senal_resultado_mux0001<1>368_SW0 (N226)
+     LUT4:I3->O            2   0.704   0.482  senal_resultado_mux0001<1>368 (N109)
+     LUT3:I2->O            1   0.704   0.455  senal_resultado_mux0001<1>29 (senal_resultado_mux0001<1>29)
+     LUT4:I2->O            1   0.704   0.000  senal_resultado_mux0001<1>172 (senal_resultado_mux0001<1>)
+     LD_1:D                    0.308          senal_resultado_21
     ----------------------------------------
-    Total                      6.313ns (3.638ns logic, 2.675ns route)
-                                       (57.6% logic, 42.4% route)
+    Total                     31.714ns (17.335ns logic, 14.379ns route)
+                                       (54.7% logic, 45.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'error_and0000'
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'senal_resultado_not00001'
+  Total number of paths / destination ports: 22 / 22
 -------------------------------------------------------------------------
-Offset:              4.368ns (Levels of Logic = 1)
-  Source:            exponente_real_7 (LATCH)
-  Destination:       exponente_real<7> (PAD)
-  Source Clock:      error_and0000 rising
+Offset:              7.095ns (Levels of Logic = 4)
+  Source:            senal_resultado_20 (LATCH)
+  Destination:       mantisa_real<21> (PAD)
+  Source Clock:      senal_resultado_not00001 rising
 
-  Data Path: exponente_real_7 to exponente_real<7>
+  Data Path: senal_resultado_20 to mantisa_real<21>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCP_1:G->Q           1   0.676   0.420  exponente_real_7 (exponente_real_7)
-     OBUF:I->O                 3.272          exponente_real_7_OBUF (exponente_real<7>)
+     LD_1:G->Q             1   0.676   0.499  senal_resultado_20 (senal_resultado_20)
+     LUT3:I1->O            1   0.704   0.499  mantisa_real<21>24_SW0_SW0 (N328)
+     LUT3:I1->O            1   0.704   0.000  mantisa_real<21>24_F (N458)
+     MUXF5:I0->O           1   0.321   0.420  mantisa_real<21>24 (mantisa_real_21_OBUF)
+     OBUF:I->O                 3.272          mantisa_real_21_OBUF (mantisa_real<21>)
     ----------------------------------------
-    Total                      4.368ns (3.948ns logic, 0.420ns route)
-                                       (90.4% logic, 9.6% route)
+    Total                      7.095ns (5.677ns logic, 1.418ns route)
+                                       (80.0% logic, 20.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 287 / 24
+  Total number of paths / destination ports: 5929447 / 32
 -------------------------------------------------------------------------
-Delay:               11.682ns (Levels of Logic = 6)
-  Source:            acarreo<1> (PAD)
+Delay:               35.996ns (Levels of Logic = 26)
+  Source:            resultado_suma<19> (PAD)
   Destination:       mantisa_real<22> (PAD)
 
-  Data Path: acarreo<1> to mantisa_real<22>
+  Data Path: resultado_suma<19> to mantisa_real<22>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            44   1.218   1.441  acarreo_1_IBUF (acarreo_1_IBUF)
-     LUT3:I0->O            5   0.704   0.668  exponente_real_mux0002<2>11 (N8)
-     LUT3:I2->O            3   0.704   0.610  exponente_real_mux0002<4>11 (N4)
-     LUT3:I1->O           23   0.704   1.237  mantisa_real<0>11 (N3)
-     LUT4:I2->O            1   0.704   0.420  mantisa_real<9>1 (mantisa_real_9_OBUF)
-     OBUF:I->O                 3.272          mantisa_real_9_OBUF (mantisa_real<9>)
+     IBUF:I->O             9   1.218   0.995  resultado_suma_19_IBUF (resultado_suma_19_IBUF)
+     LUT4:I0->O            2   0.704   0.622  count_and00031 (count_and0003)
+     LUT3:I0->O            6   0.704   0.844  count_and00061 (count_and0006)
+     LUT3:I0->O            4   0.704   0.762  count_and00101 (count_and0010)
+     LUT3:I0->O            1   0.704   0.595  count_mux0008<1>1 (Madd_count_addsub0011_lut<1>)
+     LUT4:I0->O            6   0.704   0.844  count_mux0010<1>1 (Madd_count_addsub0006_lut<1>)
+     LUT4:I0->O            2   0.704   0.622  Madd_count_addsub0008_cy<1>11 (Madd_count_addsub0008_cy<1>)
+     LUT4:I0->O            1   0.704   0.595  count_mux0013<2>1_SW0 (N364)
+     LUT4:I0->O            2   0.704   0.526  count_mux0013<2>1 (Madd_count_addsub0012_lut<2>)
+     LUT4:I1->O            3   0.704   0.610  count_mux0015<2>1 (Madd_count_addsub0024_lut<2>)
+     LUT4:I1->O            2   0.704   0.622  count_mux0016<2>1 (Madd_count_addsub0017_lut<2>)
+     LUT4:I0->O            5   0.704   0.808  count_mux0017<2>1 (Madd_count_addsub0019_lut<2>)
+     LUT3:I0->O            2   0.704   0.622  Madd_count_addsub0019_cy<2>11 (Madd_count_addsub0019_cy<2>)
+     LUT4:I0->O            1   0.704   0.595  count_mux0019<3>1_SW0 (N370)
+     LUT4:I0->O            2   0.704   0.451  count_mux0019<3>1 (Madd_count_addsub0014_lut<3>)
+     LUT4:I3->O            1   0.704   0.424  count_mux0021<4>1_SW1_SW0 (N394)
+     LUT4:I3->O            1   0.704   0.499  count_mux0021<4>1_SW1 (N376)
+     LUT4:I1->O            5   0.704   0.712  count_mux0021<4>1 (Madd_count_addsub0018_lut<4>)
+     LUT3:I1->O           45   0.704   1.266  count_mux0023<4>1 (count_mux0023<4>)
+     MUXCY:DI->O           1   0.888   0.000  Mcompar_error_cmp_lt0000_cy<4> (Mcompar_error_cmp_lt0000_cy<4>)
+     MUXCY:CI->O          31   0.459   1.437  Mcompar_error_cmp_lt0000_cy<5> (Mcompar_error_cmp_lt0000_cy<5>)
+     LUT3:I0->O            1   0.704   0.000  mantisa_real<10>22 (mantisa_real<10>21)
+     MUXF5:I0->O           3   0.321   0.566  mantisa_real<10>2_f5 (error_OBUF)
+     LUT3:I2->O            1   0.704   0.000  mantisa_real<22>1 (mantisa_real<22>1)
+     MUXF5:I1->O           1   0.321   0.420  mantisa_real<22>_f5 (mantisa_real_22_OBUF)
+     OBUF:I->O                 3.272          mantisa_real_22_OBUF (mantisa_real<22>)
     ----------------------------------------
-    Total                     11.682ns (7.306ns logic, 4.376ns route)
-                                       (62.5% logic, 37.5% route)
+    Total                     35.996ns (20.559ns logic, 15.437ns route)
+                                       (57.1% logic, 42.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.86 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.74 secs
  
 --> 
 
-Total memory usage is 302232 kilobytes
+Total memory usage is 302220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

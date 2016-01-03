@@ -81,20 +81,24 @@ BEGIN
    cloc_process :process
    begin
 		acarreo<="00";
-		resultado_suma<="11111111111111111111111";
-		exponente_max<="00110110";
-		wait for clock_period/4;
-		acarreo<="10";
-		resultado_suma<="10010110011110101011010";
-		exponente_max<="00110110";
-		wait for clock_period/4;
-		acarreo<="01";
-		resultado_suma<="11110110011110111011010";
-		exponente_max<="00110110";
-		wait for clock_period/4;
-		acarreo<="11";
-		resultado_suma<="10110100111010001010111";
+		resultado_suma<="00011111010100001010101";
 		exponente_max<="10000011";
+		wait for clock_period/4;
+		acarreo<="00";
+		resultado_suma<="00111110010111111111101";
+		exponente_max<="00110111";
+		wait for clock_period/4;
+		acarreo<="00";
+		resultado_suma<="11110110011110101011010";
+		exponente_max<="00110000";
+		wait for clock_period/4;
+		acarreo<="00";
+		resultado_suma<="11110110011110111011010";
+		exponente_max<="00000110";
+		wait for clock_period/4;
+		acarreo<="00";
+		resultado_suma<="00000000000000001010111";
+		exponente_max<="00000011";
 		wait for clock_period/4;
 		
    end process;

@@ -2,14 +2,14 @@ Command line:
    Prueba_selec_comp_mantisa_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59289
+     -socket  52416
 
-Sat Dec 26 17:08:35 2015
+Wed Dec 30 22:31:05 2015
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 996.848 Meg
+ Current Memory Usage: 992.657 Meg
 
  Total Signals          : 17
  Total Nets             : 117
@@ -21,9 +21,9 @@ Sat Dec 26 17:08:35 2015
  Total Scalar Nets and Variables : 619
 Total Line Count : 97
 
- Total Simulation Time: 0.171875 sec
+ Total Simulation Time: 0.234375 sec
 
- Current Memory Usage: 839.553 Meg
+ Current Memory Usage: 363.479 Meg
 
-Sat Dec 26 17:09:47 2015
+Wed Dec 30 22:39:32 2015
 

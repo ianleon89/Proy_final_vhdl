@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\ANDRES\Documents\UBA\Ibimestre\circuitoslogicosprogramables\ProyFinal\programa\Proyecto_ALU_v1\PRUEBA_REAL_SUMADOR_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR_isim_beh.wdb 
+Running: C:\Users\ANDRES\Documents\UBA\Ibimestre\circuitoslogicosprogramables\ProyFinal\programa\Proyecto_ALU_v1\Prueba_selecc_exponen_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selecc_exponen_isim_beh.wdb 
 ISim P.49d (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -16,7 +16,7 @@ License server machine is down or not responding.
  See the system adminstrator about starting the license server system, or
  make sure you're referring to the right host (see LM_LICENSE_FILE).
 Feature:       ISIM
-Hostname:      190.174.137.126
+Hostname:      190.174.164.42
 License path:  C:/.Xilinx;C:\Xilinx\14.4\ISE_DS\ISE\/coregen/core_licenses\Xilinx.lic;C:\Xilinx\14.4\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;80@cursosfiuba.no-ip.org;
 FLEXnet Licensing error:-96,491
 For further information, refer to the FLEXnet Licensing documentation,
@@ -30,5 +30,4 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /prueba_real_sumador/uut/c4/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.

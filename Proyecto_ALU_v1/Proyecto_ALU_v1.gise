@@ -23,6 +23,18 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ALU_IEEE_754.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ALU_IEEE_754.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ALU_IEEE_754.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ALU_IEEE_754.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_IEEE_754.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU_IEEE_754.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ALU_IEEE_754.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ALU_IEEE_754.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_IEEE_754_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_IEEE_754_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_IEEE_754_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU_IEEE_754_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Comparador_Exp.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Comparador_Exp.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Comparador_Exp.lso"/>
@@ -52,9 +64,17 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Detector_de_Rebose_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Detector_de_Rebose_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Detector_de_Rebose_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PRUEBA_REAL_SUMADOR_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Multiplicador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Multiplicador.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Multiplicador.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Multiplicador.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplicador.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Multiplicador.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Multiplicador.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Multiplicador_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PRUEBA_REAL_SUMADOR_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PRUEBA_REAL_SUMADOR_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PRUEBA_REAL_SUMADOR_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Pressenta_resultados.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Pressenta_resultados.lso"/>
@@ -74,18 +94,41 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prob_sumador_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_comp_exp_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_comp_exp_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_multi_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_multi_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_presenta_resultado_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_presenta_resultado_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_rebose_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_rebose_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_restador_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_restador_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_selec_comp_mantisa_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selec_comp_mantisa_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_selec_oper_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selec_oper_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_selec_suma_resta_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selec_suma_resta_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selecc_exponen_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_selecc_exponen_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Prueba_selecc_exponen_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selecc_exponen_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_selector_opera_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_selector_opera_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_shifter_valoresaceptables_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_shifter_valoresaceptables_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Restador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Restador.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Restador.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Restador.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Restador.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Restador.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Restador.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Restador.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Restador_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Restador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Restador_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Restador_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Restador_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Selec_Comp_Mantisa.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Selec_Comp_Mantisa.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Selec_Comp_Mantisa.ngc"/>
@@ -98,6 +141,22 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Selec_Comp_Mantisa_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selec_Comp_Mantisa_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Selec_Comp_Mantisa_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Selec_exponente.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Selec_exponente.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Selec_exponente.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Selec_exponente.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selec_exponente.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Selec_exponente.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Selec_exponente.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Selec_exponente.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selec_exponente_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Selec_exponente_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Seleccion_Operacion.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Seleccion_Operacion.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Seleccion_Operacion.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Seleccion_Operacion.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seleccion_Operacion_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Seleccion_Operacion_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Seleccion_suma_resta.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Seleccion_suma_resta.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Seleccion_suma_resta.ngc"/>
@@ -107,6 +166,16 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Seleccion_suma_resta.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Seleccion_suma_resta.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Seleccion_suma_resta_envsettings.html"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Seleccion_suma_resta_mul.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Seleccion_suma_resta_mul.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Seleccion_suma_resta_mul.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Seleccion_suma_resta_mul.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seleccion_suma_resta_mul.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Seleccion_suma_resta_mul.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Seleccion_suma_resta_mul.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Seleccion_suma_resta_mul.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seleccion_suma_resta_mul_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Seleccion_suma_resta_mul_xst.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Seleccion_suma_resta_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seleccion_suma_resta_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Seleccion_suma_resta_xst.xrpt"/>
@@ -172,17 +241,11 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="seleccion_operacion.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="seleccion_operacion.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="seleccion_operacion.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="seleccion_operacion.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seleccion_operacion.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="seleccion_operacion.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="seleccion_operacion.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="seleccion_operacion.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="seleccion_operacion_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="seleccion_operacion_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seleccion_operacion_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seleccion_operacion_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -190,133 +253,142 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1450908755" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1450908755">
+    <transform xil_pn:end_ts="1451527476" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1451527476">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451165410" xil_pn:in_ck="-1426355455604675648" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1451165410">
+    <transform xil_pn:end_ts="1451776338" xil_pn:in_ck="5820419151108394664" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1451836548">
+      <status xil_pn:value="ExecutingRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1451776361" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4558370900865461791" xil_pn:start_ts="1451776361">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1451776361" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3179945317341774367" xil_pn:start_ts="1451776361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1451776189" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2895043534188493516" xil_pn:start_ts="1451776189">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1451776361" xil_pn:in_ck="5820419151108394664" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1451776361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Comparador_Exp.vhd"/>
       <outfile xil_pn:name="Detector_de_Rebose.vhd"/>
+      <outfile xil_pn:name="Multiplicador.vhd"/>
       <outfile xil_pn:name="PRUEBA_REAL_SUMADOR.vhd"/>
       <outfile xil_pn:name="Pressenta_resultados.vhd"/>
       <outfile xil_pn:name="Prob_shiftter.vhd"/>
       <outfile xil_pn:name="Prob_sumador.vhd"/>
       <outfile xil_pn:name="Prueba_comp_exp.vhd"/>
+      <outfile xil_pn:name="Prueba_multi.vhd"/>
       <outfile xil_pn:name="Prueba_presenta_resultado.vhd"/>
       <outfile xil_pn:name="Prueba_rebose.vhd"/>
+      <outfile xil_pn:name="Prueba_restador.vhd"/>
       <outfile xil_pn:name="Prueba_selec_comp_mantisa.vhd"/>
-      <outfile xil_pn:name="Prueba_selec_oper.vhd"/>
       <outfile xil_pn:name="Prueba_selec_suma_resta.vhd"/>
+      <outfile xil_pn:name="Prueba_selecc_exponen.vhd"/>
+      <outfile xil_pn:name="Prueba_selector_opera.vhd"/>
       <outfile xil_pn:name="Prueba_shifter_valoresaceptables.vhd"/>
+      <outfile xil_pn:name="Restador.vhd"/>
       <outfile xil_pn:name="Selec_Comp_Mantisa.vhd"/>
+      <outfile xil_pn:name="Selec_exponente.vhd"/>
       <outfile xil_pn:name="Seleccion_suma_resta.vhd"/>
       <outfile xil_pn:name="Shiftter.vhd"/>
       <outfile xil_pn:name="Sumador.vhd"/>
       <outfile xil_pn:name="Sumador_iee_754.vhd"/>
       <outfile xil_pn:name="seleccion_operacion.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1451164848" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7329165622489277934" xil_pn:start_ts="1451164848">
+    <transform xil_pn:end_ts="1451776365" xil_pn:in_ck="5820419151108394664" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5270967019849303712" xil_pn:start_ts="1451776361">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1451164848" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7504311843491514220" xil_pn:start_ts="1451164848">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1451150162" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8893333367985900745" xil_pn:start_ts="1451150162">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1451165413" xil_pn:in_ck="-1426355455604675648" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1451165413">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Comparador_Exp.vhd"/>
-      <outfile xil_pn:name="Detector_de_Rebose.vhd"/>
-      <outfile xil_pn:name="PRUEBA_REAL_SUMADOR.vhd"/>
-      <outfile xil_pn:name="Pressenta_resultados.vhd"/>
-      <outfile xil_pn:name="Prob_shiftter.vhd"/>
-      <outfile xil_pn:name="Prob_sumador.vhd"/>
-      <outfile xil_pn:name="Prueba_comp_exp.vhd"/>
-      <outfile xil_pn:name="Prueba_presenta_resultado.vhd"/>
-      <outfile xil_pn:name="Prueba_rebose.vhd"/>
-      <outfile xil_pn:name="Prueba_selec_comp_mantisa.vhd"/>
-      <outfile xil_pn:name="Prueba_selec_oper.vhd"/>
-      <outfile xil_pn:name="Prueba_selec_suma_resta.vhd"/>
-      <outfile xil_pn:name="Prueba_shifter_valoresaceptables.vhd"/>
-      <outfile xil_pn:name="Selec_Comp_Mantisa.vhd"/>
-      <outfile xil_pn:name="Seleccion_suma_resta.vhd"/>
-      <outfile xil_pn:name="Shiftter.vhd"/>
-      <outfile xil_pn:name="Sumador.vhd"/>
-      <outfile xil_pn:name="Sumador_iee_754.vhd"/>
-      <outfile xil_pn:name="seleccion_operacion.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1451165419" xil_pn:in_ck="-1426355455604675648" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6235675649222345990" xil_pn:start_ts="1451165413">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PRUEBA_REAL_SUMADOR_beh.prj"/>
-      <outfile xil_pn:name="PRUEBA_REAL_SUMADOR_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Prueba_selecc_exponen_beh.prj"/>
+      <outfile xil_pn:name="Prueba_selecc_exponen_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1451165419" xil_pn:in_ck="-3380400345796475547" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2033630825838993011" xil_pn:start_ts="1451165419">
+    <transform xil_pn:end_ts="1451776366" xil_pn:in_ck="3917525332765675146" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2655027184128343149" xil_pn:start_ts="1451776365">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="PRUEBA_REAL_SUMADOR_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Prueba_selecc_exponen_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
-    <transform xil_pn:end_ts="1450638650" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1450638650">
+    <transform xil_pn:end_ts="1451505414" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1451505414">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1748312252208417777" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451836282" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3430921989293006877" xil_pn:start_ts="1451836282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8893333367985900745" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451836282" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2488860591750705859" xil_pn:start_ts="1451836282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451776947" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1451776947">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6224626875040798575" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451836282" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4545951191583681627" xil_pn:start_ts="1451836282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451776947" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1451776947">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164646" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5941951413574933121" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451836282" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7295374770644995661" xil_pn:start_ts="1451836282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1451164663" xil_pn:in_ck="-7940295940813751055" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6297625436542740980" xil_pn:start_ts="1451164646">
+    <transform xil_pn:end_ts="1451836416" xil_pn:in_ck="-17955437001308129" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5854607674897038528" xil_pn:start_ts="1451836381">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="ALU_IEEE_754.lso"/>
+      <outfile xil_pn:name="ALU_IEEE_754.ngc"/>
+      <outfile xil_pn:name="ALU_IEEE_754.ngr"/>
+      <outfile xil_pn:name="ALU_IEEE_754.prj"/>
+      <outfile xil_pn:name="ALU_IEEE_754.stx"/>
+      <outfile xil_pn:name="ALU_IEEE_754.syr"/>
+      <outfile xil_pn:name="ALU_IEEE_754.xst"/>
+      <outfile xil_pn:name="ALU_IEEE_754_vhdl.prj"/>
+      <outfile xil_pn:name="ALU_IEEE_754_xst.xrpt"/>
       <outfile xil_pn:name="Comparador_Exp.ngr"/>
       <outfile xil_pn:name="Detector_de_Rebose.ngr"/>
+      <outfile xil_pn:name="Multiplicador.ngr"/>
       <outfile xil_pn:name="Pressenta_resultados.ngr"/>
+      <outfile xil_pn:name="Restador.ngr"/>
       <outfile xil_pn:name="Selec_Comp_Mantisa.ngr"/>
+      <outfile xil_pn:name="Selec_exponente.ngr"/>
+      <outfile xil_pn:name="Seleccion_Operacion.ngr"/>
+      <outfile xil_pn:name="Seleccion_suma_resta.ngr"/>
       <outfile xil_pn:name="Shiftter.ngr"/>
       <outfile xil_pn:name="Sumador.ngr"/>
-      <outfile xil_pn:name="Sumador_iee_754.lso"/>
-      <outfile xil_pn:name="Sumador_iee_754.ngc"/>
       <outfile xil_pn:name="Sumador_iee_754.ngr"/>
-      <outfile xil_pn:name="Sumador_iee_754.prj"/>
-      <outfile xil_pn:name="Sumador_iee_754.stx"/>
-      <outfile xil_pn:name="Sumador_iee_754.syr"/>
-      <outfile xil_pn:name="Sumador_iee_754.xst"/>
-      <outfile xil_pn:name="Sumador_iee_754_vhdl.prj"/>
-      <outfile xil_pn:name="Sumador_iee_754_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>

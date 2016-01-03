@@ -1,49 +1,72 @@
-V3 36
+V3 50
 FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd 2015/12/26.18:15:51 P.49d
-EN work/Comparador_Exp 1451164649 \
+EN work/Comparador_Exp 1451836384 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
       PB ieee/std_logic_arith 1354696160 PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/Comparador_Exp/Behavioral 1451164650 \
+AR work/Comparador_Exp/Behavioral 1451836385 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd \
-      EN work/Comparador_Exp 1451164649
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd 2015/12/24.11:53:41 P.49d
-EN work/Detector_de_Rebose 1451164657 \
+      EN work/Comparador_Exp 1451836384
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd 2016/01/03.12:32:22 P.49d
+EN work/Detector_de_Rebose 1451836402 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
       PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/Detector_de_Rebose/Behavioral 1451164658 \
+AR work/Detector_de_Rebose/Behavioral 1451836403 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd \
-      EN work/Detector_de_Rebose 1451164657
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd 2015/12/24.17:16:00 P.49d
-EN work/Pressenta_resultados 1451164659 \
+      EN work/Detector_de_Rebose 1451836402
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd 2016/01/02.18:42:14 P.49d
+EN work/Multiplicador 1451836396 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/Multiplicador/Behavioral 1451836397 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd \
+      EN work/Multiplicador 1451836396
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd 2016/01/03.12:37:49 P.49d
+EN work/Pressenta_resultados 1451836404 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/Pressenta_resultados/Behavioral 1451164660 \
+AR work/Pressenta_resultados/Behavioral 1451836405 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd \
-      EN work/Pressenta_resultados 1451164659
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd 2015/12/24.18:26:20 P.49d
-EN work/seleccion_operacion 1450992391 \
+      EN work/Pressenta_resultados 1451836404
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd 2015/12/30.21:49:40 P.49d
+EN work/Restador 1451836394 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
+      PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/Restador/Behavioral 1451836395 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd \
+      EN work/Restador 1451836394
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd 2015/12/27.18:21:01 P.49d
+EN work/seleccion_operacion 1451836388 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/seleccion_operacion/Behavioral 1450992392 \
+AR work/seleccion_operacion/Behavioral 1451836389 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd \
-      EN work/seleccion_operacion 1450992391
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd 2015/12/24.18:22:03 P.49d
-EN work/Seleccion_suma_resta 1450992956 \
+      EN work/seleccion_operacion 1451836388
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd 2016/01/02.18:49:50 P.49d
+EN work/Seleccion_suma_resta_mul 1451836398 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/Seleccion_suma_resta/Behavioral 1450992957 \
+AR work/Seleccion_suma_resta_mul/Behavioral 1451836399 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd \
-      EN work/Seleccion_suma_resta 1450992956
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd 2015/12/26.17:06:44 P.49d
-EN work/Selec_Comp_Mantisa 1451164651 \
+      EN work/Seleccion_suma_resta_mul 1451836398
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd 2015/12/30.22:45:25 P.49d
+EN work/Selec_Comp_Mantisa 1451836386 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
       PB ieee/std_logic_arith 1354696160 PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/Selec_Comp_Mantisa/Behavioral 1451164652 \
+AR work/Selec_Comp_Mantisa/Behavioral 1451836387 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd \
-      EN work/Selec_Comp_Mantisa 1451164651
+      EN work/Selec_Comp_Mantisa 1451836386
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd 2016/01/02.20:07:34 P.49d
+EN work/Selec_exponente 1451836400 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/Selec_exponente/Behavioral 1451836401 \
+      FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd \
+      EN work/Selec_exponente 1451836400
 FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shifter.vhd 2015/12/20.19:59:43 P.49d
 EN work/Shifter 1450652386 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shifter.vhd \
@@ -53,26 +76,28 @@ AR work/Shifter/Behavioral 1450652387 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shifter.vhd \
       EN work/Shifter 1450652386
 FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd 2015/12/23.18:45:14 P.49d
-EN work/Shiftter 1451164653 \
+EN work/Shiftter 1451836390 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
       PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/Shiftter/Behavioral 1451164654 \
+AR work/Shiftter/Behavioral 1451836391 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd \
-      EN work/Shiftter 1451164653
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd 2015/12/24.00:43:34 P.49d
-EN work/Sumador 1451164655 \
+      EN work/Shiftter 1451836390
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd 2015/12/30.15:23:30 P.49d
+EN work/Sumador 1451836392 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
       PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/Sumador/Behavioral 1451164656 \
+AR work/Sumador/Behavioral 1451836393 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd \
-      EN work/Sumador 1451164655
-FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd 2015/12/26.14:12:38 P.49d
-EN work/Sumador_iee_754 1451164661 \
+      EN work/Sumador 1451836392
+FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd 2016/01/03.12:51:14 P.49d
+EN work/ALU_IEEE_754 1451836406 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/Sumador_iee_754/Behavioral 1451164662 \
+AR work/ALU_IEEE_754/Behavioral 1451836407 \
       FL C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd \
-      EN work/Sumador_iee_754 1451164661 CP Comparador_Exp CP Selec_Comp_Mantisa \
-      CP Shiftter CP Sumador CP Detector_de_Rebose CP Pressenta_resultados
+      EN work/ALU_IEEE_754 1451836406 CP Comparador_Exp CP Selec_Comp_Mantisa \
+      CP Seleccion_Operacion CP Shiftter CP Sumador CP Restador CP Multiplicador \
+      CP Seleccion_suma_resta_mul CP Selec_exponente CP Detector_de_Rebose \
+      CP Pressenta_resultados

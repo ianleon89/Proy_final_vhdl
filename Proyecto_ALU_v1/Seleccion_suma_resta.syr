@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: Seleccion_suma_resta.prj
 
@@ -105,7 +105,8 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd" in Library work.
-Architecture behavioral of Entity seleccion_suma_resta is up to date.
+Entity <seleccion_suma_resta> compiled.
+Entity <seleccion_suma_resta> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -267,12 +268,12 @@ Delay:               7.049ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.45 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.45 secs
  
 --> 
 
-Total memory usage is 285996 kilobytes
+Total memory usage is 302200 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

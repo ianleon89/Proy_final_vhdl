@@ -209,8 +209,16 @@ begin
 			Mantisa_despl<=A;
 		--	sig_M<="00000000000000000000000";
 		elsif (ex2=ex1) and oper_ok /='0' then
-			Mantisa_sin_despl<=M;
-			Mantisa_despl<=A;
+			if A>M then
+				Mantisa_sin_despl<=A;
+				Mantisa_despl<=M;
+			elsif A<M then
+				Mantisa_sin_despl<=M;
+				Mantisa_despl<=A;
+			else
+				Mantisa_iguales<='1';
+			end if;
+		
 		else
 			Mantisa_sin_despl<="11111111111111111111111";
 			Mantisa_despl<="11111111111111111111111";

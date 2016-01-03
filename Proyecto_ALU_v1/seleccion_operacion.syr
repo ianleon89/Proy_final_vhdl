@@ -3,16 +3,16 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
---> Reading design: seleccion_operacion.prj
+--> Reading design: Seleccion_Operacion.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -35,17 +35,17 @@ TABLE OF CONTENTS
 *                      Synthesis Options Summary                        *
 =========================================================================
 ---- Source Parameters
-Input File Name                    : "seleccion_operacion.prj"
+Input File Name                    : "Seleccion_Operacion.prj"
 Input Format                       : mixed
 Ignore Synthesis Constraint File   : NO
 
 ---- Target Parameters
-Output File Name                   : "seleccion_operacion"
+Output File Name                   : "Seleccion_Operacion"
 Output Format                      : NGC
 Target Device                      : xc3s500e-4-fg320
 
 ---- Source Options
-Top Module Name                    : seleccion_operacion
+Top Module Name                    : Seleccion_Operacion
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
@@ -110,14 +110,14 @@ Architecture behavioral of Entity seleccion_operacion is up to date.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <seleccion_operacion> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <Seleccion_Operacion> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <seleccion_operacion> in library <work> (Architecture <behavioral>).
-Entity <seleccion_operacion> analyzed. Unit <seleccion_operacion> generated.
+Analyzing Entity <Seleccion_Operacion> in library <work> (Architecture <behavioral>).
+Entity <Seleccion_Operacion> analyzed. Unit <Seleccion_Operacion> generated.
 
 
 =========================================================================
@@ -126,22 +126,24 @@ Entity <seleccion_operacion> analyzed. Unit <seleccion_operacion> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <seleccion_operacion>.
+Synthesizing Unit <Seleccion_Operacion>.
     Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd".
-    Found 23-bit 4-to-1 multiplexer for signal <mantisa_reall>.
-    Found 8-bit 4-to-1 multiplexer for signal <exponente_reall>.
+    Found 8-bit comparator greater for signal <signo$cmp_gt0000> created at line 49.
+    Found 8-bit comparator greater for signal <signo$cmp_gt0001> created at line 92.
+    Found 1-bit xor2 for signal <signo$xor0000> created at line 61.
     Summary:
-	inferred  31 Multiplexer(s).
-Unit <seleccion_operacion> synthesized.
+	inferred   2 Comparator(s).
+Unit <Seleccion_Operacion> synthesized.
 
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 2
- 23-bit 4-to-1 multiplexer                             : 1
- 8-bit 4-to-1 multiplexer                              : 1
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -154,9 +156,10 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 2
- 23-bit 4-to-1 multiplexer                             : 1
- 8-bit 4-to-1 multiplexer                              : 1
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -164,11 +167,11 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 
-Optimizing unit <seleccion_operacion> ...
+Optimizing unit <Seleccion_Operacion> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block seleccion_operacion, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Seleccion_Operacion, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -193,21 +196,27 @@ Partition Implementation Status
 *                            Final Report                               *
 =========================================================================
 Final Results
-RTL Top Level Output File Name     : seleccion_operacion.ngr
-Top Level Output File Name         : seleccion_operacion
+RTL Top Level Output File Name     : Seleccion_Operacion.ngr
+Top Level Output File Name         : Seleccion_Operacion
 Output Format                      : NGC
 Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 95
+# IOs                              : 23
 
 Cell Usage :
-# BELS                             : 31
-#      LUT4                        : 31
-# IO Buffers                       : 95
-#      IBUF                        : 64
-#      OBUF                        : 31
+# BELS                             : 42
+#      GND                         : 1
+#      LUT2                        : 17
+#      LUT3                        : 1
+#      LUT4                        : 4
+#      MUXCY                       : 16
+#      MUXF5                       : 2
+#      VCC                         : 1
+# IO Buffers                       : 23
+#      IBUF                        : 20
+#      OBUF                        : 3
 =========================================================================
 
 Device utilization summary:
@@ -215,10 +224,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       18  out of   4656     0%  
- Number of 4 input LUTs:                 31  out of   9312     0%  
- Number of IOs:                          95
- Number of bonded IOBs:                  95  out of    232    40%  
+ Number of Slices:                       12  out of   4656     0%  
+ Number of 4 input LUTs:                 22  out of   9312     0%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
 
 ---------------------------
 Partition Resource Summary:
@@ -251,7 +260,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 7.051ns
+   Maximum combinational path delay: 10.447ns
 
 Timing Detail:
 --------------
@@ -259,32 +268,43 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 124 / 31
+  Total number of paths / destination ports: 136 / 3
 -------------------------------------------------------------------------
-Delay:               7.051ns (Levels of Logic = 3)
-  Source:            operacion<1> (PAD)
-  Destination:       exponente_reall<7> (PAD)
+Delay:               10.447ns (Levels of Logic = 14)
+  Source:            expo2<0> (PAD)
+  Destination:       signo (PAD)
 
-  Data Path: operacion<1> to exponente_reall<7>
+  Data Path: expo2<0> to signo
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            31   1.218   1.437  operacion_1_IBUF (operacion_1_IBUF)
-     LUT4:I0->O            1   0.704   0.420  Mmux_mantisa_reall91 (mantisa_reall_17_OBUF)
-     OBUF:I->O                 3.272          mantisa_reall_17_OBUF (mantisa_reall<17>)
+     IBUF:I->O             2   1.218   0.622  expo2_0_IBUF (expo2_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  Mcompar_signo_cmp_gt0000_lut<0> (Mcompar_signo_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_signo_cmp_gt0000_cy<0> (Mcompar_signo_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<1> (Mcompar_signo_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<2> (Mcompar_signo_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<3> (Mcompar_signo_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<4> (Mcompar_signo_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<5> (Mcompar_signo_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_signo_cmp_gt0000_cy<6> (Mcompar_signo_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           3   0.459   0.610  Mcompar_signo_cmp_gt0000_cy<7> (Mcompar_signo_cmp_gt0000_cy<7>)
+     LUT4:I1->O            1   0.704   0.000  signo491 (signo491)
+     MUXF5:I1->O           1   0.321   0.595  signo49_f5 (signo49)
+     LUT4:I0->O            1   0.704   0.420  signo86 (signo_OBUF)
+     OBUF:I->O                 3.272          signo_OBUF (signo)
     ----------------------------------------
-    Total                      7.051ns (5.194ns logic, 1.857ns route)
-                                       (73.7% logic, 26.3% route)
+    Total                     10.447ns (8.200ns logic, 2.247ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.47 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.76 secs
  
 --> 
 
-Total memory usage is 286028 kilobytes
+Total memory usage is 286044 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

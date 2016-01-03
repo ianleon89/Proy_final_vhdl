@@ -67,7 +67,7 @@ begin
 	
 	if mantisa_desplazada="11111111111111111111111" then
 		resultado <= mantisa_desplazada;
-		carry<="00"; 
+		carry<="01"; 
 	-- Sumador de mantisas
 	else
 		mantisa_n_des<='0'& mantisa_no_desplazada;

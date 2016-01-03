@@ -1,12 +1,12 @@
 set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
--ifn seleccion_operacion.prj
+-ifn Seleccion_Operacion.prj
 -ifmt mixed
--ofn seleccion_operacion
+-ofn Seleccion_Operacion
 -ofmt NGC
 -p xc3s500e-4-fg320
--top seleccion_operacion
+-top Seleccion_Operacion
 -opt_mode Speed
 -opt_level 1
 -iuc NO

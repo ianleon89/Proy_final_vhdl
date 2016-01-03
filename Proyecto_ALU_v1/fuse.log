@@ -1,35 +1,20 @@
-Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR_isim_beh.exe -prj C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR_beh.prj work.PRUEBA_REAL_SUMADOR 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selecc_exponen_isim_beh.exe -prj C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selecc_exponen_beh.prj work.Prueba_selecc_exponen 
 ISim P.49d (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" into library work
-Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selecc_exponen.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity Comparador_Exp [comparador_exp_default]
-Compiling architecture behavioral of entity Selec_Comp_Mantisa [selec_comp_mantisa_default]
-Compiling architecture behavioral of entity Shiftter [shiftter_default]
-Compiling architecture behavioral of entity Sumador [sumador_default]
-Compiling architecture behavioral of entity Detector_de_Rebose [detector_de_rebose_default]
-Compiling architecture behavioral of entity Pressenta_resultados [pressenta_resultados_default]
-Compiling architecture behavioral of entity Sumador_iee_754 [sumador_iee_754_default]
-Compiling architecture behavior of entity prueba_real_sumador
+Compiling architecture behavioral of entity Selec_exponente [selec_exponente_default]
+Compiling architecture behavior of entity prueba_selecc_exponen
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\PRUEBA_REAL_SUMADOR_isim_beh.exe.sim\libPortability.dll".
-Compiled 20 VHDL Units
-Built simulation executable C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/PRUEBA_REAL_SUMADOR_isim_beh.exe
-Fuse Memory Usage: 36432 KB
-Fuse CPU Usage: 905 ms
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\Prueba_selecc_exponen_isim_beh.exe.sim\libPortability.dll".
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Prueba_selecc_exponen_isim_beh.exe
+Fuse Memory Usage: 28684 KB
+Fuse CPU Usage: 781 ms

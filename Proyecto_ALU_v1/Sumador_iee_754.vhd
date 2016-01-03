@@ -29,16 +29,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Sumador_iee_754 is
+entity ALU_IEEE_754 is
     Port ( mantisa_simple_presicion_uno : in  STD_LOGIC_VECTOR (22 downto 0);
 			  mantisa_simple_presicion_dos : in  STD_LOGIC_VECTOR (22 downto 0);
+			  operacion_pico_blaze: in std_logic_vector(1 downto 0);
+			  signo_simple_presicion_uno: in std_logic;
+			  signo_simple_presicion_dos: in std_logic;
            exponente_simple_presicion_uno : in  STD_LOGIC_VECTOR (7 downto 0);
 			  exponente_simple_presicion_dos : in  STD_LOGIC_VECTOR (7 downto 0);
 			  enable_754: in  STD_LOGIC;
+			  signo_ieee754: out std_logic;
            numero_sumado_ieee754 : out  STD_LOGIC_VECTOR (30 downto 0));
-end Sumador_iee_754;
+			 
+end ALU_IEEE_754;
 
-architecture Behavioral of Sumador_iee_754 is
+architecture Behavioral of ALU_IEEE_754 is
 
 
 -- Declaro componenetes
@@ -89,7 +94,7 @@ end component;
 component Detector_de_Rebose
 
 	 Port ( acarreo : in  STD_LOGIC_VECTOR (1 downto 0);
-           resultado_suma : in  STD_LOGIC_VECTOR (22 downto 0);
+           resultado_suma_resta_mul  : in  STD_LOGIC_VECTOR (22 downto 0);
 			  exponente_max : in std_logic_vector(7 downto 0);
 			  exponente_real : out STD_LOGIC_VECTOR (7 downto 0);
 			  error: out std_logic:='0';
@@ -99,26 +104,88 @@ end component;
 
 component Pressenta_resultados 
 	Port ( error_exp : in  STD_LOGIC;
+			  enable : in std_logic;
            cod_error : in  STD_LOGIC_VECTOR (6 downto 0);
            mantisa_real : in  STD_LOGIC_VECTOR (22 downto 0);
            exponente_real : in  STD_LOGIC_VECTOR (7 downto 0);
            numero_ieee_754 : out  STD_LOGIC_VECTOR (30 downto 0));
 end component;
 
+component Restador
+Port ( mantisa_desplazada_res : in  STD_LOGIC_VECTOR (22 downto 0);
+           mantisa_no_desplazada_res : in  STD_LOGIC_VECTOR (22 downto 0);
+           expnt_iguales : in  STD_LOGIC;
+           mantisas_iguales : in  STD_LOGIC;
+           resultado_resta : out  STD_LOGIC_VECTOR (22 downto 0);
+           carry_resta : out  STD_LOGIC_VECTOR (1 downto 0));
+end component;
+component Multiplicador 
+
+ Port ( 	  exponente1 : in  STD_LOGIC_VECTOR (7 downto 0);
+           exponente2 : in  STD_LOGIC_VECTOR (7 downto 0);
+           mantisa1 : in  STD_LOGIC_VECTOR (22 downto 0);
+           mantisa2 : in  STD_LOGIC_VECTOR (22 downto 0);
+           exponente_multiplicado : out  STD_LOGIC_VECTOR (7 downto 0);
+           mantisa_multiplicada : out  STD_LOGIC_VECTOR (22 downto 0);
+			  carry_mul : out STD_LOGIC_VECTOR (1 downto 0);
+           error : out  STD_LOGIC);
+			  
+end component;
+
+component Selec_exponente 
+ Port ( exponente_suma_resta : in  STD_LOGIC_VECTOR (7 downto 0);
+           exponente_mul : in  STD_LOGIC_VECTOR (7 downto 0);
+           operacion : in  STD_LOGIC_VECTOR (1 downto 0);
+           exponente_seleccionado : out  STD_LOGIC_VECTOR (7 downto 0));
+	
+end component;
+
+component Seleccion_Operacion
+Port ( expo1 : in  STD_LOGIC_VECTOR (7 downto 0);
+           expo2 : in  STD_LOGIC_VECTOR (7 downto 0);
+			  signo1: in STD_LOGIC;
+			  signo2: in STD_LOGIC;
+           operacion : in  STD_LOGIC_VECTOR (1 downto 0);
+           operacion_real : out  STD_LOGIC_VECTOR (1 downto 0);
+           signo : out  STD_LOGIC
+			  );
+end component;
+
+component Seleccion_suma_resta_mul
+Port ( 	  result : in  STD_LOGIC_VECTOR (68 downto 0);
+           carry : in  STD_LOGIC_VECTOR (5 downto 0);
+           selec : in  STD_LOGIC_VECTOR (1 downto 0);
+           mantisa_selec : out  STD_LOGIC_VECTOR (22 downto 0);
+           carry_selec : out  STD_LOGIC_VECTOR (1 downto 0));
+
+end component;
 --Senales
 	signal senal_emax : std_logic_vector(7 downto 0);
 	signal senal_exponente_real : std_logic_vector(7 downto 0);
+	signal senal_exp_mul : std_logic_vector(7 downto 0);
 	signal senal_numero_despl : std_logic_vector(7 downto 0);
+	signal senal_exp_sum_rest_mul: std_logic_vector(7 downto 0);
 	signal senal_mantisa_despl : std_logic_vector(22 downto 0);
 	signal senal_mantisa_shift : std_logic_vector(22 downto 0);
 	signal senal_mantisa_no_despl:std_logic_vector(22 downto 0);
 	signal senal_resultado_suma:std_logic_vector(22 downto 0);
+	signal senal_resultado_mul :  STD_LOGIC_VECTOR (22 downto 0);
 	signal senal_mantisa_real:std_logic_vector(22 downto 0);
 	signal senal_cod_error : std_logic_vector(6 downto 0);
-	signal senal_acarreo: std_logic_vector(1 downto 0);
+	signal senal_acarreo_suma: std_logic_vector(1 downto 0);
+	signal senal_operacion_real : std_logic_vector(1 downto 0);
+	signal senal_resultado_resta :  STD_LOGIC_VECTOR (22 downto 0);
+	signal senal_resultado_sum_rest_mul : STD_LOGIC_VECTOR (22 downto 0);
+   signal senal_acarreo_resta	 : STD_LOGIC_VECTOR (1 downto 0);
+	signal senal_acarreo	 : STD_LOGIC_VECTOR (1 downto 0);
+	signal senal_acarreo_mul : STD_LOGIC_VECTOR (1 downto 0);
 	signal senal_exp_iguales:std_logic ;
+	signal senal_mantisas_iguales:std_logic;
+	signal senal_signo:std_logic;
 	signal senal_error_exp_rebose:std_logic ;
+	signal senal_error_exponente:std_logic ;
 	signal senal_vcc: std_logic  ;
+   signal senal_error_mul:std_logic;
 
 begin
 	-- Componenete => Salida fisica
@@ -140,9 +207,20 @@ begin
        M => mantisa_simple_presicion_dos,
        Mantisa_despl=> senal_mantisa_despl,
        Mantisa_sin_despl=> senal_mantisa_no_despl,
-     --  Mantisa_iguales => 
+       Mantisa_iguales => senal_mantisas_iguales,
 		 cod_error=> senal_cod_error
 	);
+	
+	c21: Seleccion_Operacion port map (
+		 expo1=> exponente_simple_presicion_uno, --: in  STD_LOGIC_VECTOR (7 downto 0);
+       expo2=> exponente_simple_presicion_dos, --: in  STD_LOGIC_VECTOR (7 downto 0);
+		 signo1=> signo_simple_presicion_uno, --: in STD_LOGIC;
+		 signo2=> signo_simple_presicion_dos, --: in STD_LOGIC;
+       operacion => operacion_pico_blaze,  -- : in  STD_LOGIC_VECTOR (1 downto 0);
+       operacion_real=> senal_operacion_real ,-- : out  STD_LOGIC_VECTOR (1 downto 0);
+       signo=> signo_ieee754 --: out  STD_LOGIC
+	);
+	
 	c2: Shiftter port map(
 		mantisa=> senal_mantisa_despl, --: in  STD_LOGIC_VECTOR (22 downto 0);
       enable=> enable_754, --: in  STD_LOGIC;
@@ -154,20 +232,66 @@ begin
       mantisa_no_desplazada=>senal_mantisa_no_despl,-- : in  STD_LOGIC_VECTOR (22 downto 0);
 		ex_igl=>senal_exp_iguales,--: in std_logic;
       resultado=>senal_resultado_suma,-- : out  STD_LOGIC_VECTOR (22 downto 0);
-      carry=>senal_acarreo-- : out  STD_LOGIC_VECTOR (1 downto 0));
+      carry=>senal_acarreo_suma-- : out  STD_LOGIC_VECTOR (1 downto 0));
 	);
+	
+	c31: Restador port map (
+		mantisa_desplazada_res => senal_mantisa_shift ,	--: in  STD_LOGIC_VECTOR (22 downto 0);
+      mantisa_no_desplazada_res =>	senal_mantisa_no_despl,	-- : in  STD_LOGIC_VECTOR (22 downto 0);
+      expnt_iguales =>	senal_exp_iguales,	-- : in  STD_LOGIC;
+      mantisas_iguales => senal_mantisas_iguales ,	--: in  STD_LOGIC;
+      resultado_resta => senal_resultado_resta,	--: out  STD_LOGIC_VECTOR (22 downto 0);
+      carry_resta => senal_acarreo_resta		--: out  STD_LOGIC_VECTOR (1 downto 0));
+	
+	);
+	
+	d1: Multiplicador port map(
+			  exponente1 => exponente_simple_presicion_uno, --: in  STD_LOGIC_VECTOR (7 downto 0);
+           exponente2 => exponente_simple_presicion_dos,--: in  STD_LOGIC_VECTOR (7 downto 0);
+           mantisa1 => senal_mantisa_despl,--: in  STD_LOGIC_VECTOR (22 downto 0);
+           mantisa2 => senal_mantisa_no_despl,--: in  STD_LOGIC_VECTOR (22 downto 0);
+           exponente_multiplicado => senal_exp_mul,--: out  STD_LOGIC_VECTOR (7 downto 0);
+           mantisa_multiplicada => senal_resultado_mul,--: out  STD_LOGIC_VECTOR (22 downto 0);
+			  carry_mul => senal_acarreo_mul,--: out STD_LOGIC_VECTOR (1 downto 0);
+           error => senal_error_mul--: out  STD_LOGIC
+	);
+	
+	c32: Seleccion_suma_resta_mul port map (
+	
+		result(22 downto 0) => senal_resultado_suma, 			--: in  STD_LOGIC_VECTOR (45 downto 0);
+		result(45 downto 23) => senal_resultado_resta, 
+		result(68 downto 46) => senal_resultado_mul,
+      carry	(1 downto 0)=> senal_acarreo_suma,		-- : in  STD_LOGIC_VECTOR (3 downto 0);
+		carry	(3 downto 2)=> senal_acarreo_resta,
+		carry (5 downto 4)=> senal_acarreo_mul,
+      selec	=> senal_operacion_real,		-- : in  STD_LOGIC_VECTOR (1 downto 0);
+      mantisa_selec	=> senal_resultado_sum_rest_mul ,				-- : out  STD_LOGIC_VECTOR (22 downto 0);
+      carry_selec		=> senal_acarreo			-- : out  STD_LOGIC_VECTOR (1 downto 0));
+	
+	);
+	
+	c41: Selec_exponente port map(
+		exponente_suma_resta => senal_emax,-- : in  STD_LOGIC_VECTOR (7 downto 0);
+      exponente_mul=> senal_exp_mul, --: in  STD_LOGIC_VECTOR (7 downto 0);
+      operacion=> senal_operacion_real,  --: in  STD_LOGIC_VECTOR (1 downto 0);
+      exponente_seleccionado=> senal_exp_sum_rest_mul --: out  STD_LOGIC_VECTOR (7 downto 0));
+	
+	);
+	
 	c4: Detector_de_Rebose port map(
 		acarreo => senal_acarreo,--: in  STD_LOGIC_VECTOR (1 downto 0);
-      resultado_suma=>senal_resultado_suma, --: in  STD_LOGIC_VECTOR (22 downto 0);
-		exponente_max=>senal_emax,-- : in std_logic_vector(7 downto 0);
+      resultado_suma_resta_mul => senal_resultado_sum_rest_mul , --: in  STD_LOGIC_VECTOR (22 downto 0);
+		exponente_max=>senal_exp_sum_rest_mul,-- : in std_logic_vector(7 downto 0);
 		exponente_real=> senal_exponente_real,--: out STD_LOGIC_VECTOR (7 downto 0);
 		error=>senal_error_exp_rebose,--: out std_logic:='0';
       mantisa_real=>senal_mantisa_real-- out  STD_LOGIC_VECTOR (22 downto 0));
 	
 	);
-	
+		senal_error_exponente<= (not senal_operacion_real(1) and senal_error_exp_rebose) or (senal_operacion_real(1) and senal_error_mul);
 	c5: Pressenta_resultados port map(
-		error_exp=> senal_error_exp_rebose,--: in  STD_LOGIC;
+		
+		error_exp=> senal_error_exponente,--: in  STD_LOGIC;
+		enable => enable_754,-- : in std_logic;
       cod_error=>senal_cod_error, --: in  STD_LOGIC_VECTOR (6 downto 0);
       mantisa_real=> senal_mantisa_real,-- : in  STD_LOGIC_VECTOR (22 downto 0);
       exponente_real=>senal_exponente_real, --: in  STD_LOGIC_VECTOR (7 downto 0);
