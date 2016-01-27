@@ -1,0 +1,2 @@
+# Output products list for <My_DCM>
+My_DCM_flist.txt

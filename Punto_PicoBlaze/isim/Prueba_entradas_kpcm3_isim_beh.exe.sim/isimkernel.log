@@ -1,0 +1,31 @@
+Command line:
+   Prueba_entradas_kpcm3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55567
+
+Sat Jan 16 17:14:56 2016
+
+
+ Elaboration Time: 0.234375 sec
+
+ Current Memory Usage: 997.188 Meg
+
+ Total Signals          : 1677
+ Total Nets             : 1603
+ Total Signal Drivers   : 431
+ Total Blocks           : 420
+ Total Primitive Blocks : 312
+ Total Processes        : 414
+ Total Traceable Variables  : 592
+ Total Scalar Nets and Variables : 28122
+Total Line Count : 1458
+Total Line Count : 1458
+Total Line Count : 1458
+
+ Total Simulation Time: 40.9688 sec
+
+ Current Memory Usage: 525.304 Meg
+
+Sat Jan 16 17:18:33 2016
+

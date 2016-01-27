@@ -1,0 +1,668 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: Decoder_ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Decoder_ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Decoder_ALU"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Decoder_ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/Punto_PicoBlaze/Decoder_ALU.vhd" in Library work.
+Architecture behavioral of Entity decoder_alu is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Decoder_ALU> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Decoder_ALU> in library <work> (Architecture <behavioral>).
+Entity <Decoder_ALU> analyzed. Unit <Decoder_ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Decoder_ALU>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/Punto_PicoBlaze/Decoder_ALU.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_mssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_lsb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_mssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_msb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <operacion>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_lssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_lsb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_lssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_msb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <Decoder_ALU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 9
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 9
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Decoder_ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Decoder_ALU, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Decoder_ALU.ngr
+Top Level Output File Name         : Decoder_ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 78
+
+Cell Usage :
+# BELS                             : 83
+#      LUT2                        : 49
+#      LUT3                        : 10
+#      LUT4                        : 24
+# FlipFlops/Latches                : 66
+#      LD                          : 66
+# IO Buffers                       : 78
+#      IBUF                        : 12
+#      OBUF                        : 66
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       48  out of   4656     1%  
+ Number of 4 input LUTs:                 83  out of   9312     0%  
+ Number of IOs:                          78
+ Number of bonded IOBs:                  78  out of    232    33%  
+    IOB Flip Flops:                      66
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------+------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)  | Load  |
+---------------------------------------+------------------------+-------+
+operacion_not0001(operacion_not00012:O)| NONE(*)(operacion_0)   | 2     |
+op2_msb_not0001(op2_msb_not00011:O)    | NONE(*)(op2_msb_0)     | 8     |
+op2_lssb_not0001(op2_lssb_not00011:O)  | NONE(*)(op2_lssb_0)    | 8     |
+op2_lsb_not0001(op2_lsb_not00011:O)    | NONE(*)(op2_lsb_0)     | 8     |
+op1_lssb_not0001(op1_lssb_not00011:O)  | NONE(*)(op1_lssb_0)    | 8     |
+op1_msb_not0001(op1_msb_not00011:O)    | NONE(*)(op1_msb_0)     | 8     |
+op2_mssb_not0001(op2_mssb_not00011:O)  | NONE(*)(op2_mssb_0)    | 8     |
+op1_lsb_not0001(op1_lsb_not00011:O)    | NONE(*)(op1_lsb_0)     | 8     |
+op1_mssb_not0001(op1_mssb_not00012:O)  | NONE(*)(op1_mssb_0)    | 8     |
+---------------------------------------+------------------------+-------+
+(*) These 9 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 5.304ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'operacion_not0001'
+  Total number of paths / destination ports: 10 / 2
+-------------------------------------------------------------------------
+Offset:              5.046ns (Levels of Logic = 3)
+  Source:            selec<1> (PAD)
+  Destination:       operacion_0 (LATCH)
+  Destination Clock: operacion_not0001 falling
+
+  Data Path: selec<1> to operacion_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.218   1.226  selec_1_IBUF (selec_1_IBUF)
+     LUT2:I0->O           10   0.704   0.886  op1_mssb_not000111 (N01)
+     LUT4:I3->O            1   0.704   0.000  operacion_mux0000<1>1 (operacion_mux0000<1>)
+     LD:D                      0.308          operacion_1
+    ----------------------------------------
+    Total                      5.046ns (2.934ns logic, 2.112ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op2_msb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.161ns (Levels of Logic = 3)
+  Source:            selec<0> (PAD)
+  Destination:       op2_msb_0 (LATCH)
+  Destination Clock: op2_msb_not0001 falling
+
+  Data Path: selec<0> to op2_msb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.218   1.435  selec_0_IBUF (selec_0_IBUF)
+     LUT3:I0->O            8   0.704   0.792  operacion_not000111 (N2)
+     LUT3:I2->O            1   0.704   0.000  op2_msb_mux0000<7>1 (op2_msb_mux0000<7>)
+     LD:D                      0.308          op2_msb_7
+    ----------------------------------------
+    Total                      5.161ns (2.934ns logic, 2.227ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op2_lssb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.304ns (Levels of Logic = 3)
+  Source:            selec<3> (PAD)
+  Destination:       op2_lssb_0 (LATCH)
+  Destination Clock: op2_lssb_not0001 falling
+
+  Data Path: selec<3> to op2_lssb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.438  selec_3_IBUF (selec_3_IBUF)
+     LUT4:I0->O            8   0.704   0.932  op1_mssb_cmp_eq00051 (op1_mssb_cmp_eq0005)
+     LUT2:I0->O            1   0.704   0.000  op2_lssb_mux0000<7>1 (op2_lssb_mux0000<7>)
+     LD:D                      0.308          op2_lssb_7
+    ----------------------------------------
+    Total                      5.304ns (2.934ns logic, 2.370ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op2_lsb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.304ns (Levels of Logic = 3)
+  Source:            selec<3> (PAD)
+  Destination:       op2_lsb_0 (LATCH)
+  Destination Clock: op2_lsb_not0001 falling
+
+  Data Path: selec<3> to op2_lsb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.438  selec_3_IBUF (selec_3_IBUF)
+     LUT4:I0->O            8   0.704   0.932  op1_mssb_cmp_eq00041 (op1_mssb_cmp_eq0004)
+     LUT2:I0->O            1   0.704   0.000  op2_lsb_mux0000<7>1 (op2_lsb_mux0000<7>)
+     LD:D                      0.308          op2_lsb_7
+    ----------------------------------------
+    Total                      5.304ns (2.934ns logic, 2.370ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op1_lssb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.164ns (Levels of Logic = 3)
+  Source:            selec<3> (PAD)
+  Destination:       op1_lssb_0 (LATCH)
+  Destination Clock: op1_lssb_not0001 falling
+
+  Data Path: selec<3> to op1_lssb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.298  selec_3_IBUF (selec_3_IBUF)
+     LUT4:I2->O            8   0.704   0.932  op1_mssb_cmp_eq00021 (op1_mssb_cmp_eq0002)
+     LUT2:I0->O            1   0.704   0.000  op1_lssb_mux0000<7>1 (op1_lssb_mux0000<7>)
+     LD:D                      0.308          op1_lssb_7
+    ----------------------------------------
+    Total                      5.164ns (2.934ns logic, 2.230ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op1_msb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.164ns (Levels of Logic = 3)
+  Source:            selec<3> (PAD)
+  Destination:       op1_msb_0 (LATCH)
+  Destination Clock: op1_msb_not0001 falling
+
+  Data Path: selec<3> to op1_msb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.298  selec_3_IBUF (selec_3_IBUF)
+     LUT4:I2->O            8   0.704   0.932  op1_mssb_cmp_eq00031 (op1_mssb_cmp_eq0003)
+     LUT2:I0->O            1   0.704   0.000  op1_msb_mux0000<7>1 (op1_msb_mux0000<7>)
+     LD:D                      0.308          op1_msb_7
+    ----------------------------------------
+    Total                      5.164ns (2.934ns logic, 2.230ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op2_mssb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.301ns (Levels of Logic = 3)
+  Source:            selec<0> (PAD)
+  Destination:       op2_mssb_0 (LATCH)
+  Destination Clock: op2_mssb_not0001 falling
+
+  Data Path: selec<0> to op2_mssb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.218   1.435  selec_0_IBUF (selec_0_IBUF)
+     LUT4:I0->O            8   0.704   0.932  op1_mssb_cmp_eq00061 (op1_mssb_cmp_eq0006)
+     LUT2:I0->O            1   0.704   0.000  op2_mssb_mux0000<7>1 (op2_mssb_mux0000<7>)
+     LD:D                      0.308          op2_mssb_7
+    ----------------------------------------
+    Total                      5.301ns (2.934ns logic, 2.367ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op1_lsb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.046ns (Levels of Logic = 3)
+  Source:            selec<1> (PAD)
+  Destination:       op1_lsb_0 (LATCH)
+  Destination Clock: op1_lsb_not0001 falling
+
+  Data Path: selec<1> to op1_lsb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.218   1.226  selec_1_IBUF (selec_1_IBUF)
+     LUT2:I0->O           10   0.704   0.886  op1_mssb_not000111 (N01)
+     LUT4:I3->O            1   0.704   0.000  op1_lsb_mux0000<7>1 (op1_lsb_mux0000<7>)
+     LD:D                      0.308          op1_lsb_7
+    ----------------------------------------
+    Total                      5.046ns (2.934ns logic, 2.112ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'op1_mssb_not0001'
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Offset:              5.304ns (Levels of Logic = 3)
+  Source:            selec<3> (PAD)
+  Destination:       op1_mssb_0 (LATCH)
+  Destination Clock: op1_mssb_not0001 falling
+
+  Data Path: selec<3> to op1_mssb_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.438  selec_3_IBUF (selec_3_IBUF)
+     LUT4:I0->O            8   0.704   0.932  op1_mssb_cmp_eq00001 (op1_mssb_cmp_eq0000)
+     LUT2:I0->O            1   0.704   0.000  op1_mssb_mux0000<7>1 (op1_mssb_mux0000<7>)
+     LD:D                      0.308          op1_mssb_7
+    ----------------------------------------
+    Total                      5.304ns (2.934ns logic, 2.370ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op2_lssb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op2_lssb_7 (LATCH)
+  Destination:       op2_lssb<7> (PAD)
+  Source Clock:      op2_lssb_not0001 falling
+
+  Data Path: op2_lssb_7 to op2_lssb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op2_lssb_7 (op2_lssb_7)
+     OBUF:I->O                 3.272          op2_lssb_7_OBUF (op2_lssb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'operacion_not0001'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            operacion_1 (LATCH)
+  Destination:       operacion<1> (PAD)
+  Source Clock:      operacion_not0001 falling
+
+  Data Path: operacion_1 to operacion<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  operacion_1 (operacion_1)
+     OBUF:I->O                 3.272          operacion_1_OBUF (operacion<1>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op1_mssb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op1_mssb_7 (LATCH)
+  Destination:       op1_mssb<7> (PAD)
+  Source Clock:      op1_mssb_not0001 falling
+
+  Data Path: op1_mssb_7 to op1_mssb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op1_mssb_7 (op1_mssb_7)
+     OBUF:I->O                 3.272          op1_mssb_7_OBUF (op1_mssb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op1_lsb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op1_lsb_7 (LATCH)
+  Destination:       op1_lsb<7> (PAD)
+  Source Clock:      op1_lsb_not0001 falling
+
+  Data Path: op1_lsb_7 to op1_lsb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op1_lsb_7 (op1_lsb_7)
+     OBUF:I->O                 3.272          op1_lsb_7_OBUF (op1_lsb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op2_mssb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op2_mssb_7 (LATCH)
+  Destination:       op2_mssb<7> (PAD)
+  Source Clock:      op2_mssb_not0001 falling
+
+  Data Path: op2_mssb_7 to op2_mssb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op2_mssb_7 (op2_mssb_7)
+     OBUF:I->O                 3.272          op2_mssb_7_OBUF (op2_mssb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op1_msb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op1_msb_7 (LATCH)
+  Destination:       op1_msb<7> (PAD)
+  Source Clock:      op1_msb_not0001 falling
+
+  Data Path: op1_msb_7 to op1_msb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op1_msb_7 (op1_msb_7)
+     OBUF:I->O                 3.272          op1_msb_7_OBUF (op1_msb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op1_lssb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op1_lssb_7 (LATCH)
+  Destination:       op1_lssb<7> (PAD)
+  Source Clock:      op1_lssb_not0001 falling
+
+  Data Path: op1_lssb_7 to op1_lssb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op1_lssb_7 (op1_lssb_7)
+     OBUF:I->O                 3.272          op1_lssb_7_OBUF (op1_lssb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op2_lsb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op2_lsb_7 (LATCH)
+  Destination:       op2_lsb<7> (PAD)
+  Source Clock:      op2_lsb_not0001 falling
+
+  Data Path: op2_lsb_7 to op2_lsb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op2_lsb_7 (op2_lsb_7)
+     OBUF:I->O                 3.272          op2_lsb_7_OBUF (op2_lsb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'op2_msb_not0001'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            op2_msb_7 (LATCH)
+  Destination:       op2_msb<7> (PAD)
+  Source Clock:      op2_msb_not0001 falling
+
+  Data Path: op2_msb_7 to op2_msb<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  op2_msb_7 (op2_msb_7)
+     OBUF:I->O                 3.272          op2_msb_7_OBUF (op2_msb<7>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.62 secs
+ 
+--> 
+
+Total memory usage is 298180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

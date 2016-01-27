@@ -1,0 +1,2 @@
+vhdl isim_temp "Decoder_ALU.vhd"
+vhdl isim_temp "Prueba_deco_salida.vhd"

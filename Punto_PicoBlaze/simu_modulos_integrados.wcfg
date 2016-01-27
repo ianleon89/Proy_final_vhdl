@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="prueba_ensamblados" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/prueba_ensamblados/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp1/c5/numero_ieee_754" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">numero_ieee_754[30:0]</obj_property>
+      <obj_property name="ObjectShortName">numero_ieee_754[30:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/C122/entrada_resultado_alu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">entrada_resultado_alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">entrada_resultado_alu[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op1_lsb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_lsb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_lsb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op1_lssb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_lssb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_lssb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op1_mssb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_mssb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_mssb[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op1_msb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_msb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_msb[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op2_lsb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_lsb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_lsb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op2_lssb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_lssb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_lssb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op2_mssb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_mssb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_mssb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/op2_msb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_msb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_msb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/c121/operacion" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operacion[1:0]</obj_property>
+      <obj_property name="ObjectShortName">operacion[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/interrupt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt</obj_property>
+      <obj_property name="ObjectShortName">interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/interrupt_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt_ack</obj_property>
+      <obj_property name="ObjectShortName">interrupt_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp1/c5/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp1/c5/interrupt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt</obj_property>
+      <obj_property name="ObjectShortName">interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/port_id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_ensamblados/uut/comp2/write_strobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_strobe</obj_property>
+      <obj_property name="ObjectShortName">write_strobe</obj_property>
+   </wvobject>
+</wave_config>

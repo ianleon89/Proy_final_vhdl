@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/xst"
+elaborate
+-ifn Seleccion_Operacion.prj
+-ifmt mixed

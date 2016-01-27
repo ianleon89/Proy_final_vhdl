@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_entradas_kpcm3_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="prueba_entradas_kpcm3" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/prueba_entradas_kpcm3/entrada_resultado_alu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">entrada_resultado_alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">entrada_resultado_alu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/interrupt_event" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">interrupt_event</obj_property>
+      <obj_property name="ObjectShortName">interrupt_event</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/operando1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operando1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operando1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/operando2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operando2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operando2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/operacion" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operacion[1:0]</obj_property>
+      <obj_property name="ObjectShortName">operacion[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/enable_alu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_alu</obj_property>
+      <obj_property name="ObjectShortName">enable_alu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/uut/port_id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/uut/in_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/uut/read_strobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_strobe</obj_property>
+      <obj_property name="ObjectShortName">read_strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_entradas_kpcm3/uut/processor/out_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
+   </wvobject>
+</wave_config>

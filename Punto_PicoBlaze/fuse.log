@@ -1,0 +1,80 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_isim_beh.exe -prj C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_beh.prj work.Prueba_ensamblados 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_Inputs.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_ALU.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Sumador.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Shiftter.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Selec_exponente.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Seleccion_suma_resta.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/seleccion_operacion.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Restador.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Pressenta_resultados.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Multiplicador.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Detector_de_Rebose.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Comparador_Exp.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../../../practica1/KCPSM3/VHDL/kcpsm3.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3_int_test.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/../Proyecto_ALU_v1/Sumador_iee_754.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Proyecto_Ivan_Leon.vhd" into library work
+Parsing VHDL file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity Comparador_Exp [comparador_exp_default]
+Compiling architecture behavioral of entity Selec_Comp_Mantisa [selec_comp_mantisa_default]
+Compiling architecture behavioral of entity Seleccion_Operacion [seleccion_operacion_default]
+Compiling architecture behavioral of entity Shiftter [shiftter_default]
+Compiling architecture behavioral of entity Sumador [sumador_default]
+Compiling architecture behavioral of entity Restador [restador_default]
+Compiling architecture behavioral of entity Multiplicador [multiplicador_default]
+Compiling architecture behavioral of entity Seleccion_suma_resta_mul [seleccion_suma_resta_mul_default]
+Compiling architecture behavioral of entity Selec_exponente [selec_exponente_default]
+Compiling architecture behavioral of entity Detector_de_Rebose [detector_de_rebose_default]
+Compiling architecture behavioral of entity Pressenta_resultados [pressenta_resultados_default]
+Compiling architecture behavioral of entity ALU_iee_754 [alu_iee_754_default]
+Compiling package vcomponents
+Compiling architecture behavioral of entity Decoder_ALU [decoder_alu_default]
+Compiling architecture behavioral of entity Decoder_Inputs [decoder_inputs_default]
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0001")(0,3)\]
+Compiling architecture fdr_v of entity FDR [\FDR('0')\]
+Compiling architecture fds_v of entity FDS [\FDS('1')\]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("0000000010000000")(0,15)\]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture fde_v of entity FDE [\FDE('0')\]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("00000100")(0,7)\]
+Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("1101")(0,3)\]
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture fdrse_v of entity FDRSE [\FDRSE('0')\]
+Compiling architecture ram16x1d_v of entity RAM16X1D [\RAM16X1D("0000000000000000")\]
+Compiling architecture ram64x1s_v of entity RAM64X1S [\RAM64X1S("000000000000000000000...]
+Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
+Compiling architecture ram32x1s_v of entity RAM32X1S [\RAM32X1S("000000000000000000000...]
+Compiling architecture low_level_definition of entity kcpsm3 [kcpsm3_default]
+Compiling architecture ramb16_s18_v of entity RAMB16_S18 [\RAMB16_S18("0000000000000000000...]
+Compiling architecture low_level_definition of entity int_test [int_test_default]
+Compiling architecture behavioral of entity kcpsm3_int_test [kcpsm3_int_test_default]
+Compiling architecture behavioral of entity Proyecto_Ivan_Leon [proyecto_ivan_leon_default]
+Compiling architecture behavior of entity prueba_ensamblados
+Time Resolution for simulation is 1ps.
+Waiting for 27 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\Prueba_ensamblados_isim_beh.exe.sim\libPortability.dll".
+Compiled 147 VHDL Units
+Built simulation executable C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_isim_beh.exe
+Fuse Memory Usage: 70788 KB
+Fuse CPU Usage: 2625 ms

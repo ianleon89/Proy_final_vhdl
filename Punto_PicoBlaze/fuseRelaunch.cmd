@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_isim_beh.exe" -prj "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Prueba_ensamblados_beh.prj" "work.Prueba_ensamblados" 

@@ -1,0 +1,186 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd" in Library work.
+Entity <Comparador_Exp> compiled.
+Entity <Comparador_Exp> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" in Library work.
+Architecture behavioral of Entity selec_comp_mantisa is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd" in Library work.
+Entity <Seleccion_Operacion> compiled.
+Entity <Seleccion_Operacion> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" in Library work.
+Entity <Shiftter> compiled.
+Entity <Shiftter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd" in Library work.
+Entity <Sumador> compiled.
+Entity <Sumador> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd" in Library work.
+Entity <Restador> compiled.
+Entity <Restador> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd" in Library work.
+Entity <Multiplicador> compiled.
+Entity <Multiplicador> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd" in Library work.
+Entity <Seleccion_suma_resta_mul> compiled.
+Entity <Seleccion_suma_resta_mul> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd" in Library work.
+Entity <Selec_exponente> compiled.
+Entity <Selec_exponente> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd" in Library work.
+Entity <Detector_de_Rebose> compiled.
+Entity <Detector_de_Rebose> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd" in Library work.
+Architecture behavioral of Entity pressenta_resultados is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" in Library work.
+Entity <ALU_iee_754> compiled.
+ERROR:HDLParsers:3010 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 46. Entity Sumador_iee_754 does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 51. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 51. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 55. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 55. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 63. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 63. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 69. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 69. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 78. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 78. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 79. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 79. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 87. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 87. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 89. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 89. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 96. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 96. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 98. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 98. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 100. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 100. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 106. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 106. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 107. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 107. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 108. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 108. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 115. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 115. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 117. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 117. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 124. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 124. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 131. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 131. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 136. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 136. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 144. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 144. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 146. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 146. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 155. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 155. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 163. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 163. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 172. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 172. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 182. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 182. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 192. Undefined symbol 'senal_vcc'.
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 195. Undefined symbol 'exponente_simple_presicion_uno'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 195. exponente_simple_presicion_uno: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 196. Undefined symbol 'exponente_simple_presicion_dos'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 196. exponente_simple_presicion_dos: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 197. Undefined symbol 'senal_emax'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 197. senal_emax: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 198. Undefined symbol 'senal_numero_despl'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 198. senal_numero_despl: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 201. Undefined symbol 'senal_exp_iguales'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 201. senal_exp_iguales: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 206. Undefined symbol 'mantisa_simple_presicion_uno'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 206. mantisa_simple_presicion_uno: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 207. Undefined symbol 'mantisa_simple_presicion_dos'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 207. mantisa_simple_presicion_dos: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 208. Undefined symbol 'senal_mantisa_despl'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 208. senal_mantisa_despl: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 209. Undefined symbol 'senal_mantisa_no_despl'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 209. senal_mantisa_no_despl: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 210. Undefined symbol 'senal_mantisas_iguales'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 210. senal_mantisas_iguales: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 212. Undefined symbol 'senal_cod_error'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 212. senal_cod_error: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 217. Undefined symbol 'signo_simple_presicion_uno'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 217. signo_simple_presicion_uno: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 218. Undefined symbol 'signo_simple_presicion_dos'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 218. signo_simple_presicion_dos: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 219. Undefined symbol 'operacion_pico_blaze'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 219. operacion_pico_blaze: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 220. Undefined symbol 'senal_operacion_real'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 220. senal_operacion_real: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 222. Undefined symbol 'signo_ieee754'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 222. signo_ieee754: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 226. Undefined symbol 'enable_754'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 226. enable_754: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 229. Undefined symbol 'senal_mantisa_shift'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 229. senal_mantisa_shift: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 234. Undefined symbol 'senal_resultado_suma'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 234. senal_resultado_suma: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 236. Undefined symbol 'senal_acarreo_suma'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 236. senal_acarreo_suma: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 243. Undefined symbol 'senal_resultado_resta'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 243. senal_resultado_resta: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 246. Undefined symbol 'senal_acarreo_resta'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 246. senal_acarreo_resta: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 253. Undefined symbol 'senal_exp_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 253. senal_exp_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 254. Undefined symbol 'senal_resultado_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 254. senal_resultado_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 255. Undefined symbol 'senal_acarreo_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 255. senal_acarreo_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 257. Undefined symbol 'senal_error_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 257. senal_error_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 268. Undefined symbol 'senal_resultado_sum_rest_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 268. senal_resultado_sum_rest_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 271. Undefined symbol 'senal_acarreo'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 271. senal_acarreo: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 279. Undefined symbol 'senal_exp_sum_rest_mul'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 279. senal_exp_sum_rest_mul: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 285. Undefined symbol 'senal_exponente_real'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 285. senal_exponente_real: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 286. Undefined symbol 'senal_error_exp_rebose'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 286. senal_error_exp_rebose: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 289. Undefined symbol 'senal_mantisa_real'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 289. senal_mantisa_real: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 290. Undefined symbol 'senal_error_exponente'.
+ERROR:HDLParsers:808 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 290. not can not have such operands in this context.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 293. senal_error_exponente: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 299. Undefined symbol 'numero_sumado_ieee754'.
+ERROR:HDLParsers:1209 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" Line 299. numero_sumado_ieee754: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> 
+
+Total memory usage is 265624 kilobytes
+
+Number of errors   :  121 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

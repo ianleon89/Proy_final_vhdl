@@ -1,0 +1,2 @@
+vhdl isim_temp "../Proyecto_ALU_v1/Pressenta_resultados.vhd"
+vhdl isim_temp "Prueba_presentarest.vhd"

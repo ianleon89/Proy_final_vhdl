@@ -1,0 +1,1417 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Proyecto_Ivan_Leon.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Proyecto_Ivan_Leon.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Proyecto_Ivan_Leon"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Proyecto_Ivan_Leon
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_ALU.vhd" in Library work.
+Architecture behavioral of Entity decoder_alu is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_Inputs.vhd" in Library work.
+Architecture behavioral of Entity decoder_inputs is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" in Library work.
+Architecture low_level_definition of Entity kcpsm3 is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" in Library work.
+Architecture low_level_definition of Entity int_test is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd" in Library work.
+Architecture behavioral of Entity comparador_exp is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd" in Library work.
+Architecture behavioral of Entity selec_comp_mantisa is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd" in Library work.
+Architecture behavioral of Entity seleccion_operacion is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" in Library work.
+Architecture behavioral of Entity shiftter is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd" in Library work.
+Architecture behavioral of Entity restador is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd" in Library work.
+Architecture behavioral of Entity multiplicador is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd" in Library work.
+Architecture behavioral of Entity seleccion_suma_resta_mul is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd" in Library work.
+Architecture behavioral of Entity selec_exponente is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd" in Library work.
+Architecture behavioral of Entity detector_de_rebose is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd" in Library work.
+Architecture behavioral of Entity pressenta_resultados is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd" in Library work.
+Architecture behavioral of Entity alu_iee_754 is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3_int_test.vhd" in Library work.
+Architecture behavioral of Entity kcpsm3_int_test is up to date.
+Compiling vhdl file "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Proyecto_Ivan_Leon.vhd" in Library work.
+Architecture behavioral of Entity proyecto_ivan_leon is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Proyecto_Ivan_Leon> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU_iee_754> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kcpsm3_int_test> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comparador_Exp> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Selec_Comp_Mantisa> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Seleccion_Operacion> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Shiftter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sumador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Restador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Multiplicador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Seleccion_suma_resta_mul> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Selec_exponente> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Detector_de_Rebose> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Pressenta_resultados> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder_ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder_Inputs> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kcpsm3> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <int_test> in library <work> (architecture <low_level_definition>).
+
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 289: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1200: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 452: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 483: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 606: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 614: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 381: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 423: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 525: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 597: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 682: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1109: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1136: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1220: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1269: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 332: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 371: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 403: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 413: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 432: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 442: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 468: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 493: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 554: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 587: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 794: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 871: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 886: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 937: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 956: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1244: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1301: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1311: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1327: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1415: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1448: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 828: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 1368: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd" line 906: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_00> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_01> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_02> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_03> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_04> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_05> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_06> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INITP_07> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_00> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_01> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_02> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_03> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_04> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_05> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_06> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_07> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_08> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_09> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0A> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0B> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0C> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0D> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0E> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_0F> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_10> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_11> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_12> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_13> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_14> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_15> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_16> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_17> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_18> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_19> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1A> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1B> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1C> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1D> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1E> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_1F> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_20> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_21> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_22> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_23> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_24> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_25> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_26> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_27> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_28> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_29> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2A> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2B> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2C> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2D> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2E> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_2F> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_30> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_31> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_32> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_33> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_34> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_35> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_36> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_37> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_38> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_39> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3A> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3B> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3C> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3D> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3E> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd" line 182: attribute on instance <INIT_3F> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Proyecto_Ivan_Leon> in library <work> (Architecture <behavioral>).
+Entity <Proyecto_Ivan_Leon> analyzed. Unit <Proyecto_Ivan_Leon> generated.
+
+Analyzing Entity <ALU_iee_754> in library <work> (Architecture <behavioral>).
+Entity <ALU_iee_754> analyzed. Unit <ALU_iee_754> generated.
+
+Analyzing Entity <Comparador_Exp> in library <work> (Architecture <behavioral>).
+Entity <Comparador_Exp> analyzed. Unit <Comparador_Exp> generated.
+
+Analyzing Entity <Selec_Comp_Mantisa> in library <work> (Architecture <behavioral>).
+Entity <Selec_Comp_Mantisa> analyzed. Unit <Selec_Comp_Mantisa> generated.
+
+Analyzing Entity <Seleccion_Operacion> in library <work> (Architecture <behavioral>).
+Entity <Seleccion_Operacion> analyzed. Unit <Seleccion_Operacion> generated.
+
+Analyzing Entity <Shiftter> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd" line 58: Width mismatch. <mantisa_despl> has a width of 23 bits but assigned expression is 24-bit wide.
+Entity <Shiftter> analyzed. Unit <Shiftter> generated.
+
+Analyzing Entity <Sumador> in library <work> (Architecture <behavioral>).
+Entity <Sumador> analyzed. Unit <Sumador> generated.
+
+Analyzing Entity <Restador> in library <work> (Architecture <behavioral>).
+Entity <Restador> analyzed. Unit <Restador> generated.
+
+Analyzing Entity <Multiplicador> in library <work> (Architecture <behavioral>).
+Entity <Multiplicador> analyzed. Unit <Multiplicador> generated.
+
+Analyzing Entity <Seleccion_suma_resta_mul> in library <work> (Architecture <behavioral>).
+Entity <Seleccion_suma_resta_mul> analyzed. Unit <Seleccion_suma_resta_mul> generated.
+
+Analyzing Entity <Selec_exponente> in library <work> (Architecture <behavioral>).
+Entity <Selec_exponente> analyzed. Unit <Selec_exponente> generated.
+
+Analyzing Entity <Detector_de_Rebose> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <count> in unit <Detector_de_Rebose> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flag> in unit <Detector_de_Rebose> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <Detector_de_Rebose> analyzed. Unit <Detector_de_Rebose> generated.
+
+Analyzing Entity <Pressenta_resultados> in library <work> (Architecture <behavioral>).
+Entity <Pressenta_resultados> analyzed. Unit <Pressenta_resultados> generated.
+
+Analyzing Entity <kcpsm3_int_test> in library <work> (Architecture <behavioral>).
+Entity <kcpsm3_int_test> analyzed. Unit <kcpsm3_int_test> generated.
+
+Analyzing Entity <Decoder_ALU> in library <work> (Architecture <behavioral>).
+Entity <Decoder_ALU> analyzed. Unit <Decoder_ALU> generated.
+
+Analyzing Entity <Decoder_Inputs> in library <work> (Architecture <behavioral>).
+Entity <Decoder_Inputs> analyzed. Unit <Decoder_Inputs> generated.
+
+Analyzing Entity <kcpsm3> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  1" for instance <t_state_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <toggle_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1" for instance <reset_flop1> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1" for instance <reset_flop2> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_capture_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0080" for instance <int_pulse_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <ack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shadow_carry_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shadow_zero_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  EAAA" for instance <int_update_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  04" for instance <int_value_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_enable_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  7400" for instance <move_group_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  5A3C" for instance <condition_met_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  2F" for instance <normal_count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1000" for instance <call_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  5400" for instance <push_pop_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  D" for instance <valid_move_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  41FC" for instance <flag_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <flag_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8" for instance <flag_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0001" for instance <low_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0001" for instance <high_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  3F" for instance <sel_shadow_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <zero_flag_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6996" for instance <low_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6996" for instance <high_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  F3FF" for instance <sel_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  F3" for instance <sel_arith_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  C" for instance <sel_shift_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  3" for instance <sel_shadow_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <carry_flag_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[0].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[0].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[1].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[1].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[2].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[2].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[3].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[3].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[4].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[4].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[5].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[5].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[5].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[6].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[6].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[6].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[7].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[7].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[7].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[8].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[8].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[8].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[9].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[9].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[9].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0145" for instance <register_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <register_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8" for instance <register_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[0].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[1].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[2].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[3].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[4].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[5].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[5].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[6].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[6].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[7].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[7].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0400" for instance <memory_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <memory_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8000" for instance <memory_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[0].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[0].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[1].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[1].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[2].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[2].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[3].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[3].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[4].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[4].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[5].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[5].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[6].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[6].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[7].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[7].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FFE2" for instance <sel_logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[0].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[0].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[1].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[1].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[2].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[2].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[3].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[3].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[4].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[4].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[5].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[5].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[6].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[6].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[7].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[7].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <high_shift_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <low_shift_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pipeline_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[0].lsb_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[0].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[1].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[1].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[2].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[2].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[3].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[3].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[4].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[4].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[5].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[5].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[6].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[6].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[7].msb_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[7].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1F" for instance <sel_arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6C" for instance <arith_loop[0].lsb_arith.arith_carry_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[0].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[0].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[1].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[1].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[2].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[2].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[3].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[3].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[4].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[4].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[5].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[5].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[6].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[6].arith_flop> in unit <kcpsm3>.
+WARNING:Xst:1961 - The length of the hex value for the attribute INIT on instance arith_loop[7].msb_arith.arith_carry_out_lut should be 2 bits long. The current value set is 4 bits long.  Value has been truncated
+    Set user-defined property "INIT =  2" for instance <arith_loop[7].msb_arith.arith_carry_out_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[7].msb_arith.arith_carry_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[7].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[7].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0002" for instance <input_fetch_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <sel_group_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[0].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[0].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[1].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[1].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[2].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[2].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[3].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[3].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[4].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[4].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[5].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[5].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[6].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[6].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[7].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[7].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0010" for instance <io_decode_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  4000" for instance <write_active_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <write_strobe_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0100" for instance <read_active_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <read_strobe_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[0].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[0].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[1].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[1].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[2].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[2].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[3].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[3].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[4].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[4].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[5].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[5].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[6].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[6].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[7].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[7].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[8].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[8].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[9].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[9].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6555" for instance <stack_count_loop[0].lsb_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[1].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[2].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[3].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[4].msb_stack_count.count_lut> in unit <kcpsm3>.
+Entity <kcpsm3> analyzed. Unit <kcpsm3> generated.
+
+Analyzing Entity <int_test> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  00000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_00 =  000000000000000000000000000000000000000000000000C038E38F88888888" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INITP_07 =  C000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_00 =  C0080044C00700FBC00600BAC005007FC0040044C00300F8C00200A7C0010064" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_01 =  80014103410241014100401AC00900024017C00900014014C00900004015C001" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_0F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_10 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_11 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_12 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_13 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_14 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_15 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_16 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_17 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_18 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_19 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "INIT_3F =  401B000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "SRVAL =  00000" for instance <ram_1024_x_18> in unit <int_test>.
+    Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <ram_1024_x_18> in unit <int_test>.
+Entity <int_test> analyzed. Unit <int_test> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comparador_Exp>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Comparador_Exp.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <exp_iguales>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <despl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit subtractor for signal <despl$share0000> created at line 80.
+    Found 8-bit comparator equal for signal <eMax$cmp_eq0000> created at line 61.
+    Found 8-bit comparator greater for signal <n_despl$cmp_gt0000> created at line 80.
+    Found 8-bit comparator greater for signal <n_despl$cmp_gt0001> created at line 89.
+    Found 9-bit comparator less for signal <n_despl$cmp_lt0000> created at line 92.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <Comparador_Exp> synthesized.
+
+
+Synthesizing Unit <Selec_Comp_Mantisa>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <oper_ok>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 7-bit latch for signal <cod_error>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit comparator equal for signal <Mantisa_despl$cmp_eq0000> created at line 209.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0000> created at line 204.
+    Found 8-bit comparator greater for signal <Mantisa_despl$cmp_gt0001> created at line 206.
+    Found 23-bit comparator greater for signal <Mantisa_despl$cmp_gt0002> created at line 212.
+    Found 23-bit comparator equal for signal <Mantisa_iguales$cmp_eq0000> created at line 228.
+    Summary:
+	inferred   5 Comparator(s).
+Unit <Selec_Comp_Mantisa> synthesized.
+
+
+Synthesizing Unit <Seleccion_Operacion>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/seleccion_operacion.vhd".
+    Found 23-bit comparator equal for signal <signo$cmp_eq0002> created at line 161.
+    Found 8-bit comparator greater for signal <signo$cmp_gt0000> created at line 51.
+    Found 8-bit comparator greater for signal <signo$cmp_gt0001> created at line 94.
+    Found 23-bit comparator greater for signal <signo$cmp_gt0002> created at line 155.
+    Found 23-bit comparator greater for signal <signo$cmp_gt0003> created at line 158.
+    Found 1-bit xor2 for signal <signo$xor0000> created at line 63.
+    Summary:
+	inferred   5 Comparator(s).
+Unit <Seleccion_Operacion> synthesized.
+
+
+Synthesizing Unit <Shiftter>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Shiftter.vhd".
+WARNING:Xst:1780 - Signal <m_des> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 24-bit shifter logical right for signal <mantisa_despl$shift0001> created at line 58.
+    Found 8-bit subtractor for signal <mantisa_despl$sub0000> created at line 58.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <Shiftter> synthesized.
+
+
+Synthesizing Unit <Sumador>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador.vhd".
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_des>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_n_des>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_sumada>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_2_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bit_2_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 24-bit adder for signal <mantisa_sumada$add0000> created at line 75.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Sumador> synthesized.
+
+
+Synthesizing Unit <Restador>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Restador.vhd".
+WARNING:Xst:1780 - Signal <mantisa_des_not> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bit_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bit_1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_des>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_restada>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 24-bit latch for signal <mantisa_no_desplazada>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 24-bit subtractor for signal <mantisa_restada$addsub0000> created at line 73.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Restador> synthesized.
+
+
+Synthesizing Unit <Multiplicador>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Multiplicador.vhd".
+WARNING:Xst:646 - Signal <mantisa_mul<22:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 48-bit latch for signal <mantisa_mul>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <exponente_mul>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit adder for signal <exponente_mul$addsub0000> created at line 61.
+    Found 8-bit subtractor for signal <exponente_mul$sub0000> created at line 61.
+    Found 24x24-bit multiplier for signal <mantisa_mul$mult0000> created at line 70.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Multiplicador> synthesized.
+
+
+Synthesizing Unit <Seleccion_suma_resta_mul>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Seleccion_suma_resta.vhd".
+    Found 23-bit 4-to-1 multiplexer for signal <mantisa_selec>.
+    Found 2-bit 4-to-1 multiplexer for signal <carry_selec>.
+    Summary:
+	inferred  25 Multiplexer(s).
+Unit <Seleccion_suma_resta_mul> synthesized.
+
+
+Synthesizing Unit <Selec_exponente>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Selec_exponente.vhd".
+Unit <Selec_exponente> synthesized.
+
+
+Synthesizing Unit <Detector_de_Rebose>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Detector_de_Rebose.vhd".
+WARNING:Xst:646 - Signal <senal_resultado<22>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <senal_exponente_resultado> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 23-bit latch for signal <senal_resultado>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit adder for signal <count$add0001> created at line 88.
+    Found 2-bit adder for signal <count$addsub0001> created at line 88.
+    Found 3-bit adder for signal <count$addsub0003> created at line 88.
+    Found 4-bit adder for signal <count$addsub0004> created at line 88.
+    Found 3-bit adder for signal <count$addsub0005> created at line 88.
+    Found 4-bit adder for signal <count$addsub0006> created at line 88.
+    Found 3-bit adder for signal <count$addsub0007> created at line 88.
+    Found 4-bit adder for signal <count$addsub0008> created at line 88.
+    Found 4-bit adder for signal <count$addsub0010> created at line 88.
+    Found 4-bit adder for signal <count$addsub0011> created at line 88.
+    Found 4-bit adder for signal <count$addsub0012> created at line 88.
+    Found 4-bit adder for signal <count$addsub0013> created at line 88.
+    Found 5-bit adder for signal <count$addsub0014> created at line 88.
+    Found 5-bit adder for signal <count$addsub0016> created at line 88.
+    Found 5-bit adder for signal <count$addsub0017> created at line 88.
+    Found 5-bit adder for signal <count$addsub0018> created at line 88.
+    Found 5-bit adder for signal <count$addsub0019> created at line 88.
+    Found 5-bit adder for signal <count$addsub0020> created at line 88.
+    Found 1-bit adder carry out for signal <count$addsub0021> created at line 88.
+    Found 2-bit adder carry out for signal <count$addsub0022> created at line 88.
+    Found 3-bit adder carry out for signal <count$addsub0023> created at line 88.
+    Found 4-bit adder carry out for signal <count$addsub0024> created at line 88.
+    Found 9-bit comparator greater for signal <error$cmp_gt0000> created at line 99.
+    Found 9-bit comparator less for signal <error$cmp_lt0000> created at line 96.
+    Found 8-bit subtractor for signal <exponente_real$addsub0000> created at line 97.
+    Found 8-bit addsub for signal <exponente_real$share0000> created at line 61.
+    Summary:
+	inferred  24 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Detector_de_Rebose> synthesized.
+
+
+Synthesizing Unit <Pressenta_resultados>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Pressenta_resultados.vhd".
+Unit <Pressenta_resultados> synthesized.
+
+
+Synthesizing Unit <Decoder_ALU>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_ALU.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_mssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_lsb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_mssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_msb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <operacion>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op1_lssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_lsb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_alu>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_lssb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <op2_msb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <Decoder_ALU> synthesized.
+
+
+Synthesizing Unit <Decoder_Inputs>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Decoder_Inputs.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <Salida_apicob>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit 4-to-1 multiplexer for signal <Salida_apicob$mux0001> created at line 45.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Decoder_Inputs> synthesized.
+
+
+Synthesizing Unit <ALU_iee_754>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Proyecto_ALU_v1/Sumador_iee_754.vhd".
+WARNING:Xst:646 - Signal <senal_vcc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <senal_signo> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU_iee_754> synthesized.
+
+
+Synthesizing Unit <kcpsm3>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/practica1/KCPSM3/VHDL/kcpsm3.vhd".
+Unit <kcpsm3> synthesized.
+
+
+Synthesizing Unit <int_test>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3.vhd".
+Unit <int_test> synthesized.
+
+
+Synthesizing Unit <kcpsm3_int_test>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/kcpsm3_int_test.vhd".
+WARNING:Xst:646 - Signal <port_id<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <interrupt>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <kcpsm3_int_test> synthesized.
+
+
+Synthesizing Unit <Proyecto_Ivan_Leon>.
+    Related source file is "C:/Users/ANDRES/Documents/UBA/Ibimestre/circuitoslogicosprogramables/ProyFinal/programa/Punto_PicoBlaze/Proyecto_Ivan_Leon.vhd".
+Unit <Proyecto_Ivan_Leon> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 24x24-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 30
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 24-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 3-bit adder                                           : 3
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 7
+ 4-bit adder carry out                                 : 1
+ 5-bit adder                                           : 7
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 4
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 27
+ 1-bit latch                                           : 6
+ 2-bit latch                                           : 1
+ 23-bit latch                                          : 1
+ 24-bit latch                                          : 6
+ 48-bit latch                                          : 1
+ 7-bit latch                                           : 1
+ 8-bit latch                                           : 11
+# Comparators                                          : 16
+ 23-bit comparator equal                               : 2
+ 23-bit comparator greater                             : 3
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 6
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 3
+ 2-bit 4-to-1 multiplexer                              : 1
+ 23-bit 4-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 24x24-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 30
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 24-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 3-bit adder                                           : 3
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 7
+ 4-bit adder carry out                                 : 1
+ 5-bit adder                                           : 7
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 4
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+# Latches                                              : 27
+ 1-bit latch                                           : 6
+ 2-bit latch                                           : 1
+ 23-bit latch                                          : 1
+ 24-bit latch                                          : 6
+ 48-bit latch                                          : 1
+ 7-bit latch                                           : 1
+ 8-bit latch                                           : 11
+# Comparators                                          : 16
+ 23-bit comparator equal                               : 2
+ 23-bit comparator greater                             : 3
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 6
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 3
+ 2-bit 4-to-1 multiplexer                              : 1
+ 23-bit 4-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <mantisa_n_des_23> (without init value) has a constant value of 0 in block <Sumador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mantisa_des_23> (without init value) has a constant value of 0 in block <Sumador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mantisa_no_desplazada_23> (without init value) has a constant value of 0 in block <Restador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mantisa_des_23> (without init value) has a constant value of 0 in block <Restador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mantisa_mul_0> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_1> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_2> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_3> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_4> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_5> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_6> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_7> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_8> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_9> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_10> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_11> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_12> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_13> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_14> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_15> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_16> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_17> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_18> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_19> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_20> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_21> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <mantisa_mul_22> of sequential type is unconnected in block <Multiplicador>.
+WARNING:Xst:2677 - Node <senal_resultado_22> of sequential type is unconnected in block <Detector_de_Rebose>.
+
+Optimizing unit <Proyecto_Ivan_Leon> ...
+
+Optimizing unit <Seleccion_Operacion> ...
+
+Optimizing unit <Shiftter> ...
+
+Optimizing unit <kcpsm3> ...
+
+Optimizing unit <Comparador_Exp> ...
+
+Optimizing unit <Selec_Comp_Mantisa> ...
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_0> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_1> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_2> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_3> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_4> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_5> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+WARNING:Xst:1294 - Latch <cod_error_6> is equivalent to a wire in block <Selec_Comp_Mantisa>.
+
+Optimizing unit <Sumador> ...
+
+Optimizing unit <Restador> ...
+
+Optimizing unit <Multiplicador> ...
+
+Optimizing unit <Detector_de_Rebose> ...
+
+Optimizing unit <Decoder_ALU> ...
+
+Optimizing unit <ALU_iee_754> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Proyecto_Ivan_Leon, actual ratio is 20.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Proyecto_Ivan_Leon.ngr
+Top Level Output File Name         : Proyecto_Ivan_Leon
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 1
+
+Cell Usage :
+# BELS                             : 2105
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 8
+#      LUT2                        : 306
+#      LUT3                        : 240
+#      LUT4                        : 877
+#      MUXCY                       : 349
+#      MUXF5                       : 142
+#      VCC                         : 1
+#      XORCY                       : 172
+# FlipFlops/Latches                : 360
+#      FD                          : 24
+#      FDE                         : 2
+#      FDR                         : 30
+#      FDRE                        : 9
+#      FDRSE                       : 10
+#      FDS                         : 2
+#      LD                          : 109
+#      LD_1                        : 92
+#      LDE                         : 12
+#      LDE_1                       : 70
+# RAMS                             : 27
+#      RAM16X1D                    : 8
+#      RAM32X1S                    : 10
+#      RAM64X1S                    : 8
+#      RAMB16_S18                  : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      827  out of   4656    17%  
+ Number of Slice Flip Flops:            360  out of   9312     3%  
+ Number of 4 input LUTs:               1508  out of   9312    16%  
+    Number used as logic:              1440
+    Number used as RAMs:                 68
+ Number of IOs:                           1
+ Number of bonded IOBs:                   1  out of    232     0%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of MULT18X18SIOs:                 4  out of     20    20%  
+ Number of GCLKs:                         6  out of     24    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------+-------------------------------------------+-------+
+Clock Signal                                                                  | Clock buffer(FF name)                     | Load  |
+------------------------------------------------------------------------------+-------------------------------------------+-------+
+clk                                                                           | BUFGP                                     | 104   |
+comp2/read_strobe                                                             | NONE(comp2/C122/Salida_apicob_0)          | 8     |
+comp2/write_strobe1                                                           | BUFG                                      | 67    |
+comp1/c4/senal_resultado_not00001(comp1/c4/senal_resultado_not00001:O)        | BUFG(*)(comp1/c4/senal_resultado_0)       | 22    |
+comp1/d1/mantisa_mul_not00011(comp1/d1/mantisa_mul_not00011:O)                | BUFG(*)(comp1/d1/exponente_mul_0)         | 33    |
+comp1/c31/mantisa_des_cmp_eq00001(comp1/c31/mantisa_des_cmp_eq0000_wg_cy<5>:O)| BUFG(*)(comp1/c31/mantisa_no_desplazada_0)| 70    |
+comp1/c0/exp_iguales                                                          | NONE(comp1/c3/bit_2_1)                    | 3     |
+comp1/c3/mantisa_des_cmp_eq00001(comp1/c3/mantisa_des_cmp_eq0000_wg_cy<5>:O)  | BUFG(*)(comp1/c3/mantisa_sumada_0)        | 70    |
+comp1/c1/oper_ok_not0001(comp1/c1/oper_ok_not00011:O)                         | NONE(*)(comp1/c1/oper_ok)                 | 1     |
+comp1/c0/exp_iguales_not0002(comp1/c0/exp_iguales_not00021:O)                 | NONE(*)(comp1/c0/exp_iguales)             | 1     |
+comp1/c0/exp_iguales_not0003(comp1/c0/exp_iguales_not00031:O)                 | NONE(*)(comp1/c0/despl_0)                 | 8     |
+------------------------------------------------------------------------------+-------------------------------------------+-------+
+(*) These 7 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.959ns (Maximum Frequency: 100.415MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.959ns (frequency: 100.415MHz)
+  Total number of paths / destination ports: 3811 / 378
+-------------------------------------------------------------------------
+Delay:               9.959ns (Levels of Logic = 13)
+  Source:            comp2/program/ram_1024_x_18 (RAM)
+  Destination:       comp2/processor/pc_loop[9].register_bit (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: comp2/program/ram_1024_x_18 to comp2/processor/pc_loop[9].register_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18:CLK->DO14   27   2.800   1.436  comp2/program/ram_1024_x_18 (comp2/instruction<14>)
+     LUT4:I0->O            1   0.704   0.455  comp2/processor/move_group_lut (comp2/processor/move_group)
+     LUT3:I2->O           11   0.704   1.108  comp2/processor/normal_count_lut (comp2/processor/normal_count)
+     LUT3:I0->O            1   0.704   0.000  comp2/processor/pc_loop[0].value_select_mux (comp2/processor/pc_value<0>)
+     MUXCY:S->O            1   0.464   0.000  comp2/processor/pc_loop[0].pc_lsb_carry.pc_value_muxcy (comp2/processor/pc_value_carry<0>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[1].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<1>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[2].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<2>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[3].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<3>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[4].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<4>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[5].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<5>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[6].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<6>)
+     MUXCY:CI->O           1   0.059   0.000  comp2/processor/pc_loop[7].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<7>)
+     MUXCY:CI->O           0   0.059   0.000  comp2/processor/pc_loop[8].pc_mid_carry.pc_value_muxcy (comp2/processor/pc_value_carry<8>)
+     XORCY:CI->O           1   0.804   0.000  comp2/processor/pc_loop[9].pc_msb_carry.pc_value_xor (comp2/processor/inc_pc_value<9>)
+     FDRSE:D                   0.308          comp2/processor/pc_loop[9].register_bit
+    ----------------------------------------
+    Total                      9.959ns (6.960ns logic, 2.999ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp2/write_strobe1'
+  Clock period: 3.167ns (frequency: 315.756MHz)
+  Total number of paths / destination ports: 68 / 67
+-------------------------------------------------------------------------
+Delay:               3.167ns (Levels of Logic = 2)
+  Source:            comp2/c121/enable_alu (LATCH)
+  Destination:       comp2/c121/enable_alu (LATCH)
+  Source Clock:      comp2/write_strobe1 falling
+  Destination Clock: comp2/write_strobe1 falling
+
+  Data Path: comp2/c121/enable_alu to comp2/c121/enable_alu
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              13   0.676   1.158  comp2/c121/enable_alu (comp2/c121/enable_alu)
+     LUT4:I0->O            1   0.704   0.000  comp2/c121/enable_alu_mux000111 (comp2/c121/enable_alu_mux00011)
+     MUXF5:I1->O           1   0.321   0.000  comp2/c121/enable_alu_mux00011_f5 (comp2/c121/enable_alu_mux0001)
+     LD:D                      0.308          comp2/c121/enable_alu
+    ----------------------------------------
+    Total                      3.167ns (2.009ns logic, 1.158ns route)
+                                       (63.4% logic, 36.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp1/c31/mantisa_des_cmp_eq00001'
+  Clock period: 6.079ns (frequency: 164.501MHz)
+  Total number of paths / destination ports: 944 / 70
+-------------------------------------------------------------------------
+Delay:               6.079ns (Levels of Logic = 26)
+  Source:            comp1/c31/mantisa_no_desplazada_0 (LATCH)
+  Destination:       comp1/c31/mantisa_restada_23 (LATCH)
+  Source Clock:      comp1/c31/mantisa_des_cmp_eq00001 rising
+  Destination Clock: comp1/c31/mantisa_des_cmp_eq00001 rising
+
+  Data Path: comp1/c31/mantisa_no_desplazada_0 to comp1/c31/mantisa_restada_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.676   0.622  comp1/c31/mantisa_no_desplazada_0 (comp1/c31/mantisa_no_desplazada_0)
+     LUT2:I0->O            1   0.704   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_lut<0> (comp1/c31/Msub_mantisa_restada_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<0> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<1> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<2> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<3> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<4> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<5> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<6> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<7> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<8> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<9> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<10> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<11> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<12> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<13> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<14> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<15> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<16> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<17> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<18> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<19> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<20> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<21> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<21>)
+     MUXCY:CI->O           0   0.059   0.000  comp1/c31/Msub_mantisa_restada_addsub0000_cy<22> (comp1/c31/Msub_mantisa_restada_addsub0000_cy<22>)
+     XORCY:CI->O           1   0.804   0.499  comp1/c31/Msub_mantisa_restada_addsub0000_xor<23> (comp1/c31/mantisa_restada_addsub0000<23>)
+     LUT4:I1->O            1   0.704   0.000  comp1/c31/mantisa_restada_mux0002<23>1 (comp1/c31/mantisa_restada_mux0002<23>)
+     LDE_1:D                   0.308          comp1/c31/mantisa_restada_23
+    ----------------------------------------
+    Total                      6.079ns (4.958ns logic, 1.121ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp1/c0/exp_iguales'
+  Clock period: 1.431ns (frequency: 698.812MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.431ns (Levels of Logic = 0)
+  Source:            comp1/c3/bit_2_0 (LATCH)
+  Destination:       comp1/c3/bit_1 (LATCH)
+  Source Clock:      comp1/c0/exp_iguales falling
+  Destination Clock: comp1/c0/exp_iguales falling
+
+  Data Path: comp1/c3/bit_2_0 to comp1/c3/bit_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.676   0.447  comp1/c3/bit_2_0 (comp1/c3/bit_2_0)
+     LDE:D                     0.308          comp1/c3/bit_1
+    ----------------------------------------
+    Total                      1.431ns (0.984ns logic, 0.447ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp1/c3/mantisa_des_cmp_eq00001'
+  Clock period: 4.849ns (frequency: 206.228MHz)
+  Total number of paths / destination ports: 874 / 24
+-------------------------------------------------------------------------
+Delay:               4.849ns (Levels of Logic = 25)
+  Source:            comp1/c3/mantisa_n_des_0 (LATCH)
+  Destination:       comp1/c3/mantisa_sumada_23 (LATCH)
+  Source Clock:      comp1/c3/mantisa_des_cmp_eq00001 rising
+  Destination Clock: comp1/c3/mantisa_des_cmp_eq00001 rising
+
+  Data Path: comp1/c3/mantisa_n_des_0 to comp1/c3/mantisa_sumada_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.676   0.595  comp1/c3/mantisa_n_des_0 (comp1/c3/mantisa_n_des_0)
+     LUT2:I0->O            1   0.704   0.000  comp1/c3/Madd_mantisa_sumada_add0000_lut<0> (comp1/c3/Madd_mantisa_sumada_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<0> (comp1/c3/Madd_mantisa_sumada_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<1> (comp1/c3/Madd_mantisa_sumada_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<2> (comp1/c3/Madd_mantisa_sumada_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<3> (comp1/c3/Madd_mantisa_sumada_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<4> (comp1/c3/Madd_mantisa_sumada_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<5> (comp1/c3/Madd_mantisa_sumada_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<6> (comp1/c3/Madd_mantisa_sumada_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<7> (comp1/c3/Madd_mantisa_sumada_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<8> (comp1/c3/Madd_mantisa_sumada_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<9> (comp1/c3/Madd_mantisa_sumada_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<10> (comp1/c3/Madd_mantisa_sumada_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<11> (comp1/c3/Madd_mantisa_sumada_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<12> (comp1/c3/Madd_mantisa_sumada_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<13> (comp1/c3/Madd_mantisa_sumada_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<14> (comp1/c3/Madd_mantisa_sumada_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<15> (comp1/c3/Madd_mantisa_sumada_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<16> (comp1/c3/Madd_mantisa_sumada_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<17> (comp1/c3/Madd_mantisa_sumada_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<18> (comp1/c3/Madd_mantisa_sumada_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<19> (comp1/c3/Madd_mantisa_sumada_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<20> (comp1/c3/Madd_mantisa_sumada_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<21> (comp1/c3/Madd_mantisa_sumada_add0000_cy<21>)
+     MUXCY:CI->O           0   0.059   0.000  comp1/c3/Madd_mantisa_sumada_add0000_cy<22> (comp1/c3/Madd_mantisa_sumada_add0000_cy<22>)
+     XORCY:CI->O           1   0.804   0.000  comp1/c3/Madd_mantisa_sumada_add0000_xor<23> (comp1/c3/mantisa_sumada_add0000<23>)
+     LD_1:D                    0.308          comp1/c3/mantisa_sumada_23
+    ----------------------------------------
+    Total                      4.849ns (4.254ns logic, 0.595ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp1/c1/oper_ok_not0001'
+  Clock period: 2.620ns (frequency: 381.679MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.620ns (Levels of Logic = 1)
+  Source:            comp1/c1/oper_ok (LATCH)
+  Destination:       comp1/c1/oper_ok (LATCH)
+  Source Clock:      comp1/c1/oper_ok_not0001 falling
+  Destination Clock: comp1/c1/oper_ok_not0001 falling
+
+  Data Path: comp1/c1/oper_ok to comp1/c1/oper_ok
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               8   0.676   0.932  comp1/c1/oper_ok (comp1/c1/oper_ok)
+     LUT4:I0->O            1   0.704   0.000  comp1/c1/oper_ok_mux00091 (comp1/c1/oper_ok_mux0009)
+     LD:D                      0.308          comp1/c1/oper_ok
+    ----------------------------------------
+    Total                      2.620ns (1.688ns logic, 0.932ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'comp1/c0/exp_iguales_not0003'
+  Clock period: 2.625ns (frequency: 380.952MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               2.625ns (Levels of Logic = 1)
+  Source:            comp1/c0/despl_3 (LATCH)
+  Destination:       comp1/c0/despl_3 (LATCH)
+  Source Clock:      comp1/c0/exp_iguales_not0003 falling
+  Destination Clock: comp1/c0/exp_iguales_not0003 falling
+
+  Data Path: comp1/c0/despl_3 to comp1/c0/despl_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q             11   0.676   0.937  comp1/c0/despl_3 (comp1/c0/despl_3)
+     LUT4:I3->O            1   0.704   0.000  comp1/c0/despl_mux0003<3>1 (comp1/c0/despl_mux0003<3>)
+     LDE:D                     0.308          comp1/c0/despl_3
+    ----------------------------------------
+    Total                      2.625ns (1.688ns logic, 0.937ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.22 secs
+ 
+--> 
+
+Total memory usage is 401548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  208 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

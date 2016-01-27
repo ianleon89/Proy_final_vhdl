@@ -1,0 +1,6 @@
+vhdl work "kcpsm3.vhd"
+vhdl work "Decoder_Inputs.vhd"
+vhdl work "Decoder_ALU.vhd"
+vhdl work "../../../practica1/KCPSM3/VHDL/kcpsm3.vhd"
+vhdl work "kcpsm3_int_test.vhd"
+vhdl work "Prueba_global.vhd"

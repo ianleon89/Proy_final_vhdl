@@ -1,0 +1,16 @@
+[Inputs]
+enable
+=data[7:0]=
+=selec[3:0]=
+[Outputs]
+enable_alu
+=op1_lsb[7:0]=
+=op1_lssb[7:0]=
+=op1_mssb[7:0]=
+=op1_msb[7:0]=
+=op2_lsb[7:0]=
+=op2_lssb[7:0]=
+=op2_mssb[7:0]=
+=op2_msb[7:0]=
+=operacion[1:0]=
+[BiDir]

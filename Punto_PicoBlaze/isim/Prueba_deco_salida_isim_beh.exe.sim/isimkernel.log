@@ -1,0 +1,29 @@
+Command line:
+   Prueba_deco_salida_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65192
+
+Tue Jan 19 20:37:21 2016
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 994.64 Meg
+
+ Total Signals          : 26
+ Total Nets             : 80
+ Total Signal Drivers   : 13
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 564
+Total Line Count : 69
+
+ Total Simulation Time: 0.34375 sec
+
+ Current Memory Usage: 1309.23 Meg
+
+Tue Jan 19 20:37:45 2016
+

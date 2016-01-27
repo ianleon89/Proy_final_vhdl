@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Punto_PicoBlaze.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ALU_iee_754.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ALU_iee_754.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ALU_iee_754.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ALU_iee_754.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_iee_754.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU_iee_754.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ALU_iee_754.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ALU_iee_754.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_iee_754_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_iee_754_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_iee_754_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU_iee_754_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Comparador_Exp.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Comparador_Exp.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Comparador_Exp.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Decoder_ALU.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Decoder_ALU.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Decoder_ALU.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Decoder_ALU.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decoder_ALU.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Decoder_ALU.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Decoder_ALU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decoder_ALU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Decoder_ALU.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Decoder_ALU.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Decoder_ALU_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Decoder_ALU_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decoder_ALU_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Decoder_ALU_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Decoder_Inputs.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Decoder_Inputs.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Decoder_Inputs.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Decoder_Inputs.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decoder_Inputs.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Decoder_Inputs.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Decoder_Inputs.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Decoder_Inputs.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Decoder_Inputs_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Decoder_Inputs_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decoder_Inputs_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Decoder_Inputs_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Pressenta_resultados.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Pressenta_resultados.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Pressenta_resultados.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Proyecto_Ivan_Leon.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Proyecto_Ivan_Leon.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Proyecto_Ivan_Leon.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Proyecto_Ivan_Leon.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Proyecto_Ivan_Leon.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Proyecto_Ivan_Leon.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Proyecto_Ivan_Leon.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Proyecto_Ivan_Leon.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Proyecto_Ivan_Leon_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Proyecto_Ivan_Leon_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Proyecto_Ivan_Leon_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Proyecto_Ivan_Leon_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueb_deco_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueb_deco_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_ALU_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_ALU_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_deco_salida_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_deco_salida_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_ensamblados_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_ensamblados_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Prueba_ensamblados_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_ensamblados_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_entradas_kpcm3_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_entradas_kpcm3_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_global_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_global_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Prueba_global_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_global_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_kcpms3_condecoder_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_kcpms3_condecoder_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_mux_in_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_mux_in_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Prueba_presentarest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Prueba_presentarest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Restador.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Restador.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Restador.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Restador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selec_Comp_Mantisa.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Selec_Comp_Mantisa.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Selec_Comp_Mantisa.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Seleccion_Operacion.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Seleccion_Operacion.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Seleccion_Operacion.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sumador_iee_754.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sumador_iee_754.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Sumador_iee_754.xst"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="int_test.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="int_test.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="int_test.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="kcpsm3_int_test.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="kcpsm3_int_test.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="kcpsm3_int_test.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="kcpsm3_int_test.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kcpsm3_int_test.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="kcpsm3_int_test.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="kcpsm3_int_test.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="kcpsm3_int_test.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kcpsm3_int_test_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kcpsm3_int_test_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kcpsm3_int_test_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kcpsm3_int_test_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/Decoder_ALU_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/Decoder_ALU_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1453408108" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1453408108">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453408108" xil_pn:in_ck="-7460810099401358361" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1453408108">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../practica1/KCPSM3/VHDL/kcpsm3.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Comparador_Exp.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Detector_de_Rebose.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Multiplicador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Pressenta_resultados.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Restador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Selec_exponente.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Seleccion_suma_resta.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Shiftter.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Sumador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Sumador_iee_754.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/seleccion_operacion.vhd"/>
+      <outfile xil_pn:name="Decoder_ALU.vhd"/>
+      <outfile xil_pn:name="Decoder_Inputs.vhd"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.vhd"/>
+      <outfile xil_pn:name="Prueb_deco.vhd"/>
+      <outfile xil_pn:name="Prueba_ALU.vhd"/>
+      <outfile xil_pn:name="Prueba_deco_salida.vhd"/>
+      <outfile xil_pn:name="Prueba_ensamblados.vhd"/>
+      <outfile xil_pn:name="Prueba_entradas_kpcm3.vhd"/>
+      <outfile xil_pn:name="Prueba_global.vhd"/>
+      <outfile xil_pn:name="Prueba_kcpms3_condecoder.vhd"/>
+      <outfile xil_pn:name="Prueba_mux_in.vhd"/>
+      <outfile xil_pn:name="Prueba_presentarest.vhd"/>
+      <outfile xil_pn:name="kcpsm3.vhd"/>
+      <outfile xil_pn:name="kcpsm3_int_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1453408158" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6765271000274106243" xil_pn:start_ts="1453408158">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453408158" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3136067560600362049" xil_pn:start_ts="1453408158">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407810" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8734307358388213510" xil_pn:start_ts="1453407810">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407810" xil_pn:in_ck="-7460810099401358361" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1453407810">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../practica1/KCPSM3/VHDL/kcpsm3.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Comparador_Exp.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Detector_de_Rebose.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Multiplicador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Pressenta_resultados.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Restador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Selec_Comp_Mantisa.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Selec_exponente.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Seleccion_suma_resta.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Shiftter.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Sumador.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/Sumador_iee_754.vhd"/>
+      <outfile xil_pn:name="../Proyecto_ALU_v1/seleccion_operacion.vhd"/>
+      <outfile xil_pn:name="Decoder_ALU.vhd"/>
+      <outfile xil_pn:name="Decoder_Inputs.vhd"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.vhd"/>
+      <outfile xil_pn:name="Prueb_deco.vhd"/>
+      <outfile xil_pn:name="Prueba_ALU.vhd"/>
+      <outfile xil_pn:name="Prueba_deco_salida.vhd"/>
+      <outfile xil_pn:name="Prueba_ensamblados.vhd"/>
+      <outfile xil_pn:name="Prueba_entradas_kpcm3.vhd"/>
+      <outfile xil_pn:name="Prueba_global.vhd"/>
+      <outfile xil_pn:name="Prueba_kcpms3_condecoder.vhd"/>
+      <outfile xil_pn:name="Prueba_mux_in.vhd"/>
+      <outfile xil_pn:name="Prueba_presentarest.vhd"/>
+      <outfile xil_pn:name="kcpsm3.vhd"/>
+      <outfile xil_pn:name="kcpsm3_int_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1453408171" xil_pn:in_ck="-7460810099401358361" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6053617770908479676" xil_pn:start_ts="1453408158">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Prueba_ensamblados_beh.prj"/>
+      <outfile xil_pn:name="Prueba_ensamblados_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1453408172" xil_pn:in_ck="8882453187409157496" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6028438717941435241" xil_pn:start_ts="1453408171">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Prueba_ensamblados_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1452792873" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1452792873">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2011596498631808908" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8734307358388213510" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7698681481346837298" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453407746" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2455586686452825084" xil_pn:start_ts="1453407746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453914118" xil_pn:in_ck="3709833281349866822" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="703925320825941399" xil_pn:start_ts="1453914083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="Decoder_ALU.ngr"/>
+      <outfile xil_pn:name="Decoder_Inputs.ngr"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.lso"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.ngc"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.ngr"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.prj"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.stx"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.syr"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon.xst"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon_vhdl.prj"/>
+      <outfile xil_pn:name="Proyecto_Ivan_Leon_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="kcpsm3_int_test.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1452798313" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4581283721280888463" xil_pn:start_ts="1452798313">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+  </transforms>
+
+</generated_project>

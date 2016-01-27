@@ -1,0 +1,6 @@
+vhdl isim_temp "kcpsm3.vhd"
+vhdl isim_temp "Decoder_Inputs.vhd"
+vhdl isim_temp "Decoder_ALU.vhd"
+vhdl isim_temp "../../../practica1/KCPSM3/VHDL/kcpsm3.vhd"
+vhdl isim_temp "kcpsm3_int_test.vhd"
+vhdl isim_temp "Prueba_kcpms3_condecoder.vhd"
